@@ -1,5 +1,28 @@
 # Full-School-Management-System
-This system is made with Angular, Nodejs, Express Js and MySQL. 
+This system is made with Angular, Nodejs, Express Js and MySQL.
+
+# Frontend
+This project was generated with Angular CLI version 11.0.7.
+
+# Development server
+Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+
+# Code scaffolding
+Run ng generate component component-name to generate a new component. You can also use ng generate directive|pipe|service|class|guard|interface|enum|module.
+
+# Build
+Run ng build to build the project. The build artifacts will be stored in the dist/ directory. Use the --prod flag for a production build.
+
+# Running unit tests
+Run ng test to execute the unit tests via Karma.
+
+# Running end-to-end tests
+Run ng e2e to execute the end-to-end tests via Protractor.
+
+# Further help
+To get more help on the Angular CLI use ng help or go check out the Angular CLI Overview and Command Reference page.
+
+
 # MODULE 1:  Admin Management
 Admin have all the access to each and every feature of system. Admin can be one or more than one person having different logins but of same domain. Admin makes the profiles and logins of users. Admin can edit or delete anything. Admin has the right to admit new students and expel or approve graduate old students. Admin can edit his/her own profile. Admin also maintains the system by check and balance of every feature. Admin has the duty to accept or reject student’s withdrawal application, transferring students and admitting transferred students.
 
