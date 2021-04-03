@@ -38,7 +38,6 @@ This module deal with scheme of studies and support material of students. When s
 Attendance has two main functions; to mark and to approve. To mark and upload attendance is the duty of teacher and to approve it is the duty of Admin. If admin approves, only then it will count and start showing on portal. This attendance feature will show all the details of lectures, their start and end time and student presence or absence in it. Day to day attendance is editable if anyone wants to change it later in a year, but this authority is only given to teachers and admin. Students and their parents can only see attendance records when they get uploaded after admin’s approval.
 
 #       Module 7: Student Affairs
-This module has small but most important features of a system. They are:
 
 Help Desk or Search:
 By using this feature, user can trace anything, user can report error if they are facing some in their respective portal. User can get answers to their queries related to school. If anyone needs appointment to meet higher authorities of school, they can do so by taking help from help desk.
