@@ -1,0 +1,30 @@
+<nav
+      class="navbar navbar-expand-md bg-light navbar-light"
+      style="font-weight: 100"
+    >
+      <div class="">
+        <a class="navbar-brand" href="#"
+          ><img src="../../assets/images/logo.png" alt="" srcset="" height="40px"
+        /></a>
+      </div>
+    </nav>
+    <div class="col-sm-12 space"></div>
+    <div class="login-form">
+        <form action="/examples/actions/confirmation.php" method="post">
+            <h2 class="text-center">Log in</h2>       
+            <div class="form-group">
+                <input type="text" [(ngModel)]='user.user_username' name="userName" class="form-control" placeholder="Username" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" [(ngModel)]='user.user_pass' name="userPass" placeholder="Password" required="required">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block" (click)="login()">Log in</button>                
+            </div>
+
+            <!-- <div class="clearfix">
+                <label class="float-left form-check-label"><input type="checkbox"> Remember me</label>
+                <a href="#" class="float-right">Forgot Password?</a>
+            </div> -->
+        </form>
+    </div>
