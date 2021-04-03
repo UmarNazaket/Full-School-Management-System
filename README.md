@@ -1,4 +1,5 @@
 # Full-School-Management-System
+This system is made with Angular, Nodejs, Express Js and MySQL. 
 # MODULE 1:  Admin Management
 Admin have all the access to each and every feature of system. Admin can be one or more than one person having different logins but of same domain. Admin makes the profiles and logins of users. Admin can edit or delete anything. Admin has the right to admit new students and expel or approve graduate old students. Admin can edit his/her own profile. Admin also maintains the system by check and balance of every feature. Admin has the duty to accept or reject student’s withdrawal application, transferring students and admitting transferred students.
 
