@@ -40,7 +40,7 @@ Students:
 They can view their marks/result and give assessments/exams online.
 
 Parents:
-They can view the progress report of their child.
+They can view the progress report of their child
 
 Finance Department Employees:
 They have multiple employees who will deal in student’s fee and other related tasks.
