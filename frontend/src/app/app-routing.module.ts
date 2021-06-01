@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { Subject } from 'rxjs';
 import { AdmissionFormComponent } from './admission-form/admission-form.component';
+import { AcceptRejectStdComponent } from './employee/accept-reject-std/accept-reject-std.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { SetfeestructureComponent } from './employee/setfeestructure/setfeestructure.component';
 import { LoginComponent } from './login/login.component';
 import { AttendanceComponent } from './parent-dashboard/attendance/attendance.component';
 import { ChildListComponent } from './parent-dashboard/child-list/child-list.component';
@@ -118,6 +121,24 @@ const routes: Routes = [{
     {
       path: "classlink",
       component: ClassLinkComponent
+    }
+  ]
+},
+{
+  path: 'employee',
+  component: EmployeeComponent,
+  children:[
+    {
+      path: "adddeletestudents",
+      component: AcceptRejectStdComponent
+    },
+    {
+      path: "subjectdetails",
+      component: SubjectdetailsComponent
+    },
+    {
+      path: "setfeechallan",
+      component: SetfeestructureComponent
     }
   ]
 }

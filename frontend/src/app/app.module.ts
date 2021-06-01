@@ -42,6 +42,9 @@ import { UploadMarksComponent } from './teacher/upload-marks/upload-marks.compon
 import { TakeexamComponent } from './teacher/takeexam/takeexam.component';
 import { StudySchemeComponent } from './teacher/study-scheme/study-scheme.component';
 import { ClassLinkComponent } from './teacher/class-link/class-link.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { AcceptRejectStdComponent } from './employee/accept-reject-std/accept-reject-std.component';
+import { SetfeestructureComponent } from './employee/setfeestructure/setfeestructure.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +73,10 @@ import { ClassLinkComponent } from './teacher/class-link/class-link.component';
     UploadMarksComponent,
     TakeexamComponent,
     StudySchemeComponent,
-    ClassLinkComponent
+    ClassLinkComponent,
+    EmployeeComponent,
+    AcceptRejectStdComponent,
+    SetfeestructureComponent
   ],
   imports: [
     FileUploadModule,

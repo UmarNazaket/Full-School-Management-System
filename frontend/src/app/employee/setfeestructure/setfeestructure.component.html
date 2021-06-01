@@ -1,0 +1,43 @@
+<div class="col-sm-12">
+    <div class="feestructureWrapper ml-5">
+
+    <div class="select_class mt-4">
+    <h6>Select a class</h6>
+    <p-dropdown [options]="classes" [(ngModel)]="selectedClass" optionLabel="name"></p-dropdown>
+    </div>
+
+    <div class="mt-4 mb-4">
+        If you want to send same challan form to whole class kindly fill these fields.
+        <br>
+        <input class="mr-2" type="date" [(ngModel)]="duedate" placeholder="Enter Due Date">
+        <input class="mr-2" type="number" [(ngModel)]="amount" placeholder="Enter Amount">
+        <button class="btn btn-primary">Send</button>
+    </div>
+
+    <p-table [value]="Students">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Father Name</th>
+                <th>Due Date</th>
+                <th>Amount</th>
+                <th>Send Challan</th>
+    
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-student let-i="rowIndex">
+            <tr>
+                <td>{{i+1}}</td>
+                <td>{{student.name}}</td>
+                <td>{{student.fatherName}}</td>
+                <td class="pl-1 pr-1"> <input style="max-width: 140px;" type="date" [(ngModel)]="duedate" placeholder="Enter Due Date"></td>
+                <td class="pl-1 pr-1"><input style="max-width: 140px;" type="number" [(ngModel)]="amount" placeholder="Enter Amount"></td>
+                <td><button class="btn btn-primary">Send</button></td>
+            </tr>
+        </ng-template>
+    </p-table>
+
+
+</div>
+</div>
