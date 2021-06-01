@@ -1,0 +1,111 @@
+    <div class="eup-ov-root p-3">
+        <div class="eup-ov-parent">
+          <div class="eup-ov-sub-parent">
+            <div class="eup-ov-grid-wrapper">
+              <div class="container">
+              <!--          Cards wrapper  -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="eup-ov-cards-heading text-center">
+                      <h5>Online Classes Link</h5>
+                    </div>
+                    <div class="eup-ov-cards-wrapper col-sm-12">
+                      <!-- card 1 -->
+                      <div class="eup-ov-single-card col-sm-6 col-md-4">
+                        <div class="eup-green-card">
+                          <p-card styleClass="eup-green-card">
+                           
+                            <div class="eup-ov-card-value text-center"> <p-skeleton width="4rem" styleClass="p-mb-2 p-mx-auto" *ngIf="contentLoader"></p-skeleton> <span *ngIf="!contentLoader">English </span></div>
+                            <div class="eup-ov-card-text"><p-skeleton width="10rem" styleClass="p-mb-2" *ngIf="contentLoader"></p-skeleton> <span *ngIf="!contentLoader"></span><a href="https://teams.microsoft.com/_?culture=en-us&country=US&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn">Click to join</a> </div>
+                          </p-card>
+                        </div>
+                      </div>
+                      <!-- card 2 -->
+                      <div class="eup-ov-single-card col-sm-6 col-md-4">
+                        <div class="eup-red-card">
+                          <p-card styleClass="eup-red-card">
+                            <div class="eup-ov-card-value"><p-skeleton width="4rem" styleClass="p-mb-2 p-mx-auto" *ngIf="contentLoader"></p-skeleton> <span *ngIf="!contentLoader">Urdu </span> </div>
+                            <div class="eup-ov-card-text pl-2 pr-2"><p-skeleton width="10rem" styleClass="p-mb-2" *ngIf="contentLoader"></p-skeleton> <span *ngIf="!contentLoader"><a href="https://teams.microsoft.com/_?culture=en-us&country=US&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn">Click to join</a></span>  </div>
+                          </p-card>
+                        </div>
+                      </div>
+                      <!-- card 3 -->
+                      <div class="eup-ov-single-card col-sm-6 col-md-4">
+                        <div class="eup-blue-card">
+                          <p-card styleClass="eup-blue-card">
+                            <div class="eup-ov-card-value"><p-skeleton width="4rem" styleClass="p-mb-2 p-mx-auto" *ngIf="contentLoader"></p-skeleton> <span *ngIf="!contentLoader">Math</span> </div>
+                            <div class="eup-ov-card-text"><p-skeleton width="10rem" styleClass="p-mb-2" *ngIf="contentLoader"></p-skeleton> <span *ngIf="!contentLoader"><a href="https://teams.microsoft.com/_?culture=en-us&country=US&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn">Click to join</a></span>  </div>
+                          </p-card>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              <!--        Table wrapper   -->
+      
+                <div class="row">
+                    <div class="eup-ov-cards-heading text-center col-sm-12">
+                        <h4>Subjects & Attendance</h4>
+                    </div>
+                  <div class="col-sm-12  mb-5 eup-ov-courses-table-wrapper">
+                    <div
+                      style="
+                        /*width: 85%;*/
+                        margin-left: auto;
+                        margin-right: auto;
+                        border-radius: 8px;
+                        border: #389cf2 solid;
+                      "
+                    >
+                      <div
+                        class="text-light pt-3 pb-3"
+                        style="
+                          display: flex;
+                          flex-direction: row;
+                          align-content: space-between;
+                          background-color: #389cf2;
+                          border: 0px;
+                        "
+                      >
+                      </div>
+      
+                      <!-- 1 Row -->
+                      <div class="pb-2 pt-2" style="border-bottom: #9b9595 1px solid;" *ngFor="let course of smallfinalarray; index as i" >
+                        <div class="col-sm-12" style="display: flex; flex-direction: row; align-content: space-between; flex-wrap: wrap;">
+            <span style="width: 30%; color: #9b9595;">{{course.teacher_name}}
+          </span>
+          <div style="width: 30%;" class="text-center" >
+            <i class="fa fa-shopping-cart fa-2x" style="color: #389cf2;" routerLink="/student/checkout"></i>
+          </div>
+                          <div class="progress" style="width: 40%; margin-left: auto;" *ngIf="!contentLoader">
+                            <div  class="progress-bar" role="progressbar" style="width: {{course.value}}%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                        <div class="col-sm-12" style="display: flex; flex-direction: row; align-content: space-between; flex-wrap: wrap;">
+            <span style="width: 30%;">
+               <p-skeleton styleClass="p-mb-2" *ngIf="contentLoader"></p-skeleton> 
+              <span *ngIf="contentLoader == false">{{course.post_title}}</span>
+          </span>
+                          <div style="width: 40%; margin-left: auto;">
+                            <div *ngIf="contentLoader">
+                              <p-skeleton styleClass="p-mb-2"></p-skeleton>
+                             <p-skeleton width="10rem" styleClass="p-mb-2"></p-skeleton>
+                            </div>
+                            <div *ngIf="!contentLoader"> {{(course.value).toFixed(2)}}% </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+      
+                    </div>
+                  </div>
+      
+                </div>
+      
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     

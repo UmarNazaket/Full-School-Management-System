@@ -1,13 +1,6 @@
-<nav
-      class="navbar navbar-expand-md bg-light navbar-light"
-      style="font-weight: 100"
-    >
-      <div class="">
-        <a class="navbar-brand" href="#"
-          ><img src="../../assets/images/logo.png" alt="" srcset="" height="40px"
-        /></a>
-      </div>
-    </nav>
+<nav class="navbar fixed-top navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="../../assets/imgs/LogoF.png" alt="kjasbf" srcset="" height="40px"></a>
+</nav>
     <div class="col-sm-12 space"></div>
     <div class="login-form">
         <form action="/examples/actions/confirmation.php" method="post">
@@ -20,6 +13,9 @@
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary btn-block" (click)="login()">Log in</button>                
+            </div>
+            <div class="form-group">
+              <p>Dont Have Account? <br/> <a routerLink="/signup"  class="mr-5">Signup</a> <a routerLink="/signup"  class="ml-5">Signup As Guest</a></p>
             </div>
 
             <!-- <div class="clearfix">

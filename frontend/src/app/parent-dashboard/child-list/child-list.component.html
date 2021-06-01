@@ -1,0 +1,27 @@
+<div class="col-sm-12 text-center mt-5 mb-3">
+    <h3>Children List</h3>
+</div>
+<p-table [value]="children">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Roll No.</th>
+            <th>Result</th>
+            <th>Attendance</th>
+            <th>Fee</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-child let-i="rowIndex">
+        <tr>
+            <td>{{i+1}}</td>
+            <td>{{child.name}}</td>
+            <td>{{child.class}}</td>
+            <td>{{child.roll_no}}</td>
+            <td (click)="getResult(child.roll_no)"><i class="fa fa-eye"></i></td>
+            <td (click)="getAttendance(child.roll_no)"><i class="fa fa-eye"></i></td>
+            <td (click)="getFee(child.roll_no)"><i class="fa fa-eye"></i></td>
+        </tr>
+    </ng-template>
+</p-table>

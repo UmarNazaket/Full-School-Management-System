@@ -1,0 +1,27 @@
+.card_wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .card{
+        background: #61ce87;
+        align-content: center;
+        min-width: 320px;
+        min-height: 120px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover{
+            background: #24974d;
+        }
+        .card_text{
+            margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: bold;
+            color: #FFFFFF;
+            font-size: 18px;
+        }
+    }
+}

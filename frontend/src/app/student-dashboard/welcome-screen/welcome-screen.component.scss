@@ -1,0 +1,169 @@
+.eup-ov-cards-heading{
+    padding: 2% 2% 0;
+    color: #d8d8d8;
+  }
+  .eup-ov-cards-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    .eup-ov-single-card{
+      // flex-basis: 33.33%;
+      text-align: center;
+      font-size: 20px;
+      color: white;
+      padding: 2%;
+  
+      .eup-green-card{
+        background-color: #61ce87;
+        border-radius: 5%;
+      }
+      .eup-red-card{
+        background-color: #e14f6a;
+        border-radius: 5%;
+      }
+      .eup-blue-card{
+        background-color: #389cf2;
+        border-radius: 5%;
+      }
+      .eup-purple-card{
+        background-color: #7583f0;
+        border-radius: 5%;
+      }
+    }
+   .eup-ov-card-value{
+     font-size: 1.2rem;
+     color: white;
+     font-weight: bold;
+   }
+    .eup-ov-card-text{
+      color: white;
+      font-weight: bold;
+      font-size: 11px;
+    }
+  }
+  
+  :host ::ng-deep .p-card{
+    height: 150px;
+    background: none;
+    border-radius: 5%;
+  
+  }
+  :host ::ng-deep .p-card-body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .eup-ov-charts-wrapper{
+    padding: 4% 2%;
+    .eup-ov-data-chart{
+      padding: 12% 0;
+    }
+    .eup-ov-chart{
+      background: #f2f8f9;
+      padding: 4% 0;
+    }
+  
+    .eup-ov-data-chart-pointers{
+  
+      .eup-ov-chart-pointer{
+        display: flex;
+        align-items: baseline;
+        .eup-ov-chart-pointer-color{
+          //flex-basis: 30%;
+          margin-right:10px
+        }
+      }
+      .eup-ov-data-chart{
+        padding: 20px 0;
+      }
+      .eup-green-pointer{
+        background-color: #61ce87;
+        border-radius: 100%;
+        padding: 3%;
+      }
+      .eup-red-pointer{
+        background-color: #e14f6a;
+        border-radius: 100%;
+        padding: 3%;
+  
+      }
+      .eup-blue-pointer{
+        background-color: #389cf2;
+        border-radius: 100%;
+        padding: 3%;
+  
+      }
+      .eup-purple-pointer{
+        background-color: #7583f0;
+        border-radius: 100%;
+        padding: 3%;
+  
+      }
+    }
+  
+  }
+  .eup-ov-courses-table-wrapper{
+    padding: 0 3%;
+  }
+  
+  .top {
+    height: 225px;
+    background: linear-gradient(to bottom, #007991, #2E4A66);
+  }
+  .topimg {
+    width: 60vw;
+  }
+  .logintxt {
+    position: absolute;
+    left: 15px;
+    bottom: 5vh;
+  }
+  .logoutbtn{
+    background: #2E4A66;
+    color: #fff;
+    border: black 1px solid;
+    position: absolute;
+    right: 15px;
+    bottom: 5vh;
+  
+  }
+  @media only screen and (max-width: 600px) {
+    .top {
+      height: 190px;
+    }
+    .login-form{
+      max-width: fit-content;
+    }
+  
+  }
+  @media only screen and (max-width: 400px) {
+    .top {
+      height: 150px;
+    }
+    .login-form {
+      max-width: fit-content;
+    }
+  }
+  
+  .datahead{
+    min-width: 220px;
+  }
+  
+  .progress-bar{
+    background-color: #61CE70;
+    border-radius: 9px;
+  }
+  .progress{
+    border-radius: 9px;
+    height: 13px;
+  }
+  a{
+    color: #FFFFFF;
+    font-size: 13px;
+    text-decoration: none;
+  }
+  .fa{
+    cursor: pointer;
+  }
+  

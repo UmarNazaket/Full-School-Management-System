@@ -1,0 +1,199 @@
+/* THIS IS FOR POPUP SCREEN */
+/* The Modal (background) */
+/* Modal Content */
+/* The Close Button */
+/* POPUP SCREEN STYLING ENDS HERE */
+/* THANKYOU SCREEN */
+@keyframes "spin" {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+.nav-item {
+	.nav-link {
+		width: max-content;
+	}
+}
+.col-sm-12 {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 10px;
+}
+.col-md-3 {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 10px;
+}
+.navbar {
+	margin-bottom: 0px;
+}
+.navbar-brand {
+	padding-top: 0px;
+}
+td {
+	color: #222;
+	font-family: Arial;
+	font-size: 14px;
+	line-height: 24px;
+}
+.opacity {
+	opacity: 0.5;
+}
+.btn-danger {
+	background-color: #FB3C2D;
+}
+.card1 {
+	display: inline-block;
+}
+.nomargin {
+	font-size: 15px;
+}
+.checkoutbody {
+	width: 86%;
+	margin-left: auto;
+	margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .leftCard{
+        width: 50%;
+    }
+    .rightCard{
+        width: 30%;
+    }
+}
+.zeropadd{
+    display: flex;
+    flex-direction: row;
+}
+.dullbackground {
+	margin-top: 10vh;
+	background-color: #F2F5F7;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom: 10vh;
+}
+.bilheading {
+	opacity: 0.5;
+	color: #505D68;
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+}
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	&:hover {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	&:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+}
+.overlay {
+	height: 90%;
+	width: 100%;
+	margin-top: 5%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.9);
+	.closebtn {
+		position: absolute;
+		top: 20px;
+		right: 45px;
+		font-size: 60px;
+		cursor: pointer;
+		color: white;
+		&:hover {
+			color: #ccc;
+		}
+	}
+	input[type="text"] {
+		padding: 15px;
+		font-size: 17px;
+		border: none;
+		float: left;
+		width: 80%;
+		background: white;
+		&:hover {
+			background: #f1f1f1;
+		}
+	}
+	button {
+		float: left;
+		width: 20%;
+		padding: 15px;
+		background: #ddd;
+		font-size: 17px;
+		border: none;
+		cursor: pointer;
+		&:hover {
+			background: #bbb;
+		}
+	}
+}
+.overlay-content {
+	position: relative;
+	top: 46%;
+	width: 80%;
+	text-align: center;
+	margin-top: 30px;
+	margin: auto;
+}
+#spinner {
+	&:not([hidden]) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&::after {
+		content: "";
+		width: 80px;
+		height: 80px;
+		border: 3px solid #f3f3f3;
+		border-top: 3px solid #FB3C2D;
+		border-radius: 100%;
+		will-change: transform;
+		animation: spin 1s infinite linear;
+	}
+}

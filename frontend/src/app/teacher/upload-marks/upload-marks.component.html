@@ -1,0 +1,33 @@
+<div class="col-sm-12 text-center mt-3 mb-5 h1">
+    Upload Marks
+</div>
+
+<div class="col-sm-12">
+    <div class="col-sm-12 text-center">
+        <p-dropdown [options]="terms" [(ngModel)]="selectedTerm" optionLabel="name" placeholder="Select a Term"></p-dropdown>
+    </div>
+<div>
+    
+    <div class="col-sm-12 text-center mb-1 mt-5"> <input type="number" style="width: 120px;" placeholder="Total marks" ></div>
+<p-table [value]="Students">
+
+    <ng-template pTemplate="header">
+        <tr>
+            <th>#</th>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Marks Gained</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-student let-i="rowIndex">
+        <tr>
+            <td>{{i+1}}</td>
+            <td>{{student.Roll_No}}</td>
+            <td>{{student.name}}</td>
+            <td><input type="number" ></td>
+        </tr>
+    </ng-template>
+</p-table>
+</div>
+
+</div>
