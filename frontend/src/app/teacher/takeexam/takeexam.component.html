@@ -1,0 +1,11 @@
+<div class="col-sm-12">
+    <div class="col-sm-12 mt-5 mb-4 text-center"><h3>Upload Paper</h3></div>
+    <p-fileUpload name="demo[]" url="" (onUpload)="onUpload($event)"
+    [accept]= "'.pdf,.doc,.docx,.text,.txt'">
+            <ng-template pTemplate="content">
+                <ul *ngIf="uploadedFiles.length">
+                    <li *ngFor="let file of uploadedFiles">{{file.name}} - {{file.size}} bytes</li>
+                </ul>
+            </ng-template>
+    </p-fileUpload>
+</div>

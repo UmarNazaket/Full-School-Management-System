@@ -1,0 +1,77 @@
+<!-- <script src="node_modules/chart.js/src/chart.js"></script> -->
+
+
+<div class="eup-db-root">
+    <div class="eup-db-parent">
+      <div class="eup-db-subparent">
+        <div class="eup-db-grid-wrapper">
+  
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12 p-0">
+                <div class="eup-db-top-bar-wrapper">
+                  <div class="eup-db-top-bar">
+                    <div class="eup-db-top-bar-heading" style="display: flex; flex-direction: row;">
+                      <h4 id="eup-navbar-heading">Dashboard</h4>
+                      
+                      <i class="fa fa-bars fa-2x ml-3 hamburger" style="color: #FFFFFF;" (click)="hamburgerclicked()"></i>
+                      
+                    </div>
+                    
+                    <div class="eup-db-top-bar-user-profile-icon">
+                      <div>
+                        
+                        <i class="fa fa-user-circle-o" routerLink="/student/profile"></i>
+                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 p-0">
+                <div class="eup-db-content-wrapper">
+                  <div class="eup-db-content-left-parent" [ngClass]="[isopen == true ? 'flex-20' : 'flex-0']" id="sidebar">
+                   <div class="eup-db-side-bar-logo">
+                     <img src="../../assets/imgs/LogoF.png" alt="">
+                   </div>
+                    <div class="eup-db-side-bar-navigation-wrapper">
+                      <ul class="eup-db-side-bar-navigation">
+                        <li class="eup-db-side-bar-nav-item" routerLink="/parent">
+                          <i class="fa fa-dashboard eup-db-side-bar-link-icon" [ngClass]="[isopen == true ? '' : 'mb-3 ']"></i>
+                          <span class="eup-db-side-bar-link-text" >Welcome</span>
+                        </li>
+                        <!-- <li class="eup-db-side-bar-nav-item" routerLink="/parent/childlist"  >
+                          <i class="fa fa-sticky-note eup-db-side-bar-link-icon" [ngClass]="[isopen == true ? '' : 'mb-3 ']"></i>
+                          <span class="eup-db-side-bar-link-text" >Child List</span>
+                        </li> -->
+                        <li class="eup-db-side-bar-nav-item" routerLink="/student/timetable">
+                          <i class="fa fa-arrow-circle-left eup-db-side-bar-link-icon" [ngClass]="[isopen == true ? '' : 'mb-3 ']"></i>
+                          <span class="eup-db-side-bar-link-text" >Time Table</span>
+                        </li>
+                        <!-- <li class="eup-db-side-bar-nav-item" routerLink="/dashboard/flashcards">
+                          <i class="fa fa-flash eup-db-side-bar-link-icon" [ngClass]="[isopen == true ? '' : 'mb-3 ']"></i>
+                          <span class="eup-db-side-bar-link-text" >Flash Cards</span>
+                        </li> -->
+                        <li class="eup-db-side-bar-nav-item" (click)="logout()">
+                          <i class="fa fa-sign-out eup-db-side-bar-link-icon" [ngClass]="[isopen == true ? '' : 'mb-3  pl-1']"></i>
+                          <span class="eup-db-side-bar-link-text" >Logout</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="eup-db-content-right-parent" [ngClass]="[isopen == true ? 'flex-80' : 'flex-100']" id="rightContent">
+                    <router-outlet></router-outlet>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  
