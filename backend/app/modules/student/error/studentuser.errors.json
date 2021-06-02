@@ -1,0 +1,12 @@
+{
+    "1100": {
+        "msg": {
+            "EN": "Error occurred while fetching student time table."
+        }
+    },
+    "1101": {
+        "msg": {
+            "EN": "Error occurred while adding scheme of study."
+        }
+    }
+}
