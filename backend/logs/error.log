@@ -1,0 +1,571 @@
+[2021-05-20 11:32:13] [31merror[39m:  Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379 
+Error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1142:16)
+[2021-05-20 12:24:02] [31merror[39m:  {"status":404} 
+[2021-05-20 12:53:19] [31merror[39m:  {"status":404} 
+[2021-05-20 12:53:48] [31merror[39m:  {"status":404} 
+[2021-05-20 12:54:11] [31merror[39m:  {"status":404} 
+[2021-05-20 12:58:24] [31merror[39m:  {"msgCode":3} 
+[2021-05-20 13:06:47] [31merror[39m:  {"msgCode":3} 
+[2021-05-20 14:50:45] [31merror[39m:  {"message":"Unable to find admin."} 
+[2021-05-20 14:52:11] [31merror[39m:  {"message":"Unable to find admin."} 
+[2021-05-20 14:53:08] [31merror[39m:  {"message":"Unable to find admin."} 
+[2021-05-20 14:54:42] [31merror[39m:  {"msgCode":4} 
+[2021-05-20 15:00:24] [31merror[39m:  {"msgCode":4} 
+[2021-05-20 15:02:21] [31merror[39m:  {"msgCode":3} 
+[2021-05-20 15:02:31] [31merror[39m:  {"msgCode":4} 
+[2021-05-20 15:09:41] [31merror[39m:  {"msgCode":4} 
+[2021-05-20 15:10:44] [31merror[39m:  {"msgCode":4} 
+[2021-05-20 15:50:21] [31merror[39m:  {"msgCode":2512} 
+[2021-05-20 16:06:17] [31merror[39m:  {"expose":true,"statusCode":400,"status":400,"body":"{\r\n        \"firstName\": \"Student\",\r\n        \"lastName\": \"name\",\r\n        \"fatherName\": \"Std-Father\",\r\n        \"phoneNumber\": 90078601,\r\n        // \"email\": \"admin@admin.com\",\r\n        \"userType\": 0,\r\n        \"DOB\": \"22-feb-1997\",\r\n        \"schoolName\": \"Public School\",\r\n        \"status\": 1,\r\n        \"class\": 5,\r\n        \"RegNo\": \"sp18-5th-083\"\r\n}","type":"entity.parse.failed"} 
+[2021-05-20 16:06:46] [31merror[39m:  SchoolUser validation failed: password: Path `password` is required. 
+ValidationError: SchoolUser validation failed: password: Path `password` is required.
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2541:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\schematype.js:1256:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2021-05-20 16:06:46] [31merror[39m:  {"msgCode":1033} 
+[2021-05-20 16:09:09] [31merror[39m:  {"expose":true,"statusCode":400,"status":400,"body":"{\r\n        \"firstName\": \"Student\",\r\n        \"lastName\": \"name\",\r\n        \"fatherName\": \"Std-Father\",\r\n        \"phoneNumber\": 90078601,\r\n        \"password\" \"student123\",\r\n        \"userType\": 0,\r\n        \"DOB\": \"22-feb-1997\",\r\n        \"schoolName\": \"Public School\",\r\n        \"status\": 1,\r\n        \"class\": 5,\r\n        \"RegNo\": \"sp18-5th-083\"\r\n}","type":"entity.parse.failed"} 
+[2021-05-20 16:24:37] [31merror[39m:  Admin SignIn:  
+[2021-05-20 16:24:37] [31merror[39m:  {"param":"email","message":5005,"location":"body"} 
+[2021-05-20 16:27:05] [31merror[39m:  {"message":"Missing credentials"} 
+[2021-05-20 16:28:57] [31merror[39m:  {"message":"Missing credentials"} 
+[2021-05-20 16:34:01] [31merror[39m:  {"message":"Missing credentials"} 
+[2021-05-20 16:36:24] [31merror[39m:  {"message":"Missing credentials"} 
+[2021-05-20 16:47:11] [31merror[39m:  {"msgCode":2512} 
+[2021-05-20 16:48:00] [31merror[39m:  {"msgCode":2512} 
+[2021-05-20 16:48:43] [31merror[39m:  {"msgCode":2512} 
+[2021-05-20 16:50:09] [31merror[39m:  {"msgCode":2512} 
+[2021-05-20 16:50:47] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: "" } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: "" }
+    at Function.create (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\error.js:57:12)
+    at toError (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\utils.js:123:22)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\operations\common_functions.js:258:39
+    at handler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\topology.js:944:24)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:350:13
+    at handleOperationResult (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\server.js:558:5)
+    at MessageStream.messageHandler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:277:5)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:485:12)
+    at processIncomingData (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:385:12)
+    at writeOrBuffer (_stream_writable.js:367:5)
+    at MessageStream.Writable.write (_stream_writable.js:307:12)
+    at Socket.ondata (_stream_readable.js:707:22)
+    at Socket.emit (events.js:315:20)
+    at Socket.EventEmitter.emit (domain.js:485:12)
+    at addChunk (_stream_readable.js:296:12)
+    at readableAddChunk (_stream_readable.js:272:9)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+[2021-05-20 16:50:47] [31merror[39m:  {"msgCode":1033} 
+[2021-05-20 16:52:04] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: "" } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: "" }
+    at Function.create (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\error.js:57:12)
+    at toError (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\utils.js:123:22)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\operations\common_functions.js:258:39
+    at handler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\topology.js:944:24)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:350:13
+    at handleOperationResult (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\server.js:558:5)
+    at MessageStream.messageHandler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:277:5)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:485:12)
+    at processIncomingData (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:385:12)
+    at writeOrBuffer (_stream_writable.js:367:5)
+    at MessageStream.Writable.write (_stream_writable.js:307:12)
+    at Socket.ondata (_stream_readable.js:707:22)
+    at Socket.emit (events.js:315:20)
+    at Socket.EventEmitter.emit (domain.js:485:12)
+    at addChunk (_stream_readable.js:296:12)
+    at readableAddChunk (_stream_readable.js:272:9)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+[2021-05-20 16:52:04] [31merror[39m:  {"msgCode":1033} 
+[2021-05-20 16:52:44] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: "" } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: "" }
+    at Function.create (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\error.js:57:12)
+    at toError (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\utils.js:123:22)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\operations\common_functions.js:258:39
+    at handler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\topology.js:944:24)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:350:13
+    at handleOperationResult (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\server.js:558:5)
+    at MessageStream.messageHandler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:277:5)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:485:12)
+    at processIncomingData (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:385:12)
+    at writeOrBuffer (_stream_writable.js:367:5)
+    at MessageStream.Writable.write (_stream_writable.js:307:12)
+    at Socket.ondata (_stream_readable.js:707:22)
+    at Socket.emit (events.js:315:20)
+    at Socket.EventEmitter.emit (domain.js:485:12)
+    at addChunk (_stream_readable.js:296:12)
+    at readableAddChunk (_stream_readable.js:272:9)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+[2021-05-20 16:52:44] [31merror[39m:  {"msgCode":1033} 
+[2021-05-20 17:03:22] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at Function.create (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\error.js:57:12)
+    at toError (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\utils.js:123:22)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\operations\common_functions.js:258:39
+    at handler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\topology.js:944:24)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:350:13
+    at handleOperationResult (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\server.js:558:5)
+    at MessageStream.messageHandler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:277:5)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:485:12)
+    at processIncomingData (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:385:12)
+    at writeOrBuffer (_stream_writable.js:367:5)
+    at MessageStream.Writable.write (_stream_writable.js:307:12)
+    at Socket.ondata (_stream_readable.js:707:22)
+    at Socket.emit (events.js:315:20)
+    at Socket.EventEmitter.emit (domain.js:485:12)
+    at addChunk (_stream_readable.js:296:12)
+    at readableAddChunk (_stream_readable.js:272:9)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+[2021-05-20 17:03:22] [31merror[39m:  {"msgCode":1033} 
+[2021-05-20 17:05:53] [31merror[39m:  {"msgCode":2513} 
+[2021-05-20 17:06:05] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at Function.create (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\error.js:57:12)
+    at toError (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\utils.js:123:22)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\operations\common_functions.js:258:39
+    at handler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\topology.js:944:24)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:350:13
+    at handleOperationResult (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\server.js:558:5)
+    at MessageStream.messageHandler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:277:5)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:485:12)
+    at processIncomingData (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:385:12)
+    at writeOrBuffer (_stream_writable.js:367:5)
+    at MessageStream.Writable.write (_stream_writable.js:307:12)
+    at Socket.ondata (_stream_readable.js:707:22)
+    at Socket.emit (events.js:315:20)
+    at Socket.EventEmitter.emit (domain.js:485:12)
+    at addChunk (_stream_readable.js:296:12)
+    at readableAddChunk (_stream_readable.js:272:9)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+[2021-05-20 17:06:05] [31merror[39m:  {"msgCode":1033} 
+[2021-05-20 17:11:40] [31merror[39m:  {"message":"Unable to find User."} 
+[2021-05-20 17:12:46] [31merror[39m:  {"message":"Unable to find User."} 
+[2021-05-20 17:14:58] [31merror[39m:  {"status":404} 
+[2021-05-20 17:16:34] [31merror[39m:  {"status":404} 
+[2021-05-20 17:27:37] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: "sp18-5th-084" } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: "sp18-5th-084" }
+    at MessageStream.messageHandler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:485:12)
+    at processIncomingData (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:385:12)
+    at writeOrBuffer (_stream_writable.js:367:5)
+    at MessageStream.Writable.write (_stream_writable.js:307:12)
+    at Socket.ondata (_stream_readable.js:707:22)
+    at Socket.emit (events.js:315:20)
+    at Socket.EventEmitter.emit (domain.js:485:12)
+    at addChunk (_stream_readable.js:296:12)
+    at readableAddChunk (_stream_readable.js:272:9)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+[2021-05-20 17:27:37] [31merror[39m:  {"msgCode":1032} 
+[2021-05-20 17:29:26] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: "sp18-5th-084" } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: "sp18-5th-084" }
+    at MessageStream.messageHandler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:485:12)
+    at processIncomingData (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:385:12)
+    at writeOrBuffer (_stream_writable.js:367:5)
+    at MessageStream.Writable.write (_stream_writable.js:307:12)
+    at Socket.ondata (_stream_readable.js:707:22)
+    at Socket.emit (events.js:315:20)
+    at Socket.EventEmitter.emit (domain.js:485:12)
+    at addChunk (_stream_readable.js:296:12)
+    at readableAddChunk (_stream_readable.js:272:9)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+[2021-05-20 17:29:26] [31merror[39m:  {"msgCode":1032} 
+[2021-05-20 17:30:34] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: "sp18-5th-084" } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: "sp18-5th-084" }
+    at MessageStream.messageHandler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:485:12)
+    at processIncomingData (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:385:12)
+    at writeOrBuffer (_stream_writable.js:367:5)
+    at MessageStream.Writable.write (_stream_writable.js:307:12)
+    at Socket.ondata (_stream_readable.js:707:22)
+    at Socket.emit (events.js:315:20)
+    at Socket.EventEmitter.emit (domain.js:485:12)
+    at addChunk (_stream_readable.js:296:12)
+    at readableAddChunk (_stream_readable.js:272:9)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+[2021-05-20 17:30:34] [31merror[39m:  {"msgCode":1032} 
+[2021-05-20 21:03:14] [31merror[39m:  mongoose connection disconnected 
+[2021-05-21 11:34:18] [31merror[39m:  {"status":404} 
+[2021-05-21 11:36:01] [31merror[39m:  {"status":404} 
+[2021-05-21 12:03:59] [31merror[39m:  SchoolUser validation failed: class: Cast to ObjectId failed for value "" (type string) at path "class" 
+ValidationError: SchoolUser validation failed: class: Cast to ObjectId failed for value "" (type string) at path "class"
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at model.$set (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:1318:12)
+    at model.$set (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:1022:16)
+    at model.Document (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:147:12)
+    at model.Model (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:105:12)
+    at new model (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:4706:15)
+    at createSubAdminAccount (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:116:28)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at isEmailExists (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:97:24)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-05-21 12:03:59] [31merror[39m:  {"msgCode":1033} 
+[2021-05-21 12:09:59] [31merror[39m:  {"status":404} 
+[2021-05-21 12:20:53] [31merror[39m:  {"status":404} 
+[2021-05-21 12:20:59] [31merror[39m:  Cast to ObjectId failed for value "" (type string) at path "teacher" 
+CastError: Cast to ObjectId failed for value "" (type string) at path "teacher"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-05-21 12:20:59] [31merror[39m:  {"msgCode":1039} 
+[2021-05-21 12:23:18] [31merror[39m:  Cast to ObjectId failed for value "" (type string) at path "teacher" 
+CastError: Cast to ObjectId failed for value "" (type string) at path "teacher"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-05-21 12:23:18] [31merror[39m:  {"msgCode":1039} 
+[2021-05-21 12:26:16] [31merror[39m:  Cast to ObjectId failed for value "" (type string) at path "teacher" 
+CastError: Cast to ObjectId failed for value "" (type string) at path "teacher"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-05-21 12:26:16] [31merror[39m:  {"msgCode":1039} 
+[2021-05-26 16:45:57] [31merror[39m:  Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379 
+Error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1142:16)
+[2021-05-26 16:48:50] [31merror[39m:  moment(...).unix(...).format is not a function 
+TypeError: moment(...).unix(...).format is not a function
+    at createNewTimeTable (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:440:50)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at E:\vizteck-work\expressWithMongoDb\config\passport.js:111:24
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at passport.isAuthenticated (E:\vizteck-work\expressWithMongoDb\config\passport.js:101:16)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:69:12
+    at pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:337:31)
+    at deserialized (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:349:7)
+    at E:\vizteck-work\expressWithMongoDb\config\passport.js:88:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:4868:18
+[2021-05-26 16:48:50] [31merror[39m:  {"msgCode":1037} 
+[2021-05-26 18:43:09] [31merror[39m:  TimeTable validation failed: class: Cast to ObjectId failed for value "660a755585cc40f3fbcf3302f" (type string) at path "class" 
+ValidationError: TimeTable validation failed: class: Cast to ObjectId failed for value "660a755585cc40f3fbcf3302f" (type string) at path "class"
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at model.$set (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:1318:12)
+    at model.$set (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:1022:16)
+    at model.Document (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:147:12)
+    at model.Model (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:105:12)
+    at new model (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:4706:15)
+    at createNewTimeTable (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:443:28)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at E:\vizteck-work\expressWithMongoDb\config\passport.js:111:24
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at passport.isAuthenticated (E:\vizteck-work\expressWithMongoDb\config\passport.js:101:16)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+[2021-05-26 18:43:09] [31merror[39m:  {"msgCode":1037} 
+[2021-05-26 18:57:16] [31merror[39m:  {"status":404} 
+[2021-05-26 18:57:39] [31merror[39m:  Cast to ObjectId failed for value "660a755585cc40f3fbcf3302f" (type string) at path "_id" for model "SchoolClass" 
+CastError: Cast to ObjectId failed for value "660a755585cc40f3fbcf3302f" (type string) at path "_id" for model "SchoolClass"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-05-26 18:57:39] [31merror[39m:  {"msgCode":1040} 
+[2021-05-26 19:02:34] [31merror[39m:  Cast to ObjectId failed for value "60" (type number) at path "_id" for model "TimeTable" 
+CastError: Cast to ObjectId failed for value "60" (type number) at path "_id" for model "TimeTable"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-05-26 19:02:34] [31merror[39m:  {"msgCode":1037} 
+[2021-05-26 20:49:54] [31merror[39m:  Converting circular structure to JSON
+    --> starting at object with constructor 'NativeTopology'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'topology' closes the circle 
+TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'NativeTopology'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'topology' closes the circle
+    at JSON.stringify (<anonymous>)
+    at Object.successResponse (E:\vizteck-work\expressWithMongoDb\config\response.js:12:27)
+    at viewFeeChallan (E:\vizteck-work\expressWithMongoDb\app\modules\employee\controller\employee.controller.js:52:35)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at E:\vizteck-work\expressWithMongoDb\config\passport.js:111:24
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at passport.isAuthenticated (E:\vizteck-work\expressWithMongoDb\config\passport.js:101:16)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:69:12
+    at pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:337:31)
+    at deserialized (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:349:7)
+[2021-05-26 20:49:54] [31merror[39m:  {"msgCode":1037} 
+[2021-05-26 20:51:52] [31merror[39m:  Converting circular structure to JSON
+    --> starting at object with constructor 'NativeTopology'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'topology' closes the circle 
+TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'NativeTopology'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'topology' closes the circle
+    at JSON.stringify (<anonymous>)
+    at Object.successResponse (E:\vizteck-work\expressWithMongoDb\config\response.js:12:27)
+    at viewFeeChallan (E:\vizteck-work\expressWithMongoDb\app\modules\employee\controller\employee.controller.js:53:35)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at E:\vizteck-work\expressWithMongoDb\config\passport.js:111:24
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at passport.isAuthenticated (E:\vizteck-work\expressWithMongoDb\config\passport.js:101:16)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:69:12
+    at pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:337:31)
+    at deserialized (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:349:7)
+[2021-05-26 20:51:52] [31merror[39m:  {"msgCode":1037} 
+[2021-05-26 20:52:09] [31merror[39m:  Converting circular structure to JSON
+    --> starting at object with constructor 'NativeTopology'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'topology' closes the circle 
+TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'NativeTopology'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'topology' closes the circle
+    at JSON.stringify (<anonymous>)
+    at Object.successResponse (E:\vizteck-work\expressWithMongoDb\config\response.js:12:27)
+    at viewFeeChallan (E:\vizteck-work\expressWithMongoDb\app\modules\employee\controller\employee.controller.js:53:35)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at E:\vizteck-work\expressWithMongoDb\config\passport.js:111:24
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at passport.isAuthenticated (E:\vizteck-work\expressWithMongoDb\config\passport.js:101:16)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:69:12
+    at pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:337:31)
+    at deserialized (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:349:7)
+[2021-05-26 20:52:09] [31merror[39m:  {"msgCode":1037} 
+[2021-05-26 20:53:25] [31merror[39m:  Converting circular structure to JSON
+    --> starting at object with constructor 'NativeTopology'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'topology' closes the circle 
+TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'NativeTopology'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'topology' closes the circle
+    at JSON.stringify (<anonymous>)
+    at Object.successResponse (E:\vizteck-work\expressWithMongoDb\config\response.js:12:27)
+    at viewFeeChallan (E:\vizteck-work\expressWithMongoDb\app\modules\employee\controller\employee.controller.js:53:35)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at E:\vizteck-work\expressWithMongoDb\config\passport.js:111:24
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at passport.isAuthenticated (E:\vizteck-work\expressWithMongoDb\config\passport.js:101:16)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:69:12
+    at pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:337:31)
+    at deserialized (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:349:7)
+[2021-05-26 20:53:25] [31merror[39m:  {"msgCode":1037} 
+[2021-05-26 20:54:07] [31merror[39m:  {"msgCode":1200} 
+[2021-05-26 21:47:10] [31merror[39m:  Invalid select: select only takes 1 argument 
+Error: Invalid select: select only takes 1 argument
+    at model.Query.select (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:952:11)
+    at fetchStudentSubjects (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:75:12)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at E:\vizteck-work\expressWithMongoDb\config\passport.js:111:24
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at passport.isAuthenticated (E:\vizteck-work\expressWithMongoDb\config\passport.js:101:16)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:69:12
+    at pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:337:31)
+    at deserialized (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:349:7)
+    at E:\vizteck-work\expressWithMongoDb\config\passport.js:88:17
+[2021-05-26 21:47:10] [31merror[39m:  {"msgCode":1037} 
+[2021-05-27 10:19:02] [31merror[39m:  studentId is not defined 
+ReferenceError: studentId is not defined
+    at createSubAdminAccount (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:112:13)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at isEmailExists (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:98:24)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-05-27 10:19:02] [31merror[39m:  {"msgCode":1033} 
+[2021-05-31 19:24:29] [31merror[39m:  teacherSubjects is not defined 
+ReferenceError: teacherSubjects is not defined
+    at fetchOnlineClass (E:\vizteck-work\expressWithMongoDb\app\modules\teacher\controller\teacheruser.controller.js:150:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-05-31 19:24:29] [31merror[39m:  {"msgCode":1037} 
+[2021-05-31 20:27:43] [31merror[39m:  mongoose connection disconnected 
+[2021-05-31 20:52:51] [31merror[39m:  {"msgCode":1100} 
+[2021-05-31 20:53:48] [31merror[39m:  {"msgCode":1100} 
+[2021-05-31 20:54:29] [31merror[39m:  {"msgCode":1100} 
+[2021-05-31 20:55:48] [31merror[39m:  {"msgCode":1101} 
+[2021-05-31 20:57:21] [31merror[39m:  {"msgCode":1101} 
+[2021-05-31 20:58:42] [31merror[39m:  {"msgCode":1101} 
+[2021-05-31 20:59:22] [31merror[39m:  {"msgCode":1101} 
+[2021-05-31 21:00:07] [31merror[39m:  {"msgCode":1101} 
+[2021-05-31 21:00:40] [31merror[39m:  {"msgCode":1101} 
+[2021-05-31 21:03:06] [31merror[39m:  {"msgCode":1101} 
+[2021-05-31 21:19:35] [31merror[39m:  {"status":404} 
+[2021-05-31 21:19:57] [31merror[39m:  Attendance is not defined 
+ReferenceError: Attendance is not defined
+    at addAttendance (E:\vizteck-work\expressWithMongoDb\app\modules\teacher\controller\teacheruser.controller.js:271:32)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at E:\vizteck-work\expressWithMongoDb\config\passport.js:111:24
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at passport.isAuthenticated (E:\vizteck-work\expressWithMongoDb\config\passport.js:101:16)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:69:12
+    at pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:337:31)
+    at deserialized (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:349:7)
+    at E:\vizteck-work\expressWithMongoDb\config\passport.js:88:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:4868:18
+[2021-05-31 21:19:57] [31merror[39m:  {"msgCode":1037} 
+[2021-05-31 21:41:19] [31merror[39m:  studentSubjects is not defined 
+ReferenceError: studentSubjects is not defined
+    at fetchStudentAttendance (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:105:9)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-05-31 21:41:19] [31merror[39m:  {"msgCode":1037} 
+[2021-05-31 21:50:05] [31merror[39m:  {"status":404} 
+[2021-05-31 21:50:20] [31merror[39m:  Cannot read property 'name' of undefined 
+TypeError: Cannot read property 'name' of undefined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:148:45
+    at Array.map (<anonymous>)
+    at fetchStudentMarks (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:147:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-05-31 21:50:20] [31merror[39m:  {"msgCode":1037} 
+[2021-05-31 21:51:19] [31merror[39m:  Cannot read property 'name' of undefined 
+TypeError: Cannot read property 'name' of undefined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:148:45
+    at Array.map (<anonymous>)
+    at fetchStudentMarks (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:147:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-05-31 21:51:19] [31merror[39m:  {"msgCode":1037} 
+[2021-05-31 22:05:50] [31merror[39m:  {"status":404} 
+[2021-05-31 22:06:36] [31merror[39m:  OnlineClass validation failed: link: Path `link` is required. 
+ValidationError: OnlineClass validation failed: link: Path `link` is required.
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2541:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\schematype.js:1256:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2021-05-31 22:06:36] [31merror[39m:  {"msgCode":1037} 
+[2021-05-31 22:06:54] [31merror[39m:  OnlineClass validation failed: link: Path `link` is required. 
+ValidationError: OnlineClass validation failed: link: Path `link` is required.
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2541:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\schematype.js:1256:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2021-05-31 22:06:54] [31merror[39m:  {"msgCode":1037} 
+[2021-05-31 22:07:10] [31merror[39m:  OnlineClass validation failed: link: Path `link` is required. 
+ValidationError: OnlineClass validation failed: link: Path `link` is required.
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2541:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\schematype.js:1256:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2021-05-31 22:07:10] [31merror[39m:  {"msgCode":1037} 

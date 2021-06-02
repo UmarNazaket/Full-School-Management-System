@@ -1,0 +1,74 @@
+{
+    "appTitle": "test",
+    "env": "development",
+    "PORT": 3400,
+    "baseUrl": "http://localhost:3400",
+    "mongodb": {
+        "host": "mongodb://localhost:27017/",
+        "uri": "mongodb://localhost:27017/",
+        "db_name": "SchoolSystem",
+        "credentials": {
+            "username": "",
+            "password": ""
+        },
+        "enableMongoDebugging": true
+    },
+    "redis": {
+        "host": "localhost",
+        "port": 6379
+    },
+    "session": {
+        "secret": "*&test&#"
+    },
+    "mailer": {
+        "SENDGRID_API_KEY": "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",
+        "fromAddress": "info@vizteck.com",
+        "mailerName": "Vizteck"
+    },
+    "userTypes": [
+        "user",
+        "company",
+        "driver",
+        "admin"
+    ],
+    "deviceTypes": [
+        "ios",
+        "android",
+        "web"
+    ],
+    "verificationCodeLength": 4,
+    "confirmationCodeLength": 4,
+    "forgetPassCodeExpiryMinutes": 100,
+    "confirmAcctCodeExpiryDays": 3,
+    "postedJobApplicantsIntervalInMinutes": 5,
+    "referralCodeLength": 6,
+    "aws": {
+        "s3": {
+            "secretAccessKey": "",
+            "accessKeyId": "",
+            "region": "",
+            "bucket": "",
+            "vehicleType": "vehicleType",
+            "vehicleDocumentsDirectory": "vehicleDocuments/1000X1000",
+            "identityDocumentsDirectory": "identityDocuments/1000X1000",
+            "profileImageDirectory": "profileImages/1000X1000",
+            "profileImageResizeDirectory": "profileImages/100X100/",
+            "profileImageMediumResizeDirectory": "profileImages/300X300/",
+            "profileImageVehicleResizeDirectory": "profileImages/48X48/"
+        }
+    },
+    "sns": {
+        "access": {
+            "secretAccessKey": "",
+            "accessKeyId": "",
+            "region": ""
+        },
+        "promotionSubscriptions": ""
+    },
+    "platFormApplicationArn": {
+        "gcm": "",
+        "apn_user": "",
+        "apn_driver": ""
+    },
+    "googleMapsAPI": ""
+}
