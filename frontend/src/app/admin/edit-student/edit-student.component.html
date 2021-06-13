@@ -1,0 +1,97 @@
+<div class="col-sm-12">
+    <div class="h3 text-center mt-4">Select Class</div>
+    <div class="class_wrapper">
+        <div class="class" (click)="getStudents(1)">1</div>
+        <div class="class" (click)="getStudents(2)">2</div>
+        <div class="class" (click)="getStudents(3)">3</div>
+        <div class="class" (click)="getStudents(4)">4</div>
+        <div class="class" (click)="getStudents(5)">5</div>
+        <div class="class" (click)="getStudents(6)">6</div>
+        <div class="class" (click)="getStudents(7)">7</div>
+        <div class="class" (click)="getStudents(8)">8</div>
+        <div class="class" (click)="getStudents(9)">9</div>
+        <div class="class" (click)="getStudents(10)">10</div>
+    </div>
+<section class="panel important">
+    
+    <p-toast></p-toast>
+    
+    <div class="card">
+        
+    
+        <p-table #dt [value]="products" [rows]="10" [paginator]="true" [globalFilterFields]="['name','country.name','representative.name','status']"
+            [(selection)]="selectedProducts" [rowHover]="true" dataKey="id"
+            currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [showCurrentPageReport]="true">
+            <ng-template pTemplate="caption">
+                <div class="p-d-flex p-ai-center p-jc-between">
+                    <h5 class="p-m-0">Repair Forms</h5> 
+                    <span class="p-input-icon-left">
+                        <i class="pi pi-search"></i>
+                        <input pInputText type="text" (input)="dt.filterGlobal($event.target.value, 'contains')" placeholder="Search..." />
+                    </span>
+                </div>
+            </ng-template>
+            <ng-template pTemplate="header">
+                <tr>
+                    
+                    <th pSortableColumn="name">Name <p-sortIcon field="name"></p-sortIcon></th>
+                    <th pSortableColumn="devicename">Roll No.<p-sortIcon field="devicename"></p-sortIcon></th>
+                    <th pSortableColumn="zipcode">Class<p-sortIcon field="zipcode"></p-sortIcon></th>
+                    <th></th>
+                </tr>
+            </ng-template>
+    
+            <ng-template pTemplate="body" let-product>
+                <tr>
+                    
+                    <td>{{product.name}}</td>
+                    <td>{{product.RegNo}}</td>
+                    <td>{{product.class}}</td>
+                    <td>
+                        <button pButton pRipple icon="pi pi-pencil" class="p-button-rounded p-button-success p-mr-2" (click)="editProduct(product)"></button>
+                        <button pButton pRipple icon="pi pi-trash" class="p-button-rounded p-button-warning" (click)="deleteProduct(product)"></button>
+                    </td>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="summary">
+                <div class="p-d-flex p-ai-center p-jc-between">
+                    In total there are {{products ? products.length : 0 }} Students.
+                </div>
+            </ng-template>
+        </p-table>
+    </div>
+    
+    <p-dialog [(visible)]="productDialog" [style]="{width: '450px'}" header="Product Details" [modal]="true" styleClass="p-fluid">
+        <ng-template pTemplate="content">
+            <div class="p-field">
+                <label for="name">Name</label>
+                <input type="text" pInputText id="name" [(ngModel)]="product.name" required autofocus />
+                <small class="p-invalid" *ngIf="submitted && !product.name">Name is required.</small>
+            </div>
+            <div class="p-field">
+              <label for="email">Reg No.</label>
+              <input type="text" pInputText id="email" [(ngModel)]="product.RegNo" required autofocus />
+              <small class="p-invalid" *ngIf="submitted && !product.RegNo">Reg No is required.</small>
+          </div>
+          <div class="p-field">
+            <label for="phonenumber">Phone Number</label>
+            <input type="text" pInputText id="phonenumber" [(ngModel)]="product.class" required autofocus />
+            <small class="p-invalid" *ngIf="submitted && !product.class">PhoneNumber is required.</small>
+          </div>
+            <div class="p-field">
+                <label for="devicename">Father Name</label>
+                <input type="text" pInputText id="devicename" [(ngModel)]="product.fatherName" required autofocus />
+                <small class="p-invalid" *ngIf="submitted && !product.fatherName">Father Name is required.</small>
+            </div>
+          
+        </ng-template>
+        
+        <ng-template pTemplate="footer">
+            <button pButton pRipple label="Cancel" icon="pi pi-times" class="p-button-text" (click)="hideDialog()"></button>
+            <button pButton pRipple label="Save" icon="pi pi-check" class="p-button-text" (click)="saveProduct()"></button>
+        </ng-template>
+    </p-dialog>
+    
+    <p-confirmDialog [style]="{width: '450px'}"></p-confirmDialog>
+    </section>
+</div>

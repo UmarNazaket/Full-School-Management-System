@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fee.component.scss']
 })
 export class FeeComponent implements OnInit {
-
+  challan: any;
   constructor() { }
 
   ngOnInit(): void {
+    this.challan = JSON.parse(localStorage.getItem("feeChallan"))
   }
 
 }

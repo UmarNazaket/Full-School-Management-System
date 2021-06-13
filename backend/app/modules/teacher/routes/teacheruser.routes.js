@@ -13,16 +13,16 @@ const teacherUserController = require('../controller/teacheruser.controller'),
             passport.isAuthorized([0, 1,2,3,4]),
             teacherUserController.viewTimeTable
         );
-        app.get(
+        app.post(
             version + moduleName + '/subjects',
-            passport.isAuthenticated,
-            passport.isAuthorized([0, 1,2,3,4]),
+            // passport.isAuthenticated,
+            // passport.isAuthorized([0, 1,2,3,4]),
             teacherUserController.fetchTeacherSubjects
         );
         app.post(
             version + moduleName + '/add/onlineclass',
-            passport.isAuthenticated,
-            passport.isAuthorized([0, 1,2,3,4]),
+            // passport.isAuthenticated,
+            // passport.isAuthorized([0, 1,2,3,4]),
             teacherUserController.addOnlineClass
         );
         app.get(
@@ -37,29 +37,35 @@ const teacherUserController = require('../controller/teacheruser.controller'),
             passport.isAuthorized([0, 1,2,3,4]),
             teacherUserController.fetchOnlineClassById
         );
-        app.get(
-            version + moduleName + '/fetch/student/list/:id',
-            passport.isAuthenticated,
-            passport.isAuthorized([0, 1,2,3,4]),
+        app.post(
+            version + moduleName + '/fetch/student/list',
+            // passport.isAuthenticated,
+            // passport.isAuthorized([0, 1,2,3,4]),
             teacherUserController.fetchStudentBySubject
         );
         app.put(
             version + moduleName + '/add/study/scheme',
-            passport.isAuthenticated,
-            passport.isAuthorized([0, 1,2,3,4]),
+            // passport.isAuthenticated,
+            // passport.isAuthorized([0, 1,2,3,4]),
             teacherUserController.addSchemeOfStudy
         );
         app.post(
             version + moduleName + '/add/attendance',
-            passport.isAuthenticated,
-            passport.isAuthorized([0, 1,2,3,4]),
+            // passport.isAuthenticated,
+            // passport.isAuthorized([0, 1,2,3,4]),
             teacherUserController.addAttendance
         );
         app.post(
             version + moduleName + '/add/marks',
-            passport.isAuthenticated,
-            passport.isAuthorized([0, 1,2,3,4]),
+            // passport.isAuthenticated,
+            // passport.isAuthorized([0, 1,2,3,4]),
             teacherUserController.addStudentMarks
+        );
+        app.post(
+            version + moduleName + '/add/online/exam',
+            // passport.isAuthenticated,
+            // passport.isAuthorized([0, 1,2,3,4]),
+            teacherUserController.addOnlineExam
         );
     }
 

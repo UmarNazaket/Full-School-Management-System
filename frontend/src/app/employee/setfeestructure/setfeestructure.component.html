@@ -3,16 +3,16 @@
 
     <div class="select_class mt-4">
     <h6>Select a class</h6>
-    <p-dropdown [options]="classes" [(ngModel)]="selectedClass" optionLabel="name"></p-dropdown>
+    <p-dropdown [options]="classes" [(ngModel)]="selectedClass" (click)="getlistofStudents()" optionLabel="name"></p-dropdown>
     </div>
 
-    <div class="mt-4 mb-4">
+    <!-- <div class="mt-4 mb-4">
         If you want to send same challan form to whole class kindly fill these fields.
         <br>
         <input class="mr-2" type="date" [(ngModel)]="duedate" placeholder="Enter Due Date">
         <input class="mr-2" type="number" [(ngModel)]="amount" placeholder="Enter Amount">
         <button class="btn btn-primary">Send</button>
-    </div>
+    </div> -->
 
     <p-table [value]="Students">
         <ng-template pTemplate="header">
@@ -20,6 +20,8 @@
                 <th>#</th>
                 <th>Name</th>
                 <th>Father Name</th>
+                <th>Roll No.</th>
+                <th>Kinship</th>
                 <th>Due Date</th>
                 <th>Amount</th>
                 <th>Send Challan</th>
@@ -31,9 +33,15 @@
                 <td>{{i+1}}</td>
                 <td>{{student.name}}</td>
                 <td>{{student.fatherName}}</td>
+                <td>{{student.RegNo}}</td>
+                <td>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" (click)="checkkinship()" value="" id="flexCheckChecked">
+                      </div>
+            </td>
                 <td class="pl-1 pr-1"> <input style="max-width: 140px;" type="date" [(ngModel)]="duedate" placeholder="Enter Due Date"></td>
                 <td class="pl-1 pr-1"><input style="max-width: 140px;" type="number" [(ngModel)]="amount" placeholder="Enter Amount"></td>
-                <td><button class="btn btn-primary">Send</button></td>
+                <td><button class="btn btn-primary" (click)="SendChallan(student._id)">Send</button></td>
             </tr>
         </ng-template>
     </p-table>

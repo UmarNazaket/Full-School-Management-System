@@ -17,9 +17,7 @@ export class SignupComponent implements OnInit {
       {name: 'Ohio', code: 'Ohio'},
       {name: 'Washington', code: 'Washington'}
   ];
-
   
-
   ngOnInit(): void {
     
   }

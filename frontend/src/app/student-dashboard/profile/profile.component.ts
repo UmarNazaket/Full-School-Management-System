@@ -26,5 +26,8 @@ name: any;
   changePass(): void{
 
   }
+  changecontact(): void{
+    
+  }
 
 }

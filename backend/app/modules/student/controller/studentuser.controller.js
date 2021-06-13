@@ -1,3 +1,5 @@
+const { data } = require('../../../../config/winston');
+
 const _ = require('lodash'),
     bcrypt = require('bcryptjs'),
     SALT_WORK_FACTOR = 10,
@@ -12,13 +14,15 @@ const _ = require('lodash'),
     Subjects = mongoose.model('Subjects'),
     Attendance = mongoose.model('Attendance'),
     StudentMarks = mongoose.model('StudentMarks'),
+    OnlineExam = mongoose.model('OnlineExam'),
     OnlineClass = mongoose.model('OnlineClass'),
     StudentFee = mongoose.model('StudentFee'),
+    announcements = mongoose.model('announcements'),
     TimeTable = mongoose.model('TimeTable');
 
 let viewTimeTable = async (req, res, next) => {
     try {
-        let studentId = (req.user._id) || 0,
+        let studentId = (req.body._id) || 0, //'60c505913095fd2e844c2b73';
 
             studentTimeTable = await TimeTable.find({}).populate([{
                 path: 'subject',
@@ -44,6 +48,21 @@ let viewTimeTable = async (req, res, next) => {
                 studentTimeTable.splice(index, 1)
             }
 
+        });
+        let Monday = studentTimeTable.filter((item)=>{
+            return item.day === 2
+        })
+        let Tuesday = studentTimeTable.filter((item)=>{
+            return item.day === 2
+        })
+        let Wednesday = studentTimeTable.filter((item)=>{
+            return item.day === 2
+        })
+        let Thursday = studentTimeTable.filter((item)=>{
+            return item.day === 2
+        })
+        let Friday = studentTimeTable.filter((item)=>{
+            return item.day === 2
         })
 
         if (studentTimeTable) {
@@ -51,7 +70,15 @@ let viewTimeTable = async (req, res, next) => {
                 success: 1,
                 message: 'Student timetbale is fetched successfully.',
                 data: {
-                    TimeTable: studentTimeTable
+                    TimeTable: {
+                        Monday,
+                        Tuesday,
+                        Wednesday,
+                        Thursday,
+                        Friday
+
+
+                    }
                 }
             });
         } else {
@@ -68,14 +95,24 @@ let viewTimeTable = async (req, res, next) => {
 }
 let fetchStudentSubjects = async (req, res, next) => {
     try {
-        let studentId = (req.user._id) || 0;
+        let studentId = (req.body._id) || 0;
         console.log('here is the student id', studentId)
         let studentSubjects = await Subjects.find({
             students: {
                 $in: studentId
             },
 
-        }).select(['name'])
+        }).populate([
+            {
+            path: 'teacher',
+            model: 'SchoolUser',
+            }
+        ]).lean().select(['teacher', 'name']);
+        studentSubjects.map((item)=>{
+         item.subjectName = item.name;
+         item.teacherName = item.teacher[0].firstName +""+   item.teacher[0].lastName
+        //  item.teacher[0].pop
+        })
         if (studentSubjects) {
 
             return responseModule.successResponse(res, {
@@ -99,18 +136,29 @@ let fetchStudentSubjects = async (req, res, next) => {
 }
 let fetchStudentAttendance = async (req, res, next) => {
     try {
-        let studentId = (req.user._id) || 0;
-        let studentAttendance = await Attendance.find({
-            studentId: studentId,
-
-        }).populate([{
+        let studentId = (req.body._id) || 0;
+        let subjectId = (req.body.subjectId) || 0;
+        let filter = {};
+        if(subjectId){
+            filter={
+                studentId:studentId,
+                subjectId:subjectId
+            }
+        }else {
+            filter={
+                studentId:studentId
+            }
+        }
+        let studentAttendance = await Attendance.find(filter).populate([{
             path: 'subjectId',
             model: 'Subjects',
             required: true,
         }]).lean()
         studentAttendance = JSON.parse(JSON.stringify(studentAttendance))
+       
         studentAttendance.map((item) => {
             item.subjectName = item.subjectId.name;
+            item.date = moment.unix(item.date).format('YYYY-MM-DD')
             delete item.subjectId
         })
         if (studentAttendance) {
@@ -136,7 +184,7 @@ let fetchStudentAttendance = async (req, res, next) => {
 }
 let fetchStudentMarks = async (req, res, next) => {
     try {
-        let studentId = (req.user._id) || 0;
+        let studentId =  (req.body._id) || 0;
         let studentMarks = await StudentMarks.find({
             studentId: studentId,
 
@@ -146,17 +194,41 @@ let fetchStudentMarks = async (req, res, next) => {
             required: true,
         }]).lean()
         studentMarks = JSON.parse(JSON.stringify(studentMarks))
+        let firstTerm = [];
+        let secondTerm = [];
+        let thirdTerm = [];
         studentMarks.map((item) => {
-            item.subjectName = item.subjectId.name;
+            let data={
+                totalMarks:item.firstTerm? item.firstTerm.totalMarks : 0,
+                obtMarks: item.firstTerm? item.firstTerm.obtMarks : 0,
+                totalMarks: item.firstTerm? item.firstTerm.totalMarks : 0,
+                subjectName : item.subjectId.name
+            }
+            firstTerm = [...firstTerm, data]
+           let data2={
+                totalMarks:item.secondTerm? item.secondTerm.totalMarks : 0,
+                obtMarks: item.secondTerm? item.secondTerm.obtMarks : 0,
+                totalMarks: item.secondTerm? item.secondTerm.totalMarks : 0,
+                subjectName : item.subjectId.name
+            }
+            secondTerm = [...secondTerm, data2]
+           let data3={
+            totalMarks:item.thirdTerm? item.thirdTerm.totalMarks : 0,
+            obtMarks: item.thirdTerm? item.thirdTerm.obtMarks : 0,
+            totalMarks: item.thirdTerm? item.thirdTerm.totalMarks : 0,
+                subjectName : item.subjectId.name
+            }
+            thirdTerm = [...thirdTerm, data3]
             delete item.subjectId
         })
+       
         if (studentMarks) {
 
             return responseModule.successResponse(res, {
                 success: 1,
                 message: 'Student Marks fetched successfully.',
                 data: {
-                    studentMarks: studentMarks
+                    studentMarks: {firstTerm,secondTerm,thirdTerm}
                 }
             });
         } else {
@@ -173,7 +245,7 @@ let fetchStudentMarks = async (req, res, next) => {
 }
 let fetchStudentMarksBySubject = async (req, res, next) => {
     try {
-        let studentId = (req.user._id) || 0,
+        let studentId = (req.body._id) || 0,
             subjectId = _.trim(req.body.subjectId)
         let studentMarks = await StudentMarks.find({
             studentId: studentId,
@@ -185,17 +257,42 @@ let fetchStudentMarksBySubject = async (req, res, next) => {
             required: true,
         }]).lean()
         studentMarks = JSON.parse(JSON.stringify(studentMarks))
+        let firstTerm = [];
+        let secondTerm = [];
+        let thirdTerm = [];
         studentMarks.map((item) => {
-            item.subjectName = item.subjectId.name;
+            // item.subjectName = item.subjectId.name;
+           let data={
+                totalMarks: item.firstTerm.totalMarks,
+                obtMarks: item.firstTerm.obtMarks,
+                totalMarks: item.firstTerm.totalMarks,
+                subjectName : item.subjectId.name
+            }
+            firstTerm = [...firstTerm, data]
+           let data2={
+                totalMarks: item.secondTerm.totalMarks,
+                obtMarks: item.secondTerm.obtMarks,
+                totalMarks: item.secondTerm.totalMarks,
+                subjectName : item.subjectId.name
+            }
+            secondTerm = [...secondTerm, data2]
+           let data3={
+                totalMarks: item.thirdTerm.totalMarks,
+                obtMarks: item.thirdTerm.obtMarks,
+                totalMarks: item.thirdTerm.totalMarks,
+                subjectName : item.subjectId.name
+            }
+            thirdTerm = [...thirdTerm, data3]
             delete item.subjectId
         })
+
         if (studentMarks) {
 
             return responseModule.successResponse(res, {
                 success: 1,
                 message: 'Student Marks fetched successfully.',
                 data: {
-                    studentMarks: studentMarks
+                    studentMarks: {firstTerm,secondTerm,thirdTerm}
                 }
             });
         } else {
@@ -212,16 +309,17 @@ let fetchStudentMarksBySubject = async (req, res, next) => {
 }
 let fetchStudentOnlineClass = async (req, res, next) => {
     try {
-        let studentId= (req.user._id) || 0,
-            subjectId = _.trim(req.body.subjectId)
-        let studentOnlineClass= await OnlineClass.find({
-            subject: subjectId
+        let studentId = (req.body._id) || 0,
+            subjectId = _.trim(req.body.subjectId);
 
-        }).populate([{
+            let time = moment().unix()
+
+
+        let studentOnlineClass = await OnlineClass.find({ }).populate([{
             path: 'subject',
             model: 'Subjects',
             required: true,
-            populate:{
+            populate: {
                 path: 'students',
                 module: 'SchoolUser',
                 match: {
@@ -230,9 +328,13 @@ let fetchStudentOnlineClass = async (req, res, next) => {
             }
         }]).lean()
         studentOnlineClass = JSON.parse(JSON.stringify(studentOnlineClass))
+        console.log(studentOnlineClass);
         studentOnlineClass.map((item) => {
             item.subjectName = item.subject.name
             delete item.subject
+        })
+        studentOnlineClass = studentOnlineClass.filter((item) =>{
+            return parseInt(item.startTime) < time && parseInt(item.endTime) > time
         })
         if (studentOnlineClass) {
 
@@ -257,11 +359,20 @@ let fetchStudentOnlineClass = async (req, res, next) => {
 }
 let fetchStudentFeeChallan = async (req, res, next) => {
     try {
-        let studentId = '60a64ef1b3c56e3cdc44f9bc'; //= (req.user._id) || 0,
-        let studentFee= await StudentFee.find({
+        let studentId =  (req.body._id) || 0;
+        let studentFee = await StudentFee.find({
             student: studentId
+        }).populate({
+            path: 'student',
+            module: 'SchoolUser' 
         })
-    
+        studentFee= JSON.parse(JSON.stringify(studentFee))
+        studentFee.map((item)=>{
+            item.studentName = item.student.firstName + ""+ item.student.lastName
+            item.RegNo = item.student.RegNo
+            item.submissionDate = moment.unix(item.submissionDate).format('YYYY-MM-DD')
+           delete item.student
+        })
         if (studentFee) {
 
             return responseModule.successResponse(res, {
@@ -283,7 +394,164 @@ let fetchStudentFeeChallan = async (req, res, next) => {
         });
     }
 }
+let fetchStudentStudyScheme = async (req, res, next) => {
+    try {
+        let studentId = (req.body._id) || 0;
+        let subjectId = (req.body.subjectId) || 0;
+        let studyScheme = await Subjects.find({
+            _id: subjectId,
+            students: {
+                "$in": studentId
+            }
+        })
 
+        if (studyScheme) {
+            studyScheme = JSON.parse(JSON.stringify(studyScheme))
+            studyScheme.map((item) => {
+                delete item.students;
+                delete item.teacher;
+
+            })
+            return responseModule.successResponse(res, {
+                success: 1,
+                message: 'StudyScheme fetched successfully.',
+                data: {
+                    studyScheme: studyScheme
+                }
+            });
+        } else {
+            return next({
+                msgCode: 1100
+            });
+        }
+    } catch (err) {
+        winston.error(err);
+        return next({
+            msgCode: 1037
+        });
+    }
+}
+let fetchOnlineExam = async (req, res, next) => {
+    try {
+        let studentId =  (req.body._id) || 0;
+        let subjectId = (req.body.subjectId) || 0;
+        console.log(req.body)
+        let time = moment().unix()
+        console.log(time)
+        let onlineExam = await OnlineExam.find({
+            // startTime: {
+            //     "$gt": time
+            // },
+            // endTime: {
+            //     "$gt": time
+            // },
+            subject: subjectId
+        })
+
+        if (onlineExam) {
+            onlineExam = JSON.parse(JSON.stringify(onlineExam))
+
+            onlineExam.map((item) => {
+                delete item.teacherId;
+            })
+           onlineExam = onlineExam.filter((item) =>{
+                return  parseInt(item.startTime) < time &&  parseInt(item.endTime) < time
+            })
+            onlineExam.map((item) =>{
+                item.startTime = moment.unix(item.startTime).format('YYYY-MM-DD HH:mm:ss')
+                item.endTime = moment.unix(item.endTime).format('YYYY-MM-DD  HH:mm:ss')
+            })
+            return responseModule.successResponse(res, {
+                success: 1,
+                message: 'Online Exam fetched successfully.',
+                data: {
+                    onlineExam: onlineExam
+                }
+            });
+        } else {
+            return next({
+                msgCode: 1100
+            });
+        }
+    } catch (err) {
+        winston.error(err);
+        return next({
+            msgCode: 1037
+        });
+    }
+}
+let addData = async (req, res, next) => {
+    try {
+        console.log('dfgchvjbknljcfxdxgchvjb,')
+      let onlineExam = await SchoolUser.insertMany(req.body)
+        if (onlineExam) {
+            return responseModule.successResponse(res, {
+                success: 1,
+                message: 'Online Exam fetched successfully.',
+                data: {
+                    onlineExam: onlineExam
+                }
+            });
+        } else {
+            return next({
+                msgCode: 1100
+            });
+        }
+    } catch (err) {
+        winston.error(err);
+        return next({
+            msgCode: 1037
+        });
+    }
+}
+let announcementsAdd = async (req, res, next) => {
+    try {
+        console.log('dfgchvjbknljcfxdxgchvjb,')
+      let onlineExam = await announcements.create(req.body)
+        if (onlineExam) {
+            return responseModule.successResponse(res, {
+                success: 1,
+                message: 'Online Exam fetched successfully.',
+                data: {
+                    onlineExam: onlineExam
+                }
+            });
+        } else {
+            return next({
+                msgCode: 1100
+            });
+        }
+    } catch (err) {
+        winston.error(err);
+        return next({
+            msgCode: 1037
+        });
+    }
+}
+let announcementsfetch = async (req, res, next) => {
+    try {
+        console.log('dfgchvjbknljcfxdxgchvjb,')
+      let announcement = await announcements.find({})
+        if (announcement) {
+            return responseModule.successResponse(res, {
+                success: 1,
+                message: 'Online Exam fetched successfully.',
+                data: {
+                    announcement: announcement
+                }
+            });
+        } else {
+            return next({
+                msgCode: 1100
+            });
+        }
+    } catch (err) {
+        winston.error(err);
+        return next({
+            msgCode: 1037
+        });
+    }
+}
 module.exports = {
     viewTimeTable,
     fetchStudentSubjects,
@@ -291,5 +559,10 @@ module.exports = {
     fetchStudentMarks,
     fetchStudentMarksBySubject,
     fetchStudentOnlineClass,
-    fetchStudentFeeChallan
+    fetchStudentFeeChallan,
+    fetchStudentStudyScheme,
+    fetchOnlineExam,
+    addData,
+    announcementsAdd,
+    announcementsfetch
 }

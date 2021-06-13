@@ -21,6 +21,7 @@ export class StudentDashboardComponent implements OnInit {
   }
   logout(): void{
     // Logout Functionality here
+    this.router.navigate(['./'])
   }
   hamburgerclicked():void {
     console.log('clicking the button works !');

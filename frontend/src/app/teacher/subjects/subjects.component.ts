@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {StudentService} from '../../../shared/student.service'
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-subjects',
@@ -16,15 +18,24 @@ export class SubjectsComponent implements OnInit {
       post_title: "Urdu",
       class: 5}
     ]
+
+    teacherId = "60a75be05b90242c1c92f8fd"
     
     contentLoader = false;
     
-  constructor() { }
+  constructor( private studentservice: StudentService, private router:Router) { }
 
   ngOnInit(): void {
+    // localStorage.setItem("teacherID",this.teacherId);
+    this.studentservice.fetchSubjects(this.teacherId).subscribe((res: any) => {
+      console.table("this is data", res);
+      this.smallfinalarray = res.data.teacherSubjects;
+    });
   }
 
-  gotodetailspage(subjectName: any): void{
-    console.log(subjectName);
+  gotodetailspage(subjectId: any): void{
+    console.log(subjectId);
+    localStorage.setItem("subjectIdforteacher", subjectId);
+    this.router.navigate(['./teacher/subjectdetails'])
   }
 }

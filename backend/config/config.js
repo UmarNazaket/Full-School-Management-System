@@ -1,4 +1,4 @@
-var glob = require('glob'),
+ var glob = require('glob'),
     path = require('path'),
     env = process.env.NODE_ENV || 'development',
     mongoose = require('mongoose'),
@@ -29,6 +29,7 @@ module.exports = function(callback) {
                         winston.info('loaded config file:' + env);
 
                         var dbURI = config.mongodb.host + config.mongodb.db_name;
+                        // var dbURI = "mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
                         winston.info('Try to Connect MongoDb: ' + dbURI);
                         // make connection with mongodb
                         if (!mongoose.connection.readyState) {

@@ -1,0 +1,24 @@
+<p-table [value]="Students">
+    <ng-template pTemplate="header">
+        <tr>
+            <th [ngStyle]="{'width':'40px'}">#</th>
+            <th>Name</th>
+            <th>Father Name</th>
+            <th>Email</th>
+            <th >Class</th>
+            <th>Phone Number</th>
+            <th>Accept / Reject</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-student let-i="rowIndex">
+        <tr>
+            <td>{{i+1}}</td>
+            <td>{{student.firstName}} {{student.lastName}}</td>
+            <td>{{student.fatherName}}</td>
+            <td>{{student.email}}</td>
+            <td>{{student.class}}</td>
+            <td>{{student.phoneNumber}}</td>
+            <td><i class="fa fa-check fa-2x mr-2" style="color: green;" (click)="getadmission(student._id , 1)"></i> <i class="fa fa-times ml-2 fa-2x" style="color: red;" (click)="getadmission(student._id , 2)"></i></td>
+        </tr>
+    </ng-template>
+</p-table>

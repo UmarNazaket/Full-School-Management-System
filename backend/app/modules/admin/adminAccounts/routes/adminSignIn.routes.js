@@ -9,7 +9,7 @@ const adminSignInController = require('../controller/adminSignIn.controller'),
 module.exports = (app, version) => {
     app.post(
         version + '/admin/logIn',
-        adminMiddleWare.validateSignIn,
+        // adminMiddleWare.validateSignIn,
         adminSignInController.logInUser
     );
 
@@ -29,8 +29,8 @@ module.exports = (app, version) => {
 
     app.put(
         version + '/admin/updateProfile',
-        passport.isAuthenticated,
-        passport.isAuthorized([0, 1, 2, 3, 4]),
+        // passport.isAuthenticated,
+        // passport.isAuthorized([0, 1, 2, 3, 4]),
         adminSignInController.updateProfile
     );
     

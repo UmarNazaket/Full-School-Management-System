@@ -1,6 +1,6 @@
 .eup-ov-cards-heading{
     padding: 2% 2% 0;
-    color: #d8d8d8;
+    color: #6b6a6a;
   }
   .eup-ov-cards-wrapper{
     display: flex;
@@ -102,6 +102,9 @@
       }
     }
   
+  }
+  .subject_name{
+    cursor: pointer;
   }
   .eup-ov-courses-table-wrapper{
     padding: 0 3%;

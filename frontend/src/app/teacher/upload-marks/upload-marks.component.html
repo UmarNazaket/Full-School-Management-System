@@ -2,13 +2,16 @@
     Upload Marks
 </div>
 
+<p-messages [(value)]="msgs1" [enableService]="false"></p-messages>
+
+
 <div class="col-sm-12">
     <div class="col-sm-12 text-center">
         <p-dropdown [options]="terms" [(ngModel)]="selectedTerm" optionLabel="name" placeholder="Select a Term"></p-dropdown>
     </div>
 <div>
     
-    <div class="col-sm-12 text-center mb-1 mt-5"> <input type="number" style="width: 120px;" placeholder="Total marks" ></div>
+    <div class="col-sm-12 text-center mb-1 mt-5"> <input [(ngModel)]="totalMarks" type="number" style="width: 120px;" placeholder="Total marks" ></div>
 <p-table [value]="Students">
 
     <ng-template pTemplate="header">
@@ -17,14 +20,16 @@
             <th>Roll No</th>
             <th>Name</th>
             <th>Marks Gained</th>
+            <th>Upload Marks</th>
         </tr>
     </ng-template>
     <ng-template pTemplate="body" let-student let-i="rowIndex">
         <tr>
             <td>{{i+1}}</td>
-            <td>{{student.Roll_No}}</td>
+            <td>{{student.RegNo}}</td>
             <td>{{student.name}}</td>
-            <td><input type="number" ></td>
+            <td><input type="number" [(ngModel)]="optMarks" id="optmark{{i}}"></td>
+            <td><button class="btn btn-primary" (click)="uploadMarks(student._id)">Upload</button></td>
         </tr>
     </ng-template>
 </p-table>

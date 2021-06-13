@@ -13,23 +13,11 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>English</td>
-                <td>90</td>
-                <td>100</td>
-                <td>90%</td>
-            </tr>
-            <tr>
-                <td>Urdu</td>
-                <td>80</td>
-                <td>100</td>
-                <td>80%</td>
-            </tr>
-            <tr>
-                <td>Math</td>
-                <td>77.5</td>
-                <td>100</td>
-                <td>77.5%</td>
+            <tr *ngFor="let firstsem of firstTerm">
+                <td>{{firstsem.subjectName}}</td>
+                <td>{{firstsem.totalMarks}}</td>
+                <td>{{firstsem.obtMarks}}</td>
+                <td>{{( firstsem.obtMarks / firstsem.totalMarks)*100}}%</td>
             </tr>
         </tbody>
     </table>
@@ -45,23 +33,11 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>English</td>
-                <td>90</td>
-                <td>100</td>
-                <td>90%</td>
-            </tr>
-            <tr>
-                <td>Urdu</td>
-                <td>80</td>
-                <td>100</td>
-                <td>80%</td>
-            </tr>
-            <tr>
-                <td>Math</td>
-                <td>77.5</td>
-                <td>100</td>
-                <td>77.5%</td>
+            <tr *ngFor="let firstsem of secondTerm">
+                <td>{{firstsem.subjectName}}</td>
+                <td>{{firstsem.totalMarks}}</td>
+                <td>{{firstsem.obtMarks}}</td>
+                <td>{{( firstsem.obtMarks / firstsem.totalMarks)*100}}%</td>
             </tr>
         </tbody>
     </table>
@@ -77,23 +53,11 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>English</td>
-                <td>90</td>
-                <td>100</td>
-                <td>90%</td>
-            </tr>
-            <tr>
-                <td>Urdu</td>
-                <td>80</td>
-                <td>100</td>
-                <td>80%</td>
-            </tr>
-            <tr>
-                <td>Math</td>
-                <td>77.5</td>
-                <td>100</td>
-                <td>77.5%</td>
+            <tr *ngFor="let firstsem of thirdTerm">
+                <td>{{firstsem.subjectName}}</td>
+                <td>{{firstsem.totalMarks}}</td>
+                <td>{{firstsem.obtMarks}}</td>
+                <td>{{( firstsem.obtMarks / firstsem.totalMarks)*100}}%</td>
             </tr>
         </tbody>
     </table>

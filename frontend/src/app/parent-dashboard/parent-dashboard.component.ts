@@ -7,6 +7,7 @@ import {ActivatedRoute, Router} from '@angular/router';
   styleUrls: ['./parent-dashboard.component.scss']
 })
 export class ParentDashboardComponent implements OnInit {
+  students:[];
   isopen = false;
 
   constructor(private router:Router) { }
@@ -20,6 +21,7 @@ export class ParentDashboardComponent implements OnInit {
   }
   logout(): void{
     // Logout Functionality here
+    this.router.navigate(['./'])
   }
   hamburgerclicked():void {
     console.log('clicking the button works !');

@@ -23,8 +23,7 @@ var SubjectSchema = new Schema({
         ref: 'SchoolUser'
     }],
     class: {
-        type: Schema.Types.ObjectId,
-            ref: 'SchoolClass'
+        type: Number,
     },
     SchemeOfStudy: {
         type: String,

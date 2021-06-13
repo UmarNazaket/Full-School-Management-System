@@ -1,5 +1,10 @@
 <div>
     <h4 class="text-center mt-5 mb-5">Kindly Upload Class Link</h4>
+    <div style="display: flex; flex-direction: row; justify-content: space-around;">
+        <div>start Time:  <input type="datetime-local" [(ngModel)]="startTime"></div>
+        <div>End Time:  <input type="datetime-local" [(ngModel)]="endTime"></div>
+    </div>
+    <br/>
 <!-- <div class="col-sm-12 p-col-12 text-center" style="display: flex; justify-content: space-around;">
 <div class="col-sm-6 p-col-6">
     <p-dropdown [options]="subjects" [(ngModel)]="selectedSubject" optionLabel="name" placeholder="Select a Subject"></p-dropdown>
@@ -11,7 +16,7 @@
 <div class="text-center">
 <textarea [rows]="1" [cols]="100" pInputTextarea placeholder="Upload Class Link" [(ngModel)]="classLink"></textarea>
 <br>
-<button class="btn btn-primary mt-2 mb-3">Upload</button>
+<button class="btn btn-primary mt-2 mb-3" (click)="sendClassLink()" >Upload</button>
 </div>
 
 </div>

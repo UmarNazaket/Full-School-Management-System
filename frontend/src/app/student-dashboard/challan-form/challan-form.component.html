@@ -1,4 +1,4 @@
-<div class="container mb-5">
+<div class="container mb-5 " id="challanForm">
     <div class="row">
         <div class="well col-xs-10 col-sm-10 col-md-8 col-xs-offset-1 col-sm-offset-1 col-md-offset-2">
             <div class="row">
@@ -20,7 +20,7 @@
                         <em>Receipt #: 34522677W</em>
                     </p>
                     <p>
-                        <em>Due Date: 1st Nov, 2021</em>
+                        <em>Due Date: {{studentfee[0].submissionDate}}</em>
                     </p>
                     
                 </div>
@@ -28,11 +28,11 @@
             <div class="row NameRoll">
                 <div class="col-xs-6 col-sm-6 col-md-6">
                         
-                        <strong>Name: </strong> Bilal Munir
+                        <strong>Name: </strong> {{studentfee[0].studentName}}
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6 text-right">
                     <p>
-                        <strong>Roll No: </strong> 34522
+                        <strong>Roll No: </strong> {{studentfee[0].RegNo}}
                     </p>
                     
                 </div>
@@ -56,19 +56,19 @@
                             <td class="col-md-9"><h5><em>Monthly Fee</em></h5></td>
                             <td class="col-md-1" style="text-align: center">  </td>
                             <td class="col-md-1 text-center"></td>
-                            <td class="col-md-1 text-center">260</td>
+                            <td class="col-md-1 text-center">{{studentfee[0].fee}}</td>
                         </tr>
                         <tr>
                             <td class="col-md-9"><h5><em>Annual Subscription</em></h5></td>
                             <td class="col-md-1" style="text-align: center">  </td>
                             <td class="col-md-1 text-center"></td>
-                            <td class="col-md-3 text-center">800</td>
+                            <td class="col-md-3 text-center">0</td>
                         </tr>
                         <tr>
                             <td class="col-md-9"><h5><em>Total</em></h5></td>
                             <td class="col-md-1" style="text-align: center">  </td>
                             <td class="col-md-1 text-center"></td>
-                            <td class="col-md-1 text-center">4800</td>
+                            <td class="col-md-1 text-center">{{studentfee[0].fee}}</td>
                         </tr>
                         <tr>
                             <td>   </td>
@@ -82,21 +82,21 @@
                             </p></td>
                             <td class="text-center">
                             <p>
-                                <strong>4800</strong>
+                                <strong>{{studentfee[0].fee}}</strong>
                             </p>
                             <p>
-                                <strong>2500</strong>
+                                <strong>0</strong>
                             </p></td>
                         </tr>
                         <tr>
                             <td>   </td>
                             <td>   </td>
                             <td class="text-right"><h5><strong>Total: </strong></h5></td>
-                            <td class="text-center"><h6><strong>4800</strong></h6></td>
+                            <td class="text-center"><h6><strong>{{studentfee[0].fee}}</strong></h6></td>
                         </tr>
                     </tbody>
                 </table>
-                <button type="button" class="btn btn-success btn-lg btn-block">
+                <button type="button" class="btn btn-success btn-lg btn-block" (click)=printfn()>
                     Print   <span class="glyphicon glyphicon-chevron-right"></span>
                 </button>
             </div>

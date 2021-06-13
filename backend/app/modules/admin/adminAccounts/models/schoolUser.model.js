@@ -12,7 +12,6 @@ var Schema = mongoose.Schema;
 var UserSchema = new Schema({
     name: {
         type: String,
-        required: true,
     },
     firstName: {
         type: String,
@@ -52,8 +51,7 @@ var UserSchema = new Schema({
         default: null
     },
     class: {
-        type: Schema.Types.ObjectId,
-            ref: 'SchoolClass'
+        type: String
     },
     studentId: [{
         type: Schema.Types.ObjectId,
