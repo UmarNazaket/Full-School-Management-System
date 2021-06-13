@@ -1,5 +1,5 @@
 # Full-School-Management-System
-This system is made with Angular, Nodejs, Express Js and MySQL.
+This system is made with Angular, Nodejs, Express Js and ExpressJS.
 
 # Frontend
 This project was generated with Angular CLI version 11.0.7.
