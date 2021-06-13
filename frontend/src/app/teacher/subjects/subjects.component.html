@@ -28,19 +28,19 @@
           <!-- 1 Row -->
           <div class="pb-2 pt-2" style="border-bottom: #9b9595 1px solid;" *ngFor="let course of smallfinalarray; index as i" >
             <div class="col-sm-12" style="display: flex; flex-direction: row; align-content: space-between; flex-wrap: wrap;">
-    <span style="width: 30%; color: #9b9595;">Class: {{course.class}}
+    <span style="width: 30%; color: #9b9595;">{{course.name}}
     </span>
     
               <div class="progres" style="width: 40%; margin-left: auto;" *ngIf="!contentLoader">
                <!--  -->
-               <i class="fa fa-book fa-2x" (click)="gotodetailspage(course.post_title)"></i>
+               <i class="fa fa-book fa-2x" (click)="gotodetailspage(course._id)"></i>
               </div>
             </div>
             <div class="col-sm-12" style="display: flex; flex-direction: row; align-content: space-between; flex-wrap: wrap;">
-    <span style="width: 30%;">
+    <!-- <span style="width: 30%;">
     <p-skeleton styleClass="p-mb-2" *ngIf="contentLoader"></p-skeleton> 
-    <span *ngIf="contentLoader == false">{{course.post_title}}</span>
-    </span>
+    <span *ngIf="contentLoader == false">{{course._id}}</span>
+    </span> -->
               <div style="width: 40%; margin-left: auto;">
                 <!--  -->
                 Description

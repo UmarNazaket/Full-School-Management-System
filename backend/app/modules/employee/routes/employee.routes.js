@@ -9,8 +9,8 @@ const employeeUserController = require('../controller/employee.controller'),
         let moduleName = '/employee';
         app.post(
             version + moduleName + '/generate/fee',
-            passport.isAuthenticated,
-            passport.isAuthorized([3]),
+            // passport.isAuthenticated,
+            // passport.isAuthorized([3]),
             employeeUserController.generateStudentFee
         );
         app.get(
@@ -24,6 +24,12 @@ const employeeUserController = require('../controller/employee.controller'),
             passport.isAuthenticated,
             passport.isAuthorized([3]),
             employeeUserController.updateFeeChallan
+        );
+        app.post(
+            version + moduleName + '/student/list',
+            // passport.isAuthenticated,
+            // passport.isAuthorized([3]),
+            employeeUserController.studentList
         );
     }
 

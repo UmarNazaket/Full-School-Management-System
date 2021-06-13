@@ -4,199 +4,72 @@
         <div class="row day-columns">
           <div class="day-column">
             <div class="day-header">Monday</div>
-            <div class="day-content">
-              <div class="event gray">
-                  <span class="title">English</span>
+            <div class="day-content" >
+              <div class="event blue" *ngFor="let day1 of monday">
+                  <span class="title">{{day1.subjectName}}</span>
                   <footer>
-                    <span>08:00</span>
-                  </footer>
-              </div>
-              <div class="event orange">
-                  <span class="title">Urdu</span>
-                  <footer>
-                    <span>09:30</span>
-                  </footer>
-              </div>
-              <div class="event red">
-                  <span class="title">Math</span>
-                  <footer>
-                    <span>11:00</span>
-                  </footer>
-              </div>
-              <div class="event blue">
-                  <span class="title">Science</span>
-                  <footer>
-                    <span>12:30</span>
+                    <span>{{day1.startTime}}</span>
                   </footer>
               </div>
             </div>
-            <div class="day-footer">4 classes</div>
+            <div class="day-footer">{{monday.length}} Classes</div>
           </div>
+
+
           <div class="day-column">
             <div class="day-header">Tuesday</div>
-            <div class="day-content">
-              <div class="event purple">
-                  <span class="title">English</span>
+            <div class="day-content" >
+              <div class="event blue" *ngFor="let day2 of tuesday">
+                  <span class="title">{{day2.subjectName}}</span>
                   <footer>
-                    <span>08:00</span>
-                  </footer>
-              </div>
-              
-              <div class="event blue">
-                  <span class="title">Urdu</span>
-                  <footer>
-                    <span>09:00</span>
+                    <span>{{day2.startTime}}</span>
                   </footer>
               </div>
             </div>
-            <div class="day-footer">2 Classes</div>
+            <div class="day-footer">{{tuesday.length}} Classes</div>
           </div>
+
           <div class="day-column">
             <div class="day-header">Wednesday</div>
-            <div class="day-content">
-              <div class="event yellow">
-                  <span class="title">Event Name</span>
+            <div class="day-content" >
+              <div class="event blue" *ngFor="let day2 of wednesday">
+                  <span class="title">{{day2.subjectName}}</span>
                   <footer>
-                    <span>Prop1</span>
-                    <span>20:30</span>
-                    
-                  </footer>
-              </div>
-              <div class="event navy">
-                  <span class="title">Event Name</span>
-                  <footer>
-                    <span>Prop1</span>
-                    <span>20:30</span>
-                    
-                  </footer>
-              </div>
-              <div class="event red">
-                  <span class="title">Event Name</span>
-                  <footer>
-                    <span>Prop1</span>
-                    <span>20:30</span>
-                    
-                  </footer>
-              </div>
-              <div class="event blue">
-                  <span class="title">Event Name</span>
-                  <footer>
-                    <span>Prop1</span>
-                    <span>20:30</span>
-                    
+                    <span>{{day2.startTime}}</span>
                   </footer>
               </div>
             </div>
-            <div class="day-footer">4 Classes</div>
+            <div class="day-footer">{{wednesday.length}} Classes</div>
           </div>
+
+
           <div class="day-column">
             <div class="day-header">Thursday</div>
-            <div class="day-content">
-              <div class="event purple">
-                  <span class="title">Event Name</span>
+            <div class="day-content" >
+              <div class="event blue" *ngFor="let day2 of thursday">
+                  <span class="title">{{day2.subjectName}}</span>
                   <footer>
-                    <span>Prop1</span>
-                    <span>20:30</span>
-                    
-                  </footer>
-              </div>
-              <div class="event navy">
-                  <span class="title">Event Name</span>
-                  <footer>
-                    <span>Prop1</span>
-                    <span>20:30</span>
-                    
-                  </footer>
-              </div>
-              <div class="event orange">
-                  <span class="title">Event Name</span>
-                  <footer>
-                    <span>Prop1</span>
-                    <span>20:30</span>
-                    
-                  </footer>
-              </div>
-              <div class="event red">
-                  <span class="title">Event Name</span>
-                  <footer>
-                    <span>Prop1</span>
-                    <span>20:30</span>
-                    
-                  </footer>
-              </div>
-              <div class="event blue">
-                  <span class="title">Event Name</span>
-                  <footer>
-                    <span>Prop1</span>
-                    <span>20:30</span>
-                    
+                    <span>{{day2.startTime}}</span>
                   </footer>
               </div>
             </div>
-            <div class="day-footer">5 Classes</div>
+            <div class="day-footer">{{thursday.length}} Classes</div>
           </div>
+
           <div class="day-column">
             <div class="day-header">Friday</div>
-            <div class="day-content">
-              <div class="event purple">
-                  <span class="title">Event Name</span>
+            <div class="day-content" >
+              <div class="event blue" *ngFor="let day2 of friday">
+                  <span class="title">{{day2.subjectName}}</span>
                   <footer>
-                    <span>Prop1</span>
-                    <span>20:30</span>
-                    
-                  </footer>
-              </div>
-              <div class="event navy">
-                  <span class="title">Event Name</span>
-                  <footer>
-                    <span>Prop1</span>
-                    <span>20:30</span>
-                    
-                  </footer>
-              </div>
-               <div class="event yellow">
-                  <span class="title">Event Name</span>
-                  <footer>
-                    <span>Prop1</span>
-                    <span>20:30</span>
-                    
-                  </footer>
-              </div>
-              <div class="event navy">
-                  <span class="title">Event Name</span>
-                  <footer>
-                    <span>Prop1</span>
-                    <span>20:30</span>
-                    
-                  </footer>
-              </div>
-              <div class="event red">
-                  <span class="title">Event Name</span>
-                  <footer>
-                    <span>Prop1</span>
-                    <span>20:30</span>
-                    
-                  </footer>
-              </div>
-              <div class="event blue">
-                  <span class="title">Event Name</span>
-                  <footer>
-                    <span>Prop1</span>
-                    <span>20:30</span>
-                    
-                  </footer>
-              </div>
-              <div class="event orange">
-                  <span class="title">Event Name</span>
-                  <footer>
-                    <span>Prop1</span>
-                    <span>20:30</span>
-                    
+                    <span>{{day2.startTime}}</span>
                   </footer>
               </div>
             </div>
-            <div class="day-footer">7 Classes</div>
+            <div class="day-footer">{{friday.length}} Classes</div>
           </div>
+          
+          
           <div class="day-column">
             <div class="day-header">Saturday</div>
             <div class="day-content">

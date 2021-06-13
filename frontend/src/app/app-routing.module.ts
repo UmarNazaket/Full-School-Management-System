@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { Subject } from 'rxjs';
+import { AddAdminComponent } from './admin/add-admin/add-admin.component';
+import { AddSubjectClassComponent } from './admin/add-subject-class/add-subject-class.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdmissionFormsComponent } from './admin/admission-forms/admission-forms.component';
+import { EditStudentComponent } from './admin/edit-student/edit-student.component';
 import { AdmissionFormComponent } from './admission-form/admission-form.component';
 import { AcceptRejectStdComponent } from './employee/accept-reject-std/accept-reject-std.component';
 import { EmployeeComponent } from './employee/employee.component';
@@ -11,10 +16,12 @@ import { ChildListComponent } from './parent-dashboard/child-list/child-list.com
 import { FeeComponent } from './parent-dashboard/fee/fee.component';
 import { ParentDashboardComponent } from './parent-dashboard/parent-dashboard.component';
 import { SignupComponent } from './signup/signup.component';
+import { AssessmentsComponent } from './student-dashboard/assessments/assessments.component';
 import { ChallanFormComponent } from './student-dashboard/challan-form/challan-form.component';
 import { CheckoutComponent } from './student-dashboard/checkout/checkout.component';
 import { ProfileComponent } from './student-dashboard/profile/profile.component';
 import { ResultComponent } from './student-dashboard/result/result.component';
+import { SchemeOfStudiesComponent } from './student-dashboard/scheme-of-studies/scheme-of-studies.component';
 import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component';
 import { TimetableComponent } from './student-dashboard/timetable/timetable.component';
 import { WelcomeScreenComponent } from './student-dashboard/welcome-screen/welcome-screen.component';
@@ -65,6 +72,18 @@ const routes: Routes = [{
     {
       path: 'checkout',
       component: CheckoutComponent
+    },
+    {
+      path: "assessment",
+      component: AssessmentsComponent
+    },
+    {
+      path: "schemeofstudies",
+      component: SchemeOfStudiesComponent
+    },
+    {
+      path: "attendance",
+      component: AttendanceComponent
     }
   ]
 },
@@ -139,6 +158,28 @@ const routes: Routes = [{
     {
       path: "setfeechallan",
       component: SetfeestructureComponent
+    }
+  ]
+},
+{
+  path: 'admin',
+  component: AdminComponent,
+  children:[
+    {
+      path: "addadmin",
+      component: AddAdminComponent
+    },
+    {
+      path: "editstudent",
+      component: EditStudentComponent
+    },
+    {
+      path: "admissionforms",
+      component: AdmissionFormsComponent
+    },
+    {
+      path: 'addsubject',
+      component: AddSubjectClassComponent
     }
   ]
 }

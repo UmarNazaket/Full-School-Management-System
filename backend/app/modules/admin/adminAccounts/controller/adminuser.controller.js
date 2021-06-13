@@ -2,6 +2,10 @@
  * Created by Bilal Khursheed on 5/20/2021.
  */
 
+const {
+    stat
+} = require('fs/promises');
+
 const _ = require('lodash'),
     bcrypt = require('bcryptjs'),
     SALT_WORK_FACTOR = 10,
@@ -13,12 +17,13 @@ const _ = require('lodash'),
     SchoolUser = mongoose.model('SchoolUser'),
     SchoolClass = mongoose.model('SchoolClass'),
     Subjects = mongoose.model('Subjects'),
+    AdmissionForm = mongoose.model('AdmissionForm'),
     TimeTable = mongoose.model('TimeTable');
 
 const getSubAdminUsersListing = async (req, res, next) => {
     try {
         const offset = (req.body.offset) ? parseInt(req.body.offset) : 0,
-            limit = (req.body.limit) ? parseInt(req.body.limit) : 0,
+            limit = (req.body.limit) ? parseInt(req.body.limit) : 100,
             userType = (req.body.userType) ? parseInt(req.body.userType) : 0,
             searchText = (req.body.searchText) ? _.trim(req.body.searchText) : '',
             filters = {
@@ -107,32 +112,33 @@ let isEmailExists = async (req, res, next) => {
 };
 let createSubAdminAccount = async (req, res, next) => {
     try {
-        let name = _.trim(req.body.firstName) + '' + _.trim(req.body.lastName),
-            email = _.trim(req.body.email).toLowerCase(),
-            studentId;
-            // studentId = _.trim(req.body.studentId);
+        let name = _.trim(req.body.data.firstName) + '' + _.trim(req.body.lastName),
+            email = _.trim(req.body.data.email).toLowerCase();
+        // studentId;
+        // studentId = _.trim(req.body.data.studentId) || 0;
 
-        if (parseInt(req.body.userType) === 1) {
-            email = req.body.RegNo
-        }
-        if (parseInt(req.body.userType) === 4) {
-          studentId = req.body.studentId
-        }
+        // if (parseInt(req.body.data.userType) === 1) {
+        //     email = req.body.RegNo
+        // }
+
+        // if (parseInt(req.body.userType) === 4) {
+        //     studentId = req.body.studentId
+        // }
         let newAdminUser = new SchoolUser({
             name: name,
-            firstName: _.trim(req.body.firstName),
-            lastName: _.trim(req.body.lastName),
-            fatherName: _.trim(req.body.fatherName),
-            password: _.trim(req.body.password),
-            userType: _.trim(req.body.userType),
-            phoneNumber: _.trim(req.body.phoneNumber),
+            firstName: _.trim(req.body.data.firstName),
+            lastName: _.trim(req.body.data.lastName),
+            fatherName: _.trim(req.body.data.fatherName),
+            password: _.trim(req.body.data.password),
+            userType: _.trim(req.body.data.userType),
+            phoneNumber: _.trim(req.body.data.phoneNumber),
             email: email,
-            status: req.body.status || 0,
-            DOB: _.trim(req.body.DOB),
-            studentId: studentId,
+            status: req.body.data.status || 0,
+            DOB: _.trim(req.body.data.DOB),
+            // studentId: studentId,
             // class: _.trim(req.body.class),
-            RegNo: _.trim(req.body.RegNo),
-            schoolName: _.trim(req.body.schoolName),
+            RegNo: _.trim(req.body.data.RegNo),
+            schoolName: _.trim(req.body.data.schoolName),
         });
 
         newAdminUser.save(err => {
@@ -194,26 +200,26 @@ let getSubAdminDetail = async (req, res, next) => {
 };
 let updateSubAdminAccount = async (req, res, next) => {
     try {
-        let userId = _.trim(req.params.userId),
-            name = _.trim(req.body.firstName) + '' + _.trim(req.body.lastName),
-            email = _.trim(req.body.email).toLowerCase();
-        if (parseInt(req.body.userType) === 1) {
+        let userId = _.trim(req.body.data._id),
+            name = _.trim(req.body.data.firstName) + '' + _.trim(req.body.data.lastName),
+            email = _.trim(req.body.data.email).toLowerCase();
+        if (parseInt(req.body.data.userType) === 1) {
             email = req.body.RegNo
         }
         let updatedAccount = {
             name: name,
-            firstName: _.trim(req.body.firstName),
-            lastName: _.trim(req.body.lastName),
-            fatherName: _.trim(req.body.fatherName),
-            password: _.trim(req.body.password),
-            userType: _.trim(req.body.userType),
-            phoneNumber: _.trim(req.body.phoneNumber),
+            firstName: _.trim(req.body.data.firstName),
+            lastName: _.trim(req.body.data.lastName),
+            fatherName: _.trim(req.body.data.fatherName),
+            // password: _.trim(req.body.datapassword),
+            // userType: _.trim(req.body.userType),
+            phoneNumber: _.trim(req.body.data.phoneNumber),
             email: email,
-            status: req.body.status || 0,
-            DOB: _.trim(req.body.DOB),
-            class: _.trim(req.body.class),
-            RegNo: _.trim(req.body.RegNo),
-            schoolName: _.trim(req.body.schoolName),
+            status: req.body.data.status || 0,
+            DOB: _.trim(req.body.data.DOB),
+            class: _.trim(req.body.data.class),
+            RegNo: _.trim(req.body.data.RegNo),
+            schoolName: _.trim(req.body.data.schoolName),
         };
 
         let accountUpdated = await SchoolUser.findOneAndUpdate({
@@ -246,9 +252,9 @@ let updateSubAdminAccount = async (req, res, next) => {
 };
 let updateRequestStatus = async (req, res, next) => {
     try {
-        let userId = _.trim(req.params.userId),
+        let userId = _.trim(req.body.data.studentId),
             updatedAccount = {
-                status: req.body.status,
+                status: req.body.data.status || 5,
             };
 
         let accountUpdated = await SchoolUser.findOneAndUpdate({
@@ -298,13 +304,12 @@ let mediaUploaded = (req, res, next) => {
 };
 let createNewClass = async (req, res, next) => {
     try {
-        let name = (req.body.name),
-            classNo = _.trim(req.body.classNo);
+        let name = (req.body.data.name),
+            classNo = _.trim(req.body.data.classNo);
 
         let newClass = new SchoolClass({
             name: name,
             classNo: classNo
-
         });
 
         newClass.save(err => {
@@ -333,10 +338,12 @@ let createNewClass = async (req, res, next) => {
 };
 let createNewSubject = async (req, res, next) => {
     try {
-        let name = (req.body.name);
+        let name = (req.body.data.name);
+        let classNo = (req.body.data.classNo);
 
         let newSubject = new Subjects({
             name: name,
+            class:classNo
         });
 
         newSubject.save(err => {
@@ -473,21 +480,21 @@ let assignSubjectToClass = async (req, res, next) => {
 };
 let createNewTimeTable = async (req, res, next) => {
     try {
-        let day = parseInt(req.body.day) || 0,
-            startTime = req.body.startTime,
-            endTime = req.body.endTime,
-            classId = _.trim(req.body.classId),
-            subjectId = _.trim(req.body.subjectId);
-
-            startTime = moment.unix(startTime).format('HH:MM')
-            endTime = moment.unix(endTime).format('HH:MM')
+        let day = parseInt(req.body.data.day) || 0,
+            startTime = req.body.data.startTime,
+            endTime = req.body.data.startTime,
+            classId = _.trim(req.body.data.classNo),
+            subject = _.trim(req.body.data.subjectName);
+        console.log(day, startTime, endTime, classId, subject);
+        // startTime = moment.unix(startTime).format('HH:MM')
+        // endTime = moment.unix(endTime).format('HH:MM')
 
         let newTimeTable = new TimeTable({
             day: day,
             startTime: startTime,
             endTime: endTime,
             class: classId,
-            subject: subjectId
+            subject: subject
 
         });
 
@@ -515,6 +522,139 @@ let createNewTimeTable = async (req, res, next) => {
         });
     }
 };
+const getAdmissonList = async (req, res, next) => {
+    try {
+        console.log('dcfvgbnjmk,l')
+        let status = parseInt(req.body.status) || 0;
+        const admissions = await AdmissionForm.find({
+            $and: [{
+                status: {
+                    $eq: status
+                }
+            }]
+        })
+        return responseModule.successResponse(res, {
+            success: 1,
+            message: 'Admission list fetched successfully.',
+            data: {
+                admissionForm: admissions
+            }
+        });
+
+    } catch (err) {
+        winston.error(err);
+        return next({
+            msgCode: 1036
+        });
+    }
+};
+const getClassList = async (req, res, next) => {
+    try {
+        let classNo = req.body.class || "5";
+        let classList = await SchoolClass.find({
+            classNo: classNo
+        }).populate([{
+            path: 'subjects',
+            model: 'Subjects',
+            required: true,
+            populate: {
+                path: 'students',
+                module: 'SchoolUser',
+                required: true,
+                // match: {
+                //     _id: ObjectId(studentId)
+                // }
+
+            }
+        }]).lean();
+        classList = JSON.parse(JSON.stringify(classList))
+        let dataList = [];
+        classList.map((item, index) => {
+            console.log(item);
+            item.subjects[index].students.map((students) => {
+                if (students.status != 5) {
+                    dataList.push(students);
+                }
+                //   console.log( 'here is the cklasssssss',students)
+            })
+            //    item.subjects[index].students.length = 0;
+            //  delete item.subjects[0]
+        })
+        return responseModule.successResponse(res, {
+            success: 1,
+            message: 'Class list fetched successfully.',
+            data: {
+                classStudent: dataList
+            }
+        });
+
+    } catch (err) {
+        winston.error(err);
+        return next({
+            msgCode: 1036
+        });
+    }
+};
+const changeAdmission = async (req, res, next) => {
+    try {
+        let status = req.body.status || 1,
+            id = req.body.id;
+        console.log(status, id);
+        let admissions = await AdmissionForm.findOneAndUpdate({
+            _id: id
+        }, {
+            status: status,
+        }, )
+
+        admissions = JSON.parse(JSON.stringify(admissions))
+
+        if (status === 1) {
+            let students = await SchoolUser.create({
+                "name": admissions.firstName + " " + admissions.lastName,
+                "firstName": admissions.firstName,
+                "lastName": admissions.lastName,
+                "phoneNumber": admissions.phoneNumber,
+                "password": '12345678',
+                "userType": 1,
+                "DOB": "22-feb-1997",
+                "schoolName": "Public School",
+                "status": 1,
+                "class": admissions.class,
+                "email": `${moment().unix()}`,
+                "RegNo": `'FF'-${admissions.class}-${moment().unix()}`
+            })
+            console.log(students)
+            await SchoolUser.create({
+                "name": admissions.fatherName,
+                "firstName": admissions.fatherName,
+                "lastName": admissions.fatherName,
+                "phoneNumber": admissions.phoneNumber,
+                "password": '12345678',
+                "userType": 4,
+                "DOB": "22-feb-1997",
+                "status": 1,
+                "email": admissions.email,
+                "studentId": students._id,
+            })
+        }
+        // admissions.map((item) =>{
+
+        // })
+        return responseModule.successResponse(res, {
+            success: 1,
+            message: 'Admission accepted  successfully.',
+            data: {
+                admissions: admissions
+            }
+        });
+
+    } catch (err) {
+        winston.error(err);
+        return next({
+            msgCode: 1036
+        });
+    }
+};
 module.exports = {
     getSubAdminUsersListing,
     isEmailExists,
@@ -528,6 +668,9 @@ module.exports = {
     assignSubjectToTeacher,
     assignSubjectToStudent,
     createNewTimeTable,
-    assignSubjectToClass
+    assignSubjectToClass,
+    getAdmissonList,
+    changeAdmission,
+    getClassList
 
 };

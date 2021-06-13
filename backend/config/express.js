@@ -1,16 +1,16 @@
-const express = require('express'),
+ const express = require('express'),
     cors = require('cors'),
     helmet = require('helmet'),
     chalk = require('chalk'),
     cookieParser = require('cookie-parser'),
     session = require('express-session'),
     flash = require('connect-flash'),
-    // mongoStore = require('connect-mongo'),
+    mongoStore = require('connect-mongo'),
     http = require('http'),
     morganMiddleware = require('./morgan'),
-    winston = require('./winston'),
-    redis = require('redis'),
-    RedisStore = require('connect-redis')(session);
+    winston = require('./winston');
+    // redis = require('redis'),
+    // RedisStore = require('connect-redis')(session);
 
 const app = express();
 
@@ -39,9 +39,9 @@ require('./config')((err) => {
         global.port = expressPort.normalizePort(config.PORT || '3000');
 
         global.server.listen(global.port, '0.0.0.0');
-        global.server.on('error', expressPort.onError);
-        global.server.on('listening', expressPort.onListening);
-        // var origin = '*';
+        // global.server.on('error', expressPort.onError);
+        // global.server.on('listening', expressPort.onListening);
+        var origin = '*';
 
         // CORS middleware
         let corsOptionsDelegate = (req, callback) => {
@@ -66,36 +66,46 @@ require('./config')((err) => {
         app.use(helmet());
         app.use(cookieParser());
 
-        global.redisClient = redis.createClient({
-            port: config.redis.port, // Your Redis Port
-            host: config.redis.host, // Your hostanme or IP address,
-        });
+        // global.redisClient = redis.createClient({
+        //     port: config.redis.port, // Your Redis Port
+        //     host: config.redis.host, // Your hostanme or IP address,
+        // });
 
-        global.redisClient.on('error', (err) => {
-            winston.error(err);
-        });
+        // global.redisClient.on('error', (err) => {
+        //     winston.error(err);
+        // });
 
-        global.redisClient.on('connect', function() {
-            winston.info(chalk.bold.green('Connection build successfully with Redis Server...'));
-        });
-
+        // global.redisClient.on('connect', function() {
+        //     winston.info(chalk.bold.green('Connection build successfully with Redis Server...'));
+        // });
         app.use(session({
-            secret: config.session.secret,
-            store: new RedisStore({
-                host: config.redis.host,
-                port: config.redis.port,
-                client: global.redisClient,
-                ttl: 14 * 24 * 60 * 60,
-                clear_interval: 3600
-            }),
-            resave: true,
+            secret: 'SECRET KEY',
+            resave: false,
             saveUninitialized: true,
-            clearExpired: true,
-            checkExpirationInterval: 900000,
-            cookie: {
-                maxAge: 60 * 24 * 3600 * 1000,
-            }
-        }));
+            store:  mongoStore.create({
+                mongoUrl: config.mongodb.host + config.mongodb.db_name, //YOUR MONGODB URL
+                // ttl: 14 * 24 * 60 * 60,
+                autoRemove: 'native' 
+            })
+         } ))
+
+        // app.use(session({
+        //     secret: config.session.secret,
+        //     store: new RedisStore({
+        //         host: config.redis.host,
+        //         port: config.redis.port,
+        //         client: global.redisClient,
+        //         ttl: 14 * 24 * 60 * 60,
+        //         clear_interval: 3600
+        //     }),
+        //     resave: true,
+        //     saveUninitialized: true,
+        //     clearExpired: true,
+        //     checkExpirationInterval: 900000,
+        //     cookie: {
+        //         maxAge: 60 * 24 * 3600 * 1000,
+        //     }
+        // }));
         
         app.use(flash());
 
@@ -109,7 +119,7 @@ require('./config')((err) => {
         app.get('/', (req, res, next) => {
             res.json({
                 status: 1,
-                message: 'API server is running.',
+                message: 'API server is running.  60a75be05b90242c1c92f8fd',
                 data: {}
             });
         });
@@ -125,8 +135,8 @@ require('./config')((err) => {
         let errorHandler = require('./errorHandler');
         app.use(errorHandler.allErrorHandler);
 
-        const socketManager = require('./socketIo/socket_connection_handler');
-        socketManager.socketConnectInitialization(global.server);
+        // const socketManager = require('./socketIo/socket_connection_handler');
+        // socketManager.socketConnectInitialization(global.server);
 
         require('./scheduler');
     }

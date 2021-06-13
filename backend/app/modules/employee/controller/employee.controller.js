@@ -15,12 +15,12 @@ const _ = require('lodash'),
 
 let generateStudentFee = async (req, res, next) => {
     try {
-        let type = req.body.type || 1,
-            fee = req.body.fee,
-            submissionDate = req.body.submissionDate,
-            student = req.body.student,
-
-            studentFee = await StudentFee.create({
+        let type = req.body.data.type || 1,
+            fee = req.body.data.fee,
+            submissionDate = req.body.data.submissionDate || moment().unix(),
+            student = req.body.data.student;
+            submissionDate = moment(submissionDate).unix()
+          let  studentFee = await StudentFee.create({
                 type: type,
                 fee: fee,
                 submissionDate: submissionDate,
@@ -100,8 +100,31 @@ let updateFeeChallan = async (req, res, next) => {
         });
     }
 }
+let studentList = async (req, res, next) => {
+    try {
+        let classNo = req.body.classes || '7';
+            
+       let studentList = await SchoolUser.find({
+        class: classNo
+        });
+        return responseModule.successResponse(res, {
+            success: 1,
+            message: 'Students fee is updated successfully.',
+            data: {
+                studentList: studentList
+            }
+        });
+
+    } catch (err) {
+        winston.error(err);
+        return next({
+            msgCode: 1037
+        });
+    }
+}
 module.exports = {
     generateStudentFee,
     viewFeeChallan,
-    updateFeeChallan
+    updateFeeChallan,
+    studentList
 }

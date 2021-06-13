@@ -1,0 +1,116 @@
+
+.eup-db-root{
+    //max-height: 100vh;
+  }
+  .eup-db-top-bar-wrapper{
+    //padding: 10px;
+    background-color: #225670;
+    color: white;
+    .eup-db-top-bar{
+      padding: 1%;
+      display: flex;
+      justify-content: space-between;
+      .eup-db-top-bar-heading{
+        text-align: center;
+        //padding: 0 4%
+  
+      }
+      .eup-db-top-bar-user-profile-icon div i{
+        font-size: 2rem;
+        cursor: pointer;
+      }
+    }
+  }
+  .eup-db-content-wrapper{
+    display: flex;
+    //height: 100vh;
+    .eup-db-content-left-parent{
+      background-color: #007991;
+      flex-basis: 20%;
+      min-height: 90.3vh;
+      
+  }
+      .eup-db-side-bar-logo {
+        padding: 15%;
+        img{
+          width: 100%
+        }
+      }
+      .eup-db-side-bar-navigation{
+        list-style-type: none;
+        .eup-db-side-bar-nav-item{
+          padding: 3% 0;
+          color: white;
+          cursor: pointer;
+          &:focus{
+            outline: none;
+          }
+          .eup-db-side-bar-link-icon{
+            padding-right: 10px;
+          }
+          .eup-db-side-bar-link-text{
+          }
+        }
+      }
+    }
+    .eup-db-content-right-parent{
+      max-height: 90.4vh;
+      overflow-y: scroll;
+      // TO HIDE SIDEBAR
+     &::-webkit-scrollbar {
+    display: none;
+      // flex-basis: 80%;
+      //::-webkit-scrollbar{
+      //  display: none;
+      //}
+      //background-color: #00B7FF;
+    }
+  }
+  
+  
+  // MEDIA QUERRIES
+  
+  $layout-breakpoint-small: 500px;
+  
+  @media (max-width: $layout-breakpoint-small) {
+    .eup-db-content-left-parent{
+        display: none;
+    }
+    .hamburger{
+      display: block;
+    }
+    .eup-db-content-right-parent{
+      flex-basis: 100%!important;
+    }
+  }
+  
+  
+  .flex-100{
+    flex-basis: 100%!important;
+  }
+  .flex-80{
+    flex-basis: 80%!important;
+  }
+  .flex-20{
+    flex-basis:20%!important;
+    min-width: 162px;
+    display: block;
+  }
+  .flex-0{
+    // flex-basis: 0%!important;
+    display: none;
+  }
+  
+  @media (min-width: $layout-breakpoint-small) {
+    .eup-db-content-left-parent{
+        display: block;
+        min-width: 162px;
+        display: block;
+    }
+    .hamburger{
+      display: none;
+    }
+    .eup-db-content-right-parent{
+      flex-basis: 80%!important;
+    }
+  }

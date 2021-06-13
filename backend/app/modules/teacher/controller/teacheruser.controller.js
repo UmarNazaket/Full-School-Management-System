@@ -13,6 +13,7 @@ const _ = require('lodash'),
     TimeTable = mongoose.model('TimeTable'),
     OnlineClass = mongoose.model('OnlineClass'),
     StudentMarks = mongoose.model('StudentMarks'),
+    OnlineExam = mongoose.model('OnlineExam'),
     Attendance = mongoose.model('Attendance');
 
 let viewTimeTable = async (req, res, next) => {
@@ -67,7 +68,7 @@ let viewTimeTable = async (req, res, next) => {
 }
 let fetchTeacherSubjects = async (req, res, next) => {
     try {
-        let teacherId = (req.user._id) || 0;
+        let teacherId = (req.body.teacherId) || 0;
         // console.log('here is the student id', studentId)
         let teacherSubjects = await Subjects.find({
             teacher: {
@@ -98,16 +99,16 @@ let fetchTeacherSubjects = async (req, res, next) => {
 }
 let addOnlineClass = async (req, res, next) => {
     try {
-        let day = parseInt(req.body.day) || 0,
-            startTime = req.body.startTime,
-            endTime = req.body.endTime,
-            classId = _.trim(req.body.classId),
-            subject = _.trim(req.body.subject),
-            link = _.trim(req.body.link),
-            teacherId = _.trim((req.user._id));
+        let day = parseInt(req.body.data.day) || 0,
+            startTime = req.body.data.startTime,
+            endTime = req.body.data.endTime,
+            classId = _.trim(req.body.data.classId)|| '60a755585cc40f3fbcf3302f',
+            subject = _.trim(req.body.data.subject),
+            link = _.trim(req.body.data.link),
+            teacherId = _.trim((req.body.data.teacherId));
 
-        startTime = moment.unix(startTime).format('HH:MM');
-        endTime = moment.unix(endTime).format('HH:MM');
+        startTime = moment(startTime).unix();
+        endTime = moment(endTime).unix();
 
 
         let addOnlineClass = await OnlineClass.create({
@@ -201,23 +202,25 @@ let fetchOnlineClassById = async (req, res, next) => {
 }
 let fetchStudentBySubject = async (req, res, next) => {
     try {
-        let subjectId = (req.params.id) || 0;
-        // console.log('here is the student id', studentId)
+        let subjectId = (req.body.id) || 0;
+
+        console.log('here is the student id', subjectId)
         let studentList = await Subjects.find({
-            _id: subjectId
+            _id: ObjectId(subjectId)
 
         }).populate([{
             path: 'students',
             model: 'SchoolUser',
             required: true,
         }]).lean();
-        if (studentList) {
+        // console.log(studentList)
+        if (studentList[0]) {
 
             return responseModule.successResponse(res, {
                 success: 1,
                 message: 'Student list fetched successfully.',
                 data: {
-                    studentList: studentList[0].students
+                    studentList: studentList ? studentList[0].students ? studentList[0].students : [] : []
                 }
             });
         } else {
@@ -234,8 +237,8 @@ let fetchStudentBySubject = async (req, res, next) => {
 }
 let addSchemeOfStudy = async (req, res, next) => {
     try {
-        let subjectId = (req.body.subjectId) || '';
-        let SchemeOfStudy = (req.body.SchemeOfStudy) || '';
+        let subjectId = (req.body.data.subjectId) || '';
+        let SchemeOfStudy = (req.body.data.schemeOfStudy) || '';
         console.log('here is the detail', subjectId, SchemeOfStudy)
         let addSchemeOfStudy = await Subjects.findOneAndUpdate({
             _id: subjectId
@@ -265,11 +268,11 @@ let addSchemeOfStudy = async (req, res, next) => {
         });
     }
 }
-let addAttendance =  async (req, res, next) => {
+let addAttendance = async (req, res, next) => {
     try {
         let attendanceArry = (req.body.attendanceArry) || [];
-      
-       
+
+
         let addSchemeOfStudy = await Attendance.insertMany(attendanceArry)
         if (addSchemeOfStudy) {
 
@@ -292,13 +295,34 @@ let addAttendance =  async (req, res, next) => {
         });
     }
 }
-let addStudentMarks =  async (req, res, next) => {
+let addStudentMarks = async (req, res, next) => {
     try {
-        let marksArry = (req.body.marksArry) || [];
-      
-       
-        let addSchemeOfStudy = await StudentMarks.insertMany(marksArry)
-        if (addSchemeOfStudy) {
+        // let marksArry = (req.body.marksArry) || [];
+        console.log('******************************')
+        let subjectId = (req.body.data.subjectId) || 0;
+        let studentId = (req.body.data.studentId) || 0;
+        // let marksArry = (req.body.marksArry) || [];
+        let body = {
+            subjectId: (subjectId),
+            studentId: (studentId),
+            firstTerm: req.body.data.firstTerm || {},
+            secondTerm: req.body.data.secondTerm || {},
+            thirdTerm: req.body.data.thirdTerm || {}
+        }
+        console.log(body)
+        let findStd = await StudentMarks.find({
+            subjectId: ObjectId(subjectId),
+            studentId: ObjectId(studentId)
+        })
+        if (findStd) {
+            await StudentMarks.create(body)
+        } else {
+            await tudentMarks.findOneAndUpdate({
+                subjectId: subjectId,
+                studentId: studentId
+            }, body)
+        }
+        if (true) {
 
             return responseModule.successResponse(res, {
                 success: 1,
@@ -319,6 +343,52 @@ let addStudentMarks =  async (req, res, next) => {
         });
     }
 }
+let addOnlineExam = async (req, res, next) => {
+    try {
+        let day = parseInt(req.body.day) || 0,
+            startTime = req.body.startTime,
+            endTime = req.body.endTime,
+            classId = _.trim(req.body.classId),
+            subject = _.trim(req.body.subject),
+            link = _.trim(req.body.link),
+            teacherId = _.trim((req.user._id));
+
+
+        // startTime = moment.unix(startTime).format('HH:MM');
+        // endTime = moment.unix(endTime).format('HH:MM');
+
+
+        let addOnlineExam = await OnlineExam.create({
+            day,
+            startTime,
+            endTime,
+            classId,
+            subject,
+            link,
+            teacherId
+
+        })
+        if (addOnlineExam) {
+
+            return responseModule.successResponse(res, {
+                success: 1,
+                message: 'Online Exam is added successfully.',
+                data: {
+                    addOnlineExam: addOnlineExam
+                }
+            });
+        } else {
+            return next({
+                msgCode: 1100
+            });
+        }
+    } catch (err) {
+        winston.error(err);
+        return next({
+            msgCode: 1037
+        });
+    }
+}
 module.exports = {
     viewTimeTable,
     fetchTeacherSubjects,
@@ -329,5 +399,6 @@ module.exports = {
     addSchemeOfStudy,
     addAttendance,
     addStudentMarks,
-    
+    addOnlineExam
+
 }

@@ -569,3 +569,1106 @@ ValidationError: OnlineClass validation failed: link: Path `link` is required.
     at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\schematype.js:1256:9
     at processTicksAndRejections (internal/process/task_queues.js:79:11)
 [2021-05-31 22:07:10] [31merror[39m:  {"msgCode":1037} 
+[2021-06-01 01:21:55] [31merror[39m:  mongoose connection disconnected 
+[2021-06-02 21:25:09] [31merror[39m:  Cannot read property 'subjectId' of undefined 
+TypeError: Cannot read property 'subjectId' of undefined
+    at fetchStudentStudyScheme (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:289:35)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at E:\vizteck-work\expressWithMongoDb\config\passport.js:111:24
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at passport.isAuthenticated (E:\vizteck-work\expressWithMongoDb\config\passport.js:101:16)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:69:12
+    at pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:337:31)
+    at deserialized (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:349:7)
+    at E:\vizteck-work\expressWithMongoDb\config\passport.js:88:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:4868:18
+[2021-06-02 21:25:09] [31merror[39m:  {"msgCode":1037} 
+[2021-06-02 22:03:48] [31merror[39m:  {"status":404} 
+[2021-06-02 22:04:39] [31merror[39m:  OnlineExam is not defined 
+ReferenceError: OnlineExam is not defined
+    at fetchOnlineExam (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:328:26)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at E:\vizteck-work\expressWithMongoDb\config\passport.js:111:24
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at passport.isAuthenticated (E:\vizteck-work\expressWithMongoDb\config\passport.js:101:16)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:69:12
+    at pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:337:31)
+    at deserialized (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:349:7)
+    at E:\vizteck-work\expressWithMongoDb\config\passport.js:88:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:4868:18
+[2021-06-02 22:04:39] [31merror[39m:  {"msgCode":1037} 
+[2021-06-02 22:06:10] [31merror[39m:  {"status":404} 
+[2021-06-02 22:06:25] [31merror[39m:  OnlineExam is not defined 
+ReferenceError: OnlineExam is not defined
+    at fetchOnlineExam (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:328:26)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at E:\vizteck-work\expressWithMongoDb\config\passport.js:111:24
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at passport.isAuthenticated (E:\vizteck-work\expressWithMongoDb\config\passport.js:101:16)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:69:12
+    at pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:337:31)
+    at deserialized (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:349:7)
+    at E:\vizteck-work\expressWithMongoDb\config\passport.js:88:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:4868:18
+[2021-06-02 22:06:25] [31merror[39m:  {"msgCode":1037} 
+[2021-06-02 23:39:21] [31merror[39m:  mongoose connection disconnected 
+[2021-06-03 18:41:36] [31merror[39m:  AdmissionForm validation failed: firstName: Path `firstName` is required., lastName: Path `lastName` is required. 
+ValidationError: AdmissionForm validation failed: firstName: Path `firstName` is required., lastName: Path `lastName` is required.
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2541:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\schematype.js:1256:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2021-06-03 18:41:36] [31merror[39m:  {"msgCode":1037} 
+[2021-06-03 18:41:52] [31merror[39m:  AdmissionForm validation failed: firstName: Path `firstName` is required., lastName: Path `lastName` is required. 
+ValidationError: AdmissionForm validation failed: firstName: Path `firstName` is required., lastName: Path `lastName` is required.
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2541:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\schematype.js:1256:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2021-06-03 18:41:52] [31merror[39m:  {"msgCode":1037} 
+[2021-06-03 18:42:11] [31merror[39m:  AdmissionForm validation failed: firstName: Path `firstName` is required., lastName: Path `lastName` is required. 
+ValidationError: AdmissionForm validation failed: firstName: Path `firstName` is required., lastName: Path `lastName` is required.
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2541:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\schematype.js:1256:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2021-06-03 18:42:11] [31merror[39m:  {"msgCode":1037} 
+[2021-06-03 18:43:26] [31merror[39m:  AdmissionForm validation failed: firstName: Path `firstName` is required., lastName: Path `lastName` is required. 
+ValidationError: AdmissionForm validation failed: firstName: Path `firstName` is required., lastName: Path `lastName` is required.
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2541:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\schematype.js:1256:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2021-06-03 18:43:26] [31merror[39m:  {"msgCode":1037} 
+[2021-06-03 18:43:44] [31merror[39m:  AdmissionForm validation failed: firstName: Path `firstName` is required., lastName: Path `lastName` is required. 
+ValidationError: AdmissionForm validation failed: firstName: Path `firstName` is required., lastName: Path `lastName` is required.
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2541:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\schematype.js:1256:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2021-06-03 18:43:44] [31merror[39m:  {"msgCode":1037} 
+[2021-06-03 18:48:06] [31merror[39m:  {"status":404} 
+[2021-06-03 18:55:25] [31merror[39m:  {"status":404} 
+[2021-06-03 18:57:24] [31merror[39m:  userId Id Validation:  
+[2021-06-03 18:57:24] [31merror[39m:  {"param":"userId","message":1029,"value":"admisson","location":"params"} 
+[2021-06-03 18:57:47] [31merror[39m:  userId Id Validation:  
+[2021-06-03 18:57:47] [31merror[39m:  {"param":"userId","message":1029,"value":"admisson","location":"params"} 
+[2021-06-03 18:58:23] [31merror[39m:  userId Id Validation:  
+[2021-06-03 18:58:23] [31merror[39m:  {"param":"userId","message":1029,"value":"admisson","location":"params"} 
+[2021-06-03 18:59:42] [31merror[39m:  userId Id Validation:  
+[2021-06-03 18:59:42] [31merror[39m:  {"param":"userId","message":1029,"value":"admission","location":"params"} 
+[2021-06-03 19:00:41] [31merror[39m:  userId Id Validation:  
+[2021-06-03 19:00:41] [31merror[39m:  {"param":"userId","message":1029,"value":"admission","location":"params"} 
+[2021-06-03 19:01:54] [31merror[39m:  userId Id Validation:  
+[2021-06-03 19:01:54] [31merror[39m:  {"param":"userId","message":1029,"value":"admissio","location":"params"} 
+[2021-06-03 19:01:58] [31merror[39m:  userId Id Validation:  
+[2021-06-03 19:01:58] [31merror[39m:  {"param":"userId","message":1029,"value":"admission","location":"params"} 
+[2021-06-03 19:02:58] [31merror[39m:  userId Id Validation:  
+[2021-06-03 19:02:58] [31merror[39m:  {"param":"userId","message":1029,"value":"admission","location":"params"} 
+[2021-06-03 19:04:04] [31merror[39m:  userId Id Validation:  
+[2021-06-03 19:04:04] [31merror[39m:  {"param":"userId","message":1029,"value":"admission","location":"params"} 
+[2021-06-03 19:05:34] [31merror[39m:  {"msgCode":3} 
+[2021-06-03 19:06:01] [31merror[39m:  {"msgCode":3} 
+[2021-06-03 20:01:33] [31merror[39m:  mongoose connection disconnected 
+[2021-06-03 20:11:54] [31merror[39m:  Cast to number failed for value "2" (type number) at path "status" for model "AdmissionForm" 
+CastError: Cast to number failed for value "2" (type number) at path "status" for model "AdmissionForm"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-03 20:11:54] [31merror[39m:  {"msgCode":1036} 
+[2021-06-03 20:12:01] [31merror[39m:  Cast to number failed for value "2" (type number) at path "status" for model "AdmissionForm" 
+CastError: Cast to number failed for value "2" (type number) at path "status" for model "AdmissionForm"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-03 20:12:01] [31merror[39m:  {"msgCode":1036} 
+[2021-06-03 20:50:39] [31merror[39m:  userId Id Validation:  
+[2021-06-03 20:50:39] [31merror[39m:  {"param":"userId","message":1029,"value":"class","location":"params"} 
+[2021-06-03 20:51:02] [31merror[39m:  {"status":404} 
+[2021-06-03 20:53:43] [31merror[39m:  Assignment to constant variable. 
+TypeError: Assignment to constant variable.
+    at getClassList (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:567:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-03 20:53:43] [31merror[39m:  {"msgCode":1036} 
+[2021-06-03 20:54:53] [31merror[39m:  Assignment to constant variable. 
+TypeError: Assignment to constant variable.
+    at getClassList (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:567:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-03 20:54:53] [31merror[39m:  {"msgCode":1036} 
+[2021-06-03 21:09:21] [31merror[39m:  cosole is not defined 
+ReferenceError: cosole is not defined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:571:15
+    at Array.map (<anonymous>)
+    at E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:570:47
+    at Array.map (<anonymous>)
+    at getClassList (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:569:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-03 21:09:21] [31merror[39m:  {"msgCode":1036} 
+[2021-06-03 21:37:39] [31merror[39m:  Assignment to constant variable. 
+TypeError: Assignment to constant variable.
+    at changeAdmission (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:604:20)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-03 21:37:39] [31merror[39m:  {"msgCode":1036} 
+[2021-06-03 21:38:24] [31merror[39m:  addmission is not defined 
+ReferenceError: addmission is not defined
+    at changeAdmission (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:606:9)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-03 21:38:24] [31merror[39m:  {"msgCode":1036} 
+[2021-06-03 22:42:07] [31merror[39m:  mongoose connection disconnected 
+[2021-06-03 22:54:52] [31merror[39m:  SchoolUser validation failed: lastName: Path `lastName` is required., firstName: Path `firstName` is required. 
+ValidationError: SchoolUser validation failed: lastName: Path `lastName` is required., firstName: Path `firstName` is required.
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2541:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\schematype.js:1256:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2021-06-03 22:54:52] [31merror[39m:  {"msgCode":1036} 
+[2021-06-03 22:55:45] [31merror[39m:  SchoolUser validation failed: name: Path `name` is required. 
+ValidationError: SchoolUser validation failed: name: Path `name` is required.
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2541:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\schematype.js:1256:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2021-06-03 22:55:45] [31merror[39m:  {"msgCode":1036} 
+[2021-06-03 22:56:34] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: "faizi@gmail.com" } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: "faizi@gmail.com" }
+    at Function.create (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\error.js:57:12)
+    at toError (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\utils.js:123:22)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\operations\common_functions.js:258:39
+    at handler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\topology.js:944:24)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:350:13
+    at handleOperationResult (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\server.js:558:5)
+    at MessageStream.messageHandler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:277:5)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:485:12)
+    at processIncomingData (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:385:12)
+    at writeOrBuffer (_stream_writable.js:367:5)
+    at MessageStream.Writable.write (_stream_writable.js:307:12)
+    at Socket.ondata (_stream_readable.js:707:22)
+    at Socket.emit (events.js:315:20)
+    at Socket.EventEmitter.emit (domain.js:485:12)
+    at addChunk (_stream_readable.js:296:12)
+    at readableAddChunk (_stream_readable.js:272:9)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+[2021-06-03 22:56:34] [31merror[39m:  {"msgCode":1036} 
+[2021-06-03 22:58:41] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at Function.create (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\error.js:57:12)
+    at toError (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\utils.js:123:22)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\operations\common_functions.js:258:39
+    at handler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\topology.js:944:24)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:350:13
+    at handleOperationResult (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\server.js:558:5)
+    at MessageStream.messageHandler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:277:5)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:485:12)
+    at processIncomingData (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:385:12)
+    at writeOrBuffer (_stream_writable.js:367:5)
+    at MessageStream.Writable.write (_stream_writable.js:307:12)
+    at Socket.ondata (_stream_readable.js:707:22)
+    at Socket.emit (events.js:315:20)
+    at Socket.EventEmitter.emit (domain.js:485:12)
+    at addChunk (_stream_readable.js:296:12)
+    at readableAddChunk (_stream_readable.js:272:9)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+[2021-06-03 22:58:41] [31merror[39m:  {"msgCode":1036} 
+[2021-06-03 22:59:58] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at Function.create (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\error.js:57:12)
+    at toError (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\utils.js:123:22)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\operations\common_functions.js:258:39
+    at handler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\topology.js:944:24)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:350:13
+    at handleOperationResult (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\server.js:558:5)
+    at MessageStream.messageHandler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:277:5)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:485:12)
+    at processIncomingData (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:385:12)
+    at writeOrBuffer (_stream_writable.js:367:5)
+    at MessageStream.Writable.write (_stream_writable.js:307:12)
+    at Socket.ondata (_stream_readable.js:707:22)
+    at Socket.emit (events.js:315:20)
+    at Socket.EventEmitter.emit (domain.js:485:12)
+    at addChunk (_stream_readable.js:296:12)
+    at readableAddChunk (_stream_readable.js:272:9)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+[2021-06-03 22:59:58] [31merror[39m:  {"msgCode":1036} 
+[2021-06-04 01:18:24] [31merror[39m:  mongoose connection disconnected 
+[2021-06-04 01:19:52] [31merror[39m:  Redis connection to localhost:6379 failed - read ECONNRESET 
+Error: Redis connection to localhost:6379 failed - read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+[2021-06-04 19:13:12] [31merror[39m:  momnent is not defined 
+ReferenceError: momnent is not defined
+    at fetchStudentOnlineClass (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:219:24)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at E:\vizteck-work\expressWithMongoDb\config\passport.js:111:24
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at passport.isAuthenticated (E:\vizteck-work\expressWithMongoDb\config\passport.js:101:16)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:69:12
+    at pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:337:31)
+    at deserialized (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\authenticator.js:349:7)
+    at E:\vizteck-work\expressWithMongoDb\config\passport.js:88:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:4868:18
+[2021-06-04 19:13:12] [31merror[39m:  {"msgCode":1037} 
+[2021-06-04 19:23:02] [31merror[39m:  {"msgCode":3} 
+[2021-06-04 19:23:09] [31merror[39m:  {"msgCode":3} 
+[2021-06-04 19:24:22] [31merror[39m:  Cannot read property '_id' of undefined 
+TypeError: Cannot read property '_id' of undefined
+    at fetchStudentOnlineClass (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:216:35)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+[2021-06-04 19:24:22] [31merror[39m:  {"msgCode":1037} 
+[2021-06-04 19:42:14] [31merror[39m:  Cannot read property 'firstName' of undefined 
+TypeError: Cannot read property 'firstName' of undefined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:87:45
+    at Array.map (<anonymous>)
+    at fetchStudentSubjects (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:85:25)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-04 19:42:14] [31merror[39m:  {"msgCode":1037} 
+[2021-06-04 20:47:10] [31merror[39m:  {"msgCode":3} 
+[2021-06-04 20:47:41] [31merror[39m:  {"msgCode":3} 
+[2021-06-04 21:29:15] [31merror[39m:  Assignment to constant variable. 
+TypeError: Assignment to constant variable.
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:227:17
+    at Array.map (<anonymous>)
+    at fetchStudentMarksBySubject (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:225:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-04 21:29:15] [31merror[39m:  {"msgCode":1037} 
+[2021-06-04 21:31:32] [31merror[39m:  {"status":404} 
+[2021-06-04 21:33:05] [31merror[39m:  {"status":404} 
+[2021-06-04 21:34:22] [31merror[39m:  {"status":404} 
+[2021-06-04 21:34:43] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "_id" for model "Subjects" 
+CastError: Cast to ObjectId failed for value "0" (type number) at path "_id" for model "Subjects"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-04 21:34:43] [31merror[39m:  {"msgCode":1037} 
+[2021-06-04 21:37:31] [31merror[39m:  firstTerm is not defined 
+ReferenceError: firstTerm is not defined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:192:13
+    at Array.map (<anonymous>)
+    at fetchStudentMarks (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:185:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-04 21:37:31] [31merror[39m:  {"msgCode":1037} 
+[2021-06-04 21:38:15] [31merror[39m:  {"status":404} 
+[2021-06-04 21:38:55] [31merror[39m:  {"status":404} 
+[2021-06-04 21:46:46] [31merror[39m:  {"status":404} 
+[2021-06-04 21:47:42] [31merror[39m:  {"status":404} 
+[2021-06-04 21:47:43] [31merror[39m:  {"status":404} 
+[2021-06-04 22:20:04] [31merror[39m:  {"message":"Unable to find admin."} 
+[2021-06-04 22:23:05] [31merror[39m:  {"message":"Unable to find admin."} 
+[2021-06-04 22:24:48] [31merror[39m:  {"message":"Unable to find admin."} 
+[2021-06-04 22:25:58] [31merror[39m:  {"message":"Unable to find admin."} 
+[2021-06-04 22:26:19] [31merror[39m:  {"message":"Unable to find admin."} 
+[2021-06-04 22:26:43] [31merror[39m:  {"message":"Unable to find admin."} 
+[2021-06-04 22:27:27] [31merror[39m:  {"message":"Unable to find admin."} 
+[2021-06-04 22:28:47] [31merror[39m:  {"message":"Unable to find admin."} 
+[2021-06-04 22:29:39] [31merror[39m:  {"message":"Unable to find admin."} 
+[2021-06-04 22:31:17] [31merror[39m:  SchoolUser validation failed: _id: Cast to ObjectId failed for value "{ '$oid': '60a62f8b927d952f44d460b8' }" (type Object) at path "_id", updatedAt: Cast to date failed for value "{ '$date': '2021-05-20T10:37:10.276Z' }" (type Object) at path "updatedAt", createdAt: Cast to date failed for value "{ '$date': '2021-05-20T09:44:43.835Z' }" (type Object) at path "createdAt" 
+ValidationError: SchoolUser validation failed: _id: Cast to ObjectId failed for value "{ '$oid': '60a62f8b927d952f44d460b8' }" (type Object) at path "_id", updatedAt: Cast to date failed for value "{ '$date': '2021-05-20T10:37:10.276Z' }" (type Object) at path "updatedAt", createdAt: Cast to date failed for value "{ '$date': '2021-05-20T09:44:43.835Z' }" (type Object) at path "createdAt"
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at model.$set (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:1318:12)
+    at model.$set (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:1022:16)
+    at model.Document (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:147:12)
+    at model.Model (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:105:12)
+    at new model (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:4706:15)
+    at Array.<anonymous> (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:3302:17)
+    at _start (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\helpers\parallelLimit.js:27:37)
+    at parallelLimit (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\helpers\parallelLimit.js:23:5)
+    at Function.Model.$__insertMany (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:3332:3)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\kareem\index.js:370:33
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2021-06-04 22:31:17] [31merror[39m:  {"msgCode":1037} 
+[2021-06-04 22:35:32] [31merror[39m:  {"msgCode":3} 
+[2021-06-04 22:36:20] [31merror[39m:  {"message":"This Student account doesn’t exist. Please enter a different RegNo."} 
+[2021-06-04 22:36:31] [31merror[39m:  {"message":"Invalid password."} 
+[2021-06-04 22:39:48] [31merror[39m:  mongoose connection disconnected 
+[2021-06-04 22:40:25] [31merror[39m:  mongoose connection disconnected 
+[2021-06-04 22:41:26] [31merror[39m:  mongoose connection disconnected 
+[2021-06-04 22:47:07] [31merror[39m:  E11000 duplicate key error collection: myFirstDatabase.schoolusers index: email_1 dup key: { email: "admin@admin.com" } 
+BulkWriteError: E11000 duplicate key error collection: myFirstDatabase.schoolusers index: email_1 dup key: { email: "admin@admin.com" }
+    at OrderedBulkOperation.handleWriteError (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\bulk\common.js:1258:9)
+    at resultHandler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\bulk\common.js:521:23)
+    at handler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\topology.js:944:24)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:350:13
+    at handleOperationResult (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\server.js:558:5)
+    at MessageStream.messageHandler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:277:5)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:485:12)
+    at processIncomingData (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:385:12)
+    at writeOrBuffer (_stream_writable.js:367:5)
+    at MessageStream.Writable.write (_stream_writable.js:307:12)
+    at TLSSocket.ondata (_stream_readable.js:707:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:485:12)
+    at addChunk (_stream_readable.js:296:12)
+    at readableAddChunk (_stream_readable.js:272:9)
+    at TLSSocket.Readable.push (_stream_readable.js:213:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:186:23)
+[2021-06-04 22:47:07] [31merror[39m:  {"msgCode":1037} 
+[2021-06-04 23:07:21] [31merror[39m:  Cannot read property 'name' of null 
+TypeError: Cannot read property 'name' of null
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:320:45
+    at Array.map (<anonymous>)
+    at fetchStudentOnlineClass (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:319:28)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-04 23:07:21] [31merror[39m:  {"msgCode":1037} 
+[2021-06-04 23:07:32] [31merror[39m:  Cannot read property 'name' of null 
+TypeError: Cannot read property 'name' of null
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:320:45
+    at Array.map (<anonymous>)
+    at fetchStudentOnlineClass (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:319:28)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-04 23:07:32] [31merror[39m:  {"msgCode":1037} 
+[2021-06-04 23:08:58] [31merror[39m:  Cannot read property 'name' of null 
+TypeError: Cannot read property 'name' of null
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:320:45
+    at Array.map (<anonymous>)
+    at fetchStudentOnlineClass (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:319:28)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-04 23:08:58] [31merror[39m:  {"msgCode":1037} 
+[2021-06-04 23:10:01] [31merror[39m:  Cannot read property 'name' of null 
+TypeError: Cannot read property 'name' of null
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:320:45
+    at Array.map (<anonymous>)
+    at fetchStudentOnlineClass (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:319:28)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-04 23:10:01] [31merror[39m:  {"msgCode":1037} 
+[2021-06-04 23:12:51] [31merror[39m:  Cannot read property 'name' of null 
+TypeError: Cannot read property 'name' of null
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:320:45
+    at Array.map (<anonymous>)
+    at fetchStudentOnlineClass (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:319:28)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-04 23:12:51] [31merror[39m:  {"msgCode":1037} 
+[2021-06-04 23:13:44] [31merror[39m:  Cannot read property 'name' of null 
+TypeError: Cannot read property 'name' of null
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:321:45
+    at Array.map (<anonymous>)
+    at fetchStudentOnlineClass (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:320:28)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-04 23:13:44] [31merror[39m:  {"msgCode":1037} 
+[2021-06-04 23:13:47] [31merror[39m:  Cannot read property 'name' of null 
+TypeError: Cannot read property 'name' of null
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:321:45
+    at Array.map (<anonymous>)
+    at fetchStudentOnlineClass (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:320:28)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-04 23:13:47] [31merror[39m:  {"msgCode":1037} 
+[2021-06-04 23:17:12] [31merror[39m:  Cannot read property 'name' of null 
+TypeError: Cannot read property 'name' of null
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:321:45
+    at Array.map (<anonymous>)
+    at fetchStudentOnlineClass (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:320:28)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-04 23:17:12] [31merror[39m:  {"msgCode":1037} 
+[2021-06-04 23:21:49] [31merror[39m:  {"msgCode":3} 
+[2021-06-04 23:21:58] [31merror[39m:  Cannot read property 'name' of null 
+TypeError: Cannot read property 'name' of null
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:193:46
+    at Array.map (<anonymous>)
+    at fetchStudentMarks (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:188:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-04 23:21:58] [31merror[39m:  {"msgCode":1037} 
+[2021-06-04 23:37:38] [31merror[39m:  {"msgCode":3} 
+[2021-06-04 23:48:35] [31merror[39m:  onlineExam is not defined 
+ReferenceError: onlineExam is not defined
+    at announcementsfetch (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:524:9)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-04 23:48:35] [31merror[39m:  {"msgCode":1037} 
+[2021-06-04 23:51:54] [31merror[39m:  {"status":404} 
+[2021-06-05 00:31:28] [31merror[39m:  mongoose connection disconnected 
+[2021-06-05 01:01:09] [31merror[39m:  {"status":404} 
+[2021-06-05 01:16:01] [31merror[39m:  {"status":404} 
+[2021-06-05 01:32:09] [31merror[39m:  {"status":404} 
+[2021-06-05 01:33:22] [31merror[39m:  {"status":404} 
+[2021-06-05 01:33:24] [31merror[39m:  {"status":404} 
+[2021-06-05 01:33:26] [31merror[39m:  {"status":404} 
+[2021-06-05 01:43:35] [31merror[39m:  Attendance is not defined 
+ReferenceError: Attendance is not defined
+    at viewStudentRecord (E:\vizteck-work\expressWithMongoDb\app\modules\parent\controller\parent.controller.js:141:13)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+[2021-06-05 01:43:35] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 01:56:44] [31merror[39m:  {"status":404} 
+[2021-06-05 02:23:43] [31merror[39m:  Cast to string failed for value "{ name: 7 }" (type Object) at path "class" for model "SchoolUser" 
+CastError: Cast to string failed for value "{ name: 7 }" (type Object) at path "class" for model "SchoolUser"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 02:23:43] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 02:27:02] [31merror[39m:  Cast to string failed for value "{ name: 7 }" (type Object) at path "class" for model "SchoolUser" 
+CastError: Cast to string failed for value "{ name: 7 }" (type Object) at path "class" for model "SchoolUser"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 02:27:02] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 02:27:18] [31merror[39m:  Cast to string failed for value "{ name: 7 }" (type Object) at path "class" for model "SchoolUser" 
+CastError: Cast to string failed for value "{ name: 7 }" (type Object) at path "class" for model "SchoolUser"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 02:27:18] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 02:28:59] [31merror[39m:  Cast to string failed for value "{ name: '5' }" (type Object) at path "class" for model "SchoolUser" 
+CastError: Cast to string failed for value "{ name: '5' }" (type Object) at path "class" for model "SchoolUser"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 02:28:59] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 03:09:20] [31merror[39m:  {"msgCode":3} 
+[2021-06-05 03:28:48] [31merror[39m:  {"status":404} 
+[2021-06-05 03:30:51] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "_id" for model "Subjects" 
+CastError: Cast to ObjectId failed for value "0" (type number) at path "_id" for model "Subjects"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 03:30:51] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 03:32:50] [31merror[39m:  Cannot read property 'students' of undefined 
+TypeError: Cannot read property 'students' of undefined
+    at fetchStudentBySubject (E:\vizteck-work\expressWithMongoDb\app\modules\teacher\controller\teacheruser.controller.js:222:49)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 03:32:50] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 03:33:45] [31merror[39m:  Cannot read property 'students' of undefined 
+TypeError: Cannot read property 'students' of undefined
+    at fetchStudentBySubject (E:\vizteck-work\expressWithMongoDb\app\modules\teacher\controller\teacheruser.controller.js:222:64)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 03:33:45] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 03:34:38] [31merror[39m:  Cannot read property 'students' of undefined 
+TypeError: Cannot read property 'students' of undefined
+    at fetchStudentBySubject (E:\vizteck-work\expressWithMongoDb\app\modules\teacher\controller\teacheruser.controller.js:222:64)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 03:34:38] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 03:34:53] [31merror[39m:  Cannot read property 'students' of undefined 
+TypeError: Cannot read property 'students' of undefined
+    at fetchStudentBySubject (E:\vizteck-work\expressWithMongoDb\app\modules\teacher\controller\teacheruser.controller.js:222:64)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 03:34:53] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 03:35:32] [31merror[39m:  Cannot read property 'students' of undefined 
+TypeError: Cannot read property 'students' of undefined
+    at fetchStudentBySubject (E:\vizteck-work\expressWithMongoDb\app\modules\teacher\controller\teacheruser.controller.js:223:64)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 03:35:32] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 03:35:45] [31merror[39m:  Cannot read property 'students' of undefined 
+TypeError: Cannot read property 'students' of undefined
+    at fetchStudentBySubject (E:\vizteck-work\expressWithMongoDb\app\modules\teacher\controller\teacheruser.controller.js:223:64)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 03:35:45] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 03:36:12] [31merror[39m:  Cannot read property 'students' of undefined 
+TypeError: Cannot read property 'students' of undefined
+    at fetchStudentBySubject (E:\vizteck-work\expressWithMongoDb\app\modules\teacher\controller\teacheruser.controller.js:223:63)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 03:36:12] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 03:37:30] [31merror[39m:  Cannot read property 'students' of undefined 
+TypeError: Cannot read property 'students' of undefined
+    at fetchStudentBySubject (E:\vizteck-work\expressWithMongoDb\app\modules\teacher\controller\teacheruser.controller.js:223:63)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 03:37:30] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 04:08:57] [31merror[39m:  {"msgCode":3} 
+[2021-06-05 04:13:11] [31merror[39m:  Attendance validation failed: day: Path `day` is required. 
+ValidationError: Attendance validation failed: day: Path `day` is required.
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2541:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\schematype.js:1256:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2021-06-05 04:13:11] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 04:13:35] [31merror[39m:  Attendance validation failed: day: Path `day` is required. 
+ValidationError: Attendance validation failed: day: Path `day` is required.
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2541:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\schematype.js:1256:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2021-06-05 04:13:35] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 04:13:37] [31merror[39m:  Attendance validation failed: day: Path `day` is required. 
+ValidationError: Attendance validation failed: day: Path `day` is required.
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2541:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\schematype.js:1256:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2021-06-05 04:13:37] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 04:13:42] [31merror[39m:  Attendance validation failed: day: Path `day` is required. 
+ValidationError: Attendance validation failed: day: Path `day` is required.
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2541:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\schematype.js:1256:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2021-06-05 04:13:42] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 04:13:44] [31merror[39m:  Attendance validation failed: day: Path `day` is required. 
+ValidationError: Attendance validation failed: day: Path `day` is required.
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2541:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\schematype.js:1256:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2021-06-05 04:13:44] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 05:03:58] [31merror[39m:  mongoose connection disconnected 
+[2021-06-05 05:34:22] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "subjectId" for model "StudentMarks" 
+CastError: Cast to ObjectId failed for value "0" (type number) at path "subjectId" for model "StudentMarks"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 05:34:22] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 05:35:28] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "subjectId" for model "StudentMarks" 
+CastError: Cast to ObjectId failed for value "0" (type number) at path "subjectId" for model "StudentMarks"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 05:35:28] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 05:44:16] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "subjectId" for model "StudentMarks" 
+CastError: Cast to ObjectId failed for value "0" (type number) at path "subjectId" for model "StudentMarks"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 05:44:16] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 05:44:57] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "subjectId" for model "StudentMarks" 
+CastError: Cast to ObjectId failed for value "0" (type number) at path "subjectId" for model "StudentMarks"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 05:44:57] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 05:48:22] [31merror[39m:  StudentMarks validation failed: studentId: Cast to ObjectId failed for value "[]" (type Array) at path "studentId" 
+ValidationError: StudentMarks validation failed: studentId: Cast to ObjectId failed for value "[]" (type Array) at path "studentId"
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at model.$set (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:1318:12)
+    at model.$set (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:1022:16)
+    at model.Document (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:147:12)
+    at model.Model (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:105:12)
+    at new model (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:4706:15)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:3094:22
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:3130:7
+    at Array.forEach (<anonymous>)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:3129:15
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at Mongoose._promiseOrCallback (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\index.js:1149:10)
+    at Function.create (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:3064:23)
+    at addStudentMarks (E:\vizteck-work\expressWithMongoDb\app\modules\teacher\controller\teacheruser.controller.js:316:32)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 05:48:22] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 05:49:59] [31merror[39m:  Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
+Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (E:\vizteck-work\expressWithMongoDb\node_modules\bson\lib\bson\objectid.js:59:11)
+    at ObjectID (E:\vizteck-work\expressWithMongoDb\node_modules\bson\lib\bson\objectid.js:40:43)
+    at addStudentMarks (E:\vizteck-work\expressWithMongoDb\app\modules\teacher\controller\teacheruser.controller.js:306:24)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\initialize.js:53:5)
+[2021-06-05 05:49:59] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 05:51:35] [31merror[39m:  Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
+Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (E:\vizteck-work\expressWithMongoDb\node_modules\bson\lib\bson\objectid.js:59:11)
+    at ObjectID (E:\vizteck-work\expressWithMongoDb\node_modules\bson\lib\bson\objectid.js:40:43)
+    at addStudentMarks (E:\vizteck-work\expressWithMongoDb\app\modules\teacher\controller\teacheruser.controller.js:307:24)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\initialize.js:53:5)
+[2021-06-05 05:51:35] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 05:52:31] [31merror[39m:  Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
+Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (E:\vizteck-work\expressWithMongoDb\node_modules\bson\lib\bson\objectid.js:59:11)
+    at ObjectID (E:\vizteck-work\expressWithMongoDb\node_modules\bson\lib\bson\objectid.js:40:43)
+    at addStudentMarks (E:\vizteck-work\expressWithMongoDb\app\modules\teacher\controller\teacheruser.controller.js:315:24)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\initialize.js:53:5)
+[2021-06-05 05:52:31] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 05:53:00] [31merror[39m:  Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
+Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (E:\vizteck-work\expressWithMongoDb\node_modules\bson\lib\bson\objectid.js:59:11)
+    at ObjectID (E:\vizteck-work\expressWithMongoDb\node_modules\bson\lib\bson\objectid.js:40:43)
+    at addStudentMarks (E:\vizteck-work\expressWithMongoDb\app\modules\teacher\controller\teacheruser.controller.js:315:24)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\initialize.js:53:5)
+[2021-06-05 05:53:00] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 06:31:06] [31merror[39m:  {"status":404} 
+[2021-06-05 06:32:11] [31merror[39m:  SchoolUser validation failed: studentId.0: Cast to [ObjectId] failed for value "[""]" (type string) at path "studentId.0" 
+ValidationError: SchoolUser validation failed: studentId.0: Cast to [ObjectId] failed for value "[""]" (type string) at path "studentId.0"
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at model.$set (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:1318:12)
+    at model.$set (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:1022:16)
+    at model.Document (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:147:12)
+    at model.Model (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:105:12)
+    at new model (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:4706:15)
+    at createSubAdminAccount (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:126:28)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+[2021-06-05 06:32:11] [31merror[39m:  {"msgCode":1033} 
+[2021-06-05 07:09:41] [31merror[39m:  {"status":404} 
+[2021-06-05 07:10:02] [31merror[39m:  Cast to ObjectId failed for value "" (type string) at path "_id" for model "SchoolUser" 
+CastError: Cast to ObjectId failed for value "" (type string) at path "_id" for model "SchoolUser"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 07:10:02] [31merror[39m:  {"msgCode":1032} 
+[2021-06-05 07:10:38] [31merror[39m:  Cast to ObjectId failed for value "" (type string) at path "_id" for model "SchoolUser" 
+CastError: Cast to ObjectId failed for value "" (type string) at path "_id" for model "SchoolUser"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 07:10:38] [31merror[39m:  {"msgCode":1032} 
+[2021-06-05 07:36:20] [31merror[39m:  Cast to ObjectId failed for value "" (type string) at path "_id" for model "SchoolUser" 
+CastError: Cast to ObjectId failed for value "" (type string) at path "_id" for model "SchoolUser"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 07:36:20] [31merror[39m:  {"msgCode":1032} 
+[2021-06-05 07:36:52] [31merror[39m:  Cast to ObjectId failed for value "" (type string) at path "_id" for model "SchoolUser" 
+CastError: Cast to ObjectId failed for value "" (type string) at path "_id" for model "SchoolUser"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 07:36:52] [31merror[39m:  {"msgCode":1032} 
+[2021-06-05 07:53:22] [31merror[39m:  {"status":404} 
+[2021-06-05 07:58:45] [31merror[39m:  {"message":"Missing credentials"} 
+[2021-06-05 07:58:57] [31merror[39m:  {"message":"Missing credentials"} 
+[2021-06-05 08:00:11] [31merror[39m:  {"message":"Missing credentials"} 
+[2021-06-05 08:25:07] [31merror[39m:  Cannot read property 'totalMarks' of undefined 
+TypeError: Cannot read property 'totalMarks' of undefined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\parent\controller\parent.controller.js:133:49
+    at Array.map (<anonymous>)
+    at viewStudentRecord (E:\vizteck-work\expressWithMongoDb\app\modules\parent\controller\parent.controller.js:124:26)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 08:25:07] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 08:25:07] [31merror[39m:  Cannot read property 'totalMarks' of undefined 
+TypeError: Cannot read property 'totalMarks' of undefined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:209:45
+    at Array.map (<anonymous>)
+    at fetchStudentMarks (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:200:22)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 08:25:07] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 08:25:16] [31merror[39m:  Cannot read property 'totalMarks' of undefined 
+TypeError: Cannot read property 'totalMarks' of undefined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:209:45
+    at Array.map (<anonymous>)
+    at fetchStudentMarks (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:200:22)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 08:25:16] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 08:25:16] [31merror[39m:  Cannot read property 'totalMarks' of undefined 
+TypeError: Cannot read property 'totalMarks' of undefined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\parent\controller\parent.controller.js:133:49
+    at Array.map (<anonymous>)
+    at viewStudentRecord (E:\vizteck-work\expressWithMongoDb\app\modules\parent\controller\parent.controller.js:124:26)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 08:25:16] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 08:25:20] [31merror[39m:  Cannot read property 'totalMarks' of undefined 
+TypeError: Cannot read property 'totalMarks' of undefined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\parent\controller\parent.controller.js:133:49
+    at Array.map (<anonymous>)
+    at viewStudentRecord (E:\vizteck-work\expressWithMongoDb\app\modules\parent\controller\parent.controller.js:124:26)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 08:25:20] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 08:25:20] [31merror[39m:  Cannot read property 'totalMarks' of undefined 
+TypeError: Cannot read property 'totalMarks' of undefined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:209:45
+    at Array.map (<anonymous>)
+    at fetchStudentMarks (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:200:22)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 08:25:20] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 08:38:08] [31merror[39m:  {"message":"Invalid password."} 
+[2021-06-05 08:38:26] [31merror[39m:  {"message":"Invalid password."} 
+[2021-06-05 08:40:39] [31merror[39m:  {"message":"Invalid password."} 
+[2021-06-05 08:41:11] [31merror[39m:  {"message":"Invalid password."} 
+[2021-06-05 08:48:51] [31merror[39m:  Cast to ObjectId failed for value "English" (type string) at path "_id" for model "Subjects" 
+CastError: Cast to ObjectId failed for value "English" (type string) at path "_id" for model "Subjects"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 08:48:51] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 08:49:04] [31merror[39m:  Cast to ObjectId failed for value "English" (type string) at path "_id" for model "Subjects" 
+CastError: Cast to ObjectId failed for value "English" (type string) at path "_id" for model "Subjects"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 08:49:04] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 08:52:03] [31merror[39m:  Cast to ObjectId failed for value "English" (type string) at path "_id" for model "Subjects" 
+CastError: Cast to ObjectId failed for value "English" (type string) at path "_id" for model "Subjects"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 08:52:03] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 08:52:04] [31merror[39m:  Cast to ObjectId failed for value "English" (type string) at path "_id" for model "Subjects" 
+CastError: Cast to ObjectId failed for value "English" (type string) at path "_id" for model "Subjects"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 08:52:04] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 08:54:53] [31merror[39m:  Cannot read property 'totalMarks' of undefined 
+TypeError: Cannot read property 'totalMarks' of undefined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:209:45
+    at Array.map (<anonymous>)
+    at fetchStudentMarks (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:200:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 08:54:53] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 08:54:57] [31merror[39m:  Cannot read property 'totalMarks' of undefined 
+TypeError: Cannot read property 'totalMarks' of undefined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:209:45
+    at Array.map (<anonymous>)
+    at fetchStudentMarks (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:200:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 08:54:57] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 08:55:09] [31merror[39m:  Cannot read property 'totalMarks' of undefined 
+TypeError: Cannot read property 'totalMarks' of undefined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:209:45
+    at Array.map (<anonymous>)
+    at fetchStudentMarks (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:200:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-05 08:55:09] [31merror[39m:  {"msgCode":1037} 
+[2021-06-05 09:08:17] [31merror[39m:  {"message":"This admin account doesn’t exist. Please enter a different email."} 
+[2021-06-05 09:08:48] [31merror[39m:  {"message":"This admin account doesn’t exist. Please enter a different email."} 
+[2021-06-05 09:08:53] [31merror[39m:  {"message":"This admin account doesn’t exist. Please enter a different email."} 
+[2021-06-05 09:09:00] [31merror[39m:  {"message":"This admin account doesn’t exist. Please enter a different email."} 
+[2021-06-05 09:09:43] [31merror[39m:  {"message":"This admin account doesn’t exist. Please enter a different email."} 
+[2021-06-05 10:02:41] [31merror[39m:  {"status":404} 
+[2021-06-05 10:02:51] [31merror[39m:  {"status":404} 
+[2021-06-05 10:02:55] [31merror[39m:  {"status":404} 
+[2021-06-05 10:03:05] [31merror[39m:  {"status":404} 
+[2021-06-05 13:46:54] [31merror[39m:  mongoose connection disconnected 
+[2021-06-12 12:16:27] [31merror[39m:  {"status":404} 
+[2021-06-12 12:35:51] [31merror[39m:  {"status":404} 
+[2021-06-12 12:36:50] [31merror[39m:  {"status":404} 
+[2021-06-12 12:38:14] [31merror[39m:  {"status":404} 
+[2021-06-12 12:41:49] [31merror[39m:  Cast to ObjectId failed for value "urdu" (type string) at path "_id" for model "Subjects" 
+CastError: Cast to ObjectId failed for value "urdu" (type string) at path "_id" for model "Subjects"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-12 12:41:49] [31merror[39m:  {"msgCode":1037} 
+[2021-06-12 14:18:33] [31merror[39m:  mongoose connection disconnected 
+[2021-06-12 14:20:41] [31merror[39m:  {"status":404} 
+[2021-06-12 15:20:20] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 00:29:40] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 00:41:19] [31merror[39m:  {"message":"This admin account doesn’t exist. Please enter a different email."} 
+[2021-06-13 00:41:55] [31merror[39m:  Cannot read property '_id' of undefined 
+TypeError: Cannot read property '_id' of undefined
+    at fetchStudentOnlineClass (E:\Separate Projects\Full-School-Management-System\backend\app\modules\student\controller\studentuser.controller.js:312:35)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-06-13 00:41:55] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 00:41:55] [31merror[39m:  Cannot read property '_id' of undefined 
+TypeError: Cannot read property '_id' of undefined
+    at fetchStudentSubjects (E:\Separate Projects\Full-School-Management-System\backend\app\modules\student\controller\studentuser.controller.js:98:35)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-06-13 00:41:55] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 00:44:51] [31merror[39m:  {"msgCode":3} 
+[2021-06-13 00:44:51] [31merror[39m:  {"msgCode":3} 
+[2021-06-13 00:45:53] [31merror[39m:  {"msgCode":3} 
+[2021-06-13 00:45:53] [31merror[39m:  {"msgCode":3} 
+[2021-06-13 05:50:04] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 10:33:36] [31merror[39m:  {"msgCode":3} 
+[2021-06-13 10:33:36] [31merror[39m:  {"msgCode":3} 
+[2021-06-13 10:34:23] [31merror[39m:  {"msgCode":3} 
+[2021-06-13 10:34:24] [31merror[39m:  {"msgCode":3} 
+[2021-06-13 10:34:39] [31merror[39m:  {"msgCode":3} 
+[2021-06-13 10:34:39] [31merror[39m:  {"msgCode":3} 
+[2021-06-13 12:22:18] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 12:22:32] [31merror[39m:  {"msgCode":3} 
+[2021-06-13 12:22:32] [31merror[39m:  {"msgCode":3} 
+[2021-06-13 12:24:36] [31merror[39m:  {"msgCode":3} 
+[2021-06-13 12:24:36] [31merror[39m:  {"msgCode":3} 
+[2021-06-13 12:29:01] [31merror[39m:  {"status":404} 
+[2021-06-13 12:29:44] [31merror[39m:  {"status":404} 
+[2021-06-13 12:41:05] [31merror[39m:  {"status":404} 
+[2021-06-13 12:41:07] [31merror[39m:  {"status":404} 
+[2021-06-13 12:48:24] [31merror[39m:  Cannot read property '_id' of undefined 
+TypeError: Cannot read property '_id' of undefined
+    at fetchStudentOnlineClass (E:\Separate Projects\Full-School-Management-System\backend\app\modules\student\controller\studentuser.controller.js:312:35)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-06-13 12:48:24] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 12:48:24] [31merror[39m:  Cannot read property '_id' of undefined 
+TypeError: Cannot read property '_id' of undefined
+    at fetchStudentSubjects (E:\Separate Projects\Full-School-Management-System\backend\app\modules\student\controller\studentuser.controller.js:98:35)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-06-13 12:48:24] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 12:51:15] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects" 
+CastError: Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects"
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-06-13 12:51:15] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 12:51:47] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects" 
+CastError: Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects"
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-06-13 12:51:47] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 12:52:13] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects" 
+CastError: Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects"
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-06-13 12:52:13] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 12:52:16] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects" 
+CastError: Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects"
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-06-13 12:52:16] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 13:46:46] [31merror[39m:  mongoose connection disconnected 

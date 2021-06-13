@@ -1,0 +1,23 @@
+<div>
+    <div class="text-center mt-5"><h3>Add Subject to class</h3></div>
+    <div class="col-sm-12 mt-4" style="display: flex; flex-direction: row; justify-content:center;">
+        <div>
+            <p-dropdown [options]="classes" [(ngModel)]="selectedClass" optionLabel="name"></p-dropdown>
+        </div>
+        <div class="ml-3 mt-1 ,r-3"> <input type="text" [(ngModel)]="subject" placeholder="Add subject"> </div>
+        <div><button class="btn btn-primary ml-4" (click)="addSubject()">Add Subject</button></div>   
+    </div>
+
+    <div class="text-center mt-4 mb-2"><h4>Add Time Table for a Subject</h4></div>
+    <div class="mt-4" style="display: flex; flex-direction: row; justify-content:center;">
+        <div>
+            <p-dropdown [options]="classes" [(ngModel)]="selectedClass1" optionLabel="name"></p-dropdown>
+        </div>
+        <div class="ml-3 mt-1 mr-3"> <input type="text" [(ngModel)]="subject1" placeholder="Add subject"> </div>
+        <div>
+            <p-dropdown [options]="days" [(ngModel)]="selectedDay" optionLabel="day"></p-dropdown>
+        </div>
+        <div class="ml-3 mt-1"> <input type="time" [(ngModel)]="time" placeholder="Add Time"> </div>
+        <div><button class="btn btn-primary ml-4" (click)="createTimeTable()">Add Time Table</button></div>
+    </div>
+</div>

@@ -10,12 +10,12 @@ const winston = require('../winston'),
     socketio = require('socket.io'),
     cookieParser = require('cookie-parser'),
     passportSocketIo = require('passport.socketio'),
-    // mongoAdapter = require('socket.io-adapter-mongo'),
-    // mongoStore = require('connect-mongo');
+    mongoAdapter = require('socket.io-adapter-mongo'),
+    mongoStore = require('connect-mongo');
     session = require('express-session'),
     // redis = require('redis'),
-    redisAdapter = require('socket.io-redis'),
-    RedisStore = require('connect-redis')(session);
+    // redisAdapter = require('socket.io-redis'),
+    // RedisStore = require('connect-redis')(session);
 
 module.exports = function(server) {
 
@@ -28,30 +28,36 @@ module.exports = function(server) {
         transports: ['websocket', 'polling']
     });
 
-    // adapter = mongoAdapter(config.mongodb.uri);
-    // io.adapter(adapter);
+    adapter = mongoAdapter(config.mongodb.uri);
+    io.adapter(adapter);
 
     // let redisClient = redis.createClient({ host: config.redis.host, port: config.redis.port });
 
-    let adapter = redisAdapter({
-        host: config.redis.host,
-        port: config.redis.port,
-        // db: config.redis.db,
-    });
+    // let adapter = redisAdapter({
+    //     host: config.redis.host,
+    //     port: config.redis.port,
+    //     // db: config.redis.db,
+    // });
+    
 
-    io.adapter(adapter);
+    // io.adapter(adapter);
 
     io.use(passportSocketIo.authorize({
         cookieParser: cookieParser, // the same middleware you registrer in express
         key: 'connect.sid', // connect.sid
         secret: config.session.secret,
-        store: new RedisStore({
-            host: config.redis.host,
-            port: config.redis.port,
-            client: global.redisClient,
-            ttl: 14 * 24 * 60 * 60,
-            clear_interval: 3600
+        store: mongoStore.create({
+            mongoUrl: config.mongodb.host + config.mongodb.db_name, //YOUR MONGODB URL
+            // ttl: 14 * 24 * 60 * 60,
+            autoRemove: 'native' 
         }),
+        //  new RedisStore({
+        //     host: config.redis.host,
+        //     port: config.redis.port,
+        //     client: global.redisClient,
+        //     ttl: 14 * 24 * 60 * 60,
+        //     clear_interval: 3600
+        // }),
         resave: true,
         saveUninitialized: true,
         cookie: {

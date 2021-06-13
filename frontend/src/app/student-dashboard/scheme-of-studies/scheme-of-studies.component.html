@@ -1,0 +1,39 @@
+<div class="root_schemeofstudies ml-2 mr-2">
+    <div class="scheme_wrapper">
+        <div class="heading_scheme text-center mt-5 mb-4">
+            <h3>Scheme Of Studies</h3>
+            <p class="pl-3 pr-3 pt-2 pb-2 ml-2 mr-2 scheme_para">{{schemeOdStudies}}</p> 
+        </div>
+    </div>
+
+    <div class="assesments_wrapper">
+        <h1>PDF Example with iframe</h1>
+    <iframe [src]="link" width="100%" height="500px">
+    </iframe>
+
+    <div class="col-sm-12" style="display: flex; flex-direction: row; justify-content: space-around;">
+        <div>
+            <h5>Start Time</h5>
+            <p>{{onlineexam.startTime}}</p>
+        </div>
+        <div>
+            <h5>End Time</h5>
+            <p>{{onlineexam.endTime}}</p>
+        </div>
+    </div>
+
+    <div class="col-sm-12 mb-5">
+        <div class="col-sm-12 mt-5 mb-4 text-center"><h3>Upload Paper</h3></div>
+        <p-fileUpload name="demo[]" url="https://cloudinary.com/console/c-1249697e2a6182748d39113d4140b1/media_library/folders/home" (onUpload)="onUpload($event)"
+        [accept]= "'.pdf,.doc,.docx,.text,.txt'">
+                <ng-template pTemplate="content">
+                    <ul *ngIf="uploadedFiles.length">
+                        <li *ngFor="let file of uploadedFiles">{{file.name}} - {{file.size}} bytes</li>
+                    </ul>
+                </ng-template>
+        </p-fileUpload>
+    </div>
+
+    
+
+</div>

@@ -1,4 +1,4 @@
-const studentUserController = require('../controller/studentuser.controller'),
+ const studentUserController = require('../controller/studentuser.controller'),
     studetnMiddleWare = require('../middlewares/student.middleware'),
     passport = require('../../../../config/passport'),
     multer = require('../../../../config/multer'),
@@ -9,45 +9,75 @@ const studentUserController = require('../controller/studentuser.controller'),
         let moduleName = '/student';
         app.get(
             version + moduleName + '/timetable',
-            passport.isAuthenticated,
-            passport.isAuthorized([0, 1,2,3,4]),
+            
+            
             studentUserController.viewTimeTable
         );
         app.get(
             version + moduleName + '/subjects',
-            passport.isAuthenticated,
-            passport.isAuthorized([0, 1,2,3,4]),
+            
+            
             studentUserController.fetchStudentSubjects
         );
-        app.get(
+        app.post(
             version + moduleName + '/fetch/attendance',
-            passport.isAuthenticated,
-            passport.isAuthorized([0, 1,2,3,4]),
+            
+            
             studentUserController.fetchStudentAttendance
         );
         app.get(
             version + moduleName + '/fetch/marks',
-            passport.isAuthenticated,
-            passport.isAuthorized([0, 1,2,3,4]),
+            
+            
             studentUserController.fetchStudentMarks
         );
         app.get(
             version + moduleName + '/fetch/mark',
-            passport.isAuthenticated,
-            passport.isAuthorized([0, 1,2,3,4]),
+            
+            
             studentUserController.fetchStudentMarksBySubject
         );
         app.get(
             version + moduleName + '/fetch/online/class',
-            passport.isAuthenticated,
-            passport.isAuthorized([0, 1,2,3,4]),
+            
+            
             studentUserController.fetchStudentOnlineClass
         );
         app.get(
             version + moduleName + '/fetch/fee/challan',
-            passport.isAuthenticated,
-            passport.isAuthorized([0, 1,2,3,4]),
+            
+            
             studentUserController.fetchStudentFeeChallan
+        );
+        app.post(
+            version + moduleName + '/fetch/subject/syllabus',
+            
+            
+            studentUserController.fetchStudentStudyScheme
+        );
+        app.post(
+            version + moduleName + '/fetch/online/exam',
+            
+            
+            studentUserController.fetchOnlineExam
+        );
+        app.post(
+            version + moduleName + '/data/add',
+            
+            
+            studentUserController.addData
+        );
+        app.post(
+            version + moduleName + '/announcements/add',
+            
+            
+            studentUserController.announcementsAdd
+        );
+        app.post(
+            version + moduleName + '/fetch/announcements',
+            
+            
+            studentUserController.announcementsfetch
         );
     }
 

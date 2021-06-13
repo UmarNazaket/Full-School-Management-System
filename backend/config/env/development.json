@@ -4,8 +4,10 @@
     "PORT": 3400,
     "baseUrl": "http://localhost:3400",
     "mongodb": {
-        "host": "mongodb://localhost:27017/",
-        "uri": "mongodb://localhost:27017/",
+        "host1": "mongodb://localhost:27017/",
+        "host": "mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/",
+        "uri1": "mongodb://localhost:27017/",
+        "uri": "mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/",
         "db_name": "SchoolSystem",
         "credentials": {
             "username": "",
@@ -14,8 +16,8 @@
         "enableMongoDebugging": true
     },
     "redis": {
-        "host": "localhost",
-        "port": 6379
+        "host": "test",
+        "port": 123
     },
     "session": {
         "secret": "*&test&#"

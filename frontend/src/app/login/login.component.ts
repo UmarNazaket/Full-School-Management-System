@@ -13,8 +13,8 @@ export class LoginComponent implements OnInit {
   val: boolean = true;
 
   user =  {
-    user_username: '',
-    user_pass: ''
+    email: '',
+    password: ''
   }
 
   message = ''
@@ -33,19 +33,41 @@ export class LoginComponent implements OnInit {
 
   login(): void{
     console.log(this.user);
-    this.authService.login(this.user).subscribe((data: any) => {
+    this.authService.login({email: this.user.email, password: this.user.password}).subscribe((data: any) => {
       console.log("this is data", data);
-      if(data.status){
-      console.log("if condition ");
-      localStorage.setItem('token', data.token);
-      localStorage.setItem('email', data.email); 
-      localStorage.setItem('username', this.user.user_username);
-      this.router.navigate(['/admin']);
+      if(data.data.userType == 0){
+      console.log("Admin ");
+      localStorage.setItem('dataType', "admin");
+      localStorage.setItem('logindata', JSON.stringify(data.data)); 
+      this.router.navigate(['/admin/addadmin']);
     }
-    else{
+    else if(data.data.userType == 1){
       console.log(data);
-      console.log("Showing Else Part");
-      this.message = "Please Write Correct Email and Pass";
+      localStorage.setItem('logindata', JSON.stringify(data.data));
+      localStorage.setItem('dataType', "student");
+      this.router.navigate(['/student/welcome']);
+    }
+    else if(data.data.userType == 2){
+      console.log("teacher")
+      localStorage.setItem('dataType', "teacher");
+      localStorage.setItem('logindata', JSON.stringify(data.data));
+      this.router.navigate(['/teacher/subjects']);
+    }
+    else if(data.data.userType == 3){
+      console.log("employee")
+      localStorage.setItem('dataType', "employee");
+      localStorage.setItem('logindata', JSON.stringify(data.data));
+      this.router.navigate(['/employee/adddeletestudents']);
+    }
+    else if(data.data.userType == 4){
+      console.log("parent");
+      localStorage.setItem('dataType', "parent");
+      localStorage.setItem('logindata', JSON.stringify(data.data));
+      this.router.navigate(['/parent/childlist']);
+    }
+
+    if(data.response == 400){
+      this.message = "Invalid Usename or Pass"
     }
     });
   }

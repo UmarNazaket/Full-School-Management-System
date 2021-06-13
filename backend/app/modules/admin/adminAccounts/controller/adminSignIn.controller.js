@@ -158,7 +158,7 @@ const adminResetPassword = async (req, res, next) => {
 
 const updateProfile = async (req, res, next) => {
     try {
-        const adminId = req.user._id,
+        const adminId = '60bad47c75036c5288e26b48'
             updateObj = _.pick(req.body, ['firstName', 'lastName', , 'phoneNumber']),
             filter = { _id: adminId },
             update = { $set: updateObj },

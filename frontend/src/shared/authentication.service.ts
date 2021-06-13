@@ -12,7 +12,11 @@ export class AuthenticationService {
   constructor(private httpClient: HttpClient) {}
 
   login(user: any){
-    return this.httpClient.post(this.baseUrl + '/checkadminlogin', {user}); 
+    return this.httpClient.post(this.baseUrl + '/admin/login', user); 
+  }
+
+  admission(user: any){
+    return this.httpClient.post(this.baseUrl + '/parent/admission', {user});
   }
   
 }

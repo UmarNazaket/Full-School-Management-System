@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {StudentService} from '../../../shared/student.service';
 
 @Component({
   selector: 'app-challan-form',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChallanFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(private studentservice: StudentService) { }
 
+  studentfee: any;
   ngOnInit(): void {
+    this.studentservice.getFeeChallan().subscribe((res: any) => {
+      console.table("this is data", res);
+      this.studentfee = res.data.studentFee;
+      // this.subjects = res.data.studentSubjects;
+    });
+  }
+
+  printfn(): void{
+    var printContents = document.getElementById("challanForm").innerHTML;
+     var originalContents = document.body.innerHTML;
+     document.body.innerHTML = printContents;
+     window.print();
+     document.body.innerHTML = originalContents;
   }
 
 }

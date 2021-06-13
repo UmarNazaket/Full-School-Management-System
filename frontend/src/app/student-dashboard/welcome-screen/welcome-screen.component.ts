@@ -3,6 +3,7 @@ import {ChartOptions, ChartType} from "chart.js";
 import {faSearch, faSortAmountDown} from "@fortawesome/free-solid-svg-icons";
 import {Label, monkeyPatchChartJsLegend, monkeyPatchChartJsTooltip, SingleDataSet} from "ng2-charts";
 import {ActivatedRoute, Router} from "@angular/router";
+import {StudentService} from '../../../shared/student.service'
 
 @Component({
   selector: 'app-welcome-screen',
@@ -10,6 +11,7 @@ import {ActivatedRoute, Router} from "@angular/router";
   styleUrls: ['./welcome-screen.component.scss']
 })
 export class WelcomeScreenComponent implements OnInit {
+  subjects: any;
   smallfinalarray = [{ID: 83648,
     teacher_name: "Dr. Uzair Iqbal",
     post_title: "English",
@@ -70,15 +72,49 @@ export class WelcomeScreenComponent implements OnInit {
     {label: 'Total Questions', value: 20, bgClass: 'eup-purple-card'},
   ];
 
-  constructor(private route:ActivatedRoute, private router:Router) { 
+  constructor(private route:ActivatedRoute, private router:Router , private studentservice: StudentService) { 
     monkeyPatchChartJsTooltip();
     monkeyPatchChartJsLegend();
   }
 
+  classlink: any;
   ngOnInit(): void {
+    this.studentservice.getClassLink().subscribe((data: any) => {
+      console.table("this is data", data);
+      this.classlink = data.data.studentOnlineClass;
+    });
+
+    this.studentservice.getSubjects().subscribe((res: any) => {
+      console.table("this is data", res);
+      this.subjects = res.data.studentSubjects;
+    });
   }
   searchCourse(): any{
 
+  }
+  gotoAssessment(post_title: any, courseid:any): void{
+    console.log(post_title, courseid);
+    localStorage.setItem("subjectName", post_title);
+    this.router.navigate(['/student/schemeofstudies'])
+
+    this.studentservice.getschemeofstudies(courseid).subscribe((res: any) => {
+      console.table("this is data", res);
+      localStorage.setItem("schemeOfStudies", JSON.stringify(res.data.studyScheme));
+    });
+
+    this.studentservice.getpaper(courseid).subscribe((res: any) => {
+      console.table("this is data", res.data.onlineExam);
+      // localStorage.setItem("schemeOfStudies", res.data.studyScheme);
+      localStorage.setItem("onlineExam", JSON.stringify(res.data.onlineExam[0]));
+    });
+  }
+
+  getAttendance(subjectId: any): void{
+    this.studentservice.getAttendance(subjectId).subscribe((res: any) => {
+      console.table("this is attendance data ", res);
+      localStorage.setItem("attendancevalues", JSON.stringify(res.data.studentAttendance));
+      this.router.navigate(['/student/attendance'])
+    });
   }
 
 }

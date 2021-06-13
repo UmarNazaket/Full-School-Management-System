@@ -1,0 +1,10 @@
+<div class="root_announcements">
+    <div class="annouce_wrapper">
+        <div class="Heading text-center mt-4">
+            <h2> Announcements </h2>
+        </div>
+        <ul *ngFor="let announcement of announcements; let i = index">
+            <li>{{announcement.announcement}}</li>
+        </ul>
+    </div>
+</div>

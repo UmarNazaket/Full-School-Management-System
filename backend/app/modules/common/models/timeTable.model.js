@@ -7,7 +7,7 @@ var mongoose = require("mongoose"),
 var Schema = mongoose.Schema;
 
 var TimeTableSchema = new Schema({
-    day: { // 1 => Monday 2=> tuesday 3=> wednesday 4=> thursday 5=> friday 6=> saturday 7=> sundat
+    day: { // 1 => Monday 2=> tuesday 3=> wednesday 4=> thursday 5=> friday 6=> saturday 7=> sunday
         type: Number,
         required: true,
     },
@@ -20,12 +20,10 @@ var TimeTableSchema = new Schema({
         required: true,
     },
     class: {
-        type: Schema.Types.ObjectId,
-            ref: 'SchoolClass'
+        type: Number,
     },
     subject: {
-        type: Schema.Types.ObjectId,
-        ref: 'Subjects'
+        type: String,
     }
 
 });
