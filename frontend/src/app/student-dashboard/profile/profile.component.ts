@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
   userId = localStorage.getItem('Id');
+  logindata = JSON.parse(localStorage.getItem('logindata'))
 name: any;
   Reg: any;
   user=  {
@@ -22,6 +23,10 @@ name: any;
    }
 
   ngOnInit(): void {
+    this.name = this.logindata.firstName;
+    this.Reg = this.logindata.email;
+    this.user.user_email = this.logindata.DOB;
+    this.user.contact = this.logindata.phoneNumber;
   }
   changePass(): void{
 

@@ -18,7 +18,8 @@ const _ = require('lodash'),
     SchoolClass = mongoose.model('SchoolClass'),
     Subjects = mongoose.model('Subjects'),
     AdmissionForm = mongoose.model('AdmissionForm'),
-    TimeTable = mongoose.model('TimeTable');
+    TimeTable = mongoose.model('TimeTable'),
+     sgMail = require('@sendgrid/mail');
 
 const getSubAdminUsersListing = async (req, res, next) => {
     try {
@@ -113,17 +114,17 @@ let isEmailExists = async (req, res, next) => {
 let createSubAdminAccount = async (req, res, next) => {
     try {
         let name = _.trim(req.body.data.firstName) + '' + _.trim(req.body.lastName),
-            email = _.trim(req.body.data.email).toLowerCase();
-        // studentId;
+            email = _.trim(req.body.data.email).toLowerCase(),
+        studentId;
         // studentId = _.trim(req.body.data.studentId) || 0;
 
-        // if (parseInt(req.body.data.userType) === 1) {
-        //     email = req.body.RegNo
-        // }
+        if (parseInt(req.body.data.userType) === 1) {
+            email = req.body.data.RegNo
+        }
 
-        // if (parseInt(req.body.userType) === 4) {
-        //     studentId = req.body.studentId
-        // }
+        if (parseInt(req.body.userType) === 4) {
+            studentId = req.body.data.studentId
+        }
         let newAdminUser = new SchoolUser({
             name: name,
             firstName: _.trim(req.body.data.firstName),
@@ -135,8 +136,8 @@ let createSubAdminAccount = async (req, res, next) => {
             email: email,
             status: req.body.data.status || 0,
             DOB: _.trim(req.body.data.DOB),
-            // studentId: studentId,
-            // class: _.trim(req.body.class),
+            studentId: studentId,
+            class: _.trim(req.body.data.class),
             RegNo: _.trim(req.body.data.RegNo),
             schoolName: _.trim(req.body.data.schoolName),
         });
@@ -200,11 +201,12 @@ let getSubAdminDetail = async (req, res, next) => {
 };
 let updateSubAdminAccount = async (req, res, next) => {
     try {
+        console.log(req.body.data)
         let userId = _.trim(req.body.data._id),
-            name = _.trim(req.body.data.firstName) + '' + _.trim(req.body.data.lastName),
+            name = _.trim(req.body.data.firstName) + ' ' + _.trim(req.body.data.lastName),
             email = _.trim(req.body.data.email).toLowerCase();
         if (parseInt(req.body.data.userType) === 1) {
-            email = req.body.RegNo
+            email = req.body.data.RegNo
         }
         let updatedAccount = {
             name: name,
@@ -548,9 +550,9 @@ const getAdmissonList = async (req, res, next) => {
         });
     }
 };
-const getClassList = async (req, res, next) => {
+const getClassListNotInUse = async (req, res, next) => {
     try {
-        let classNo = req.body.class || "5";
+        let classNo = req.body.class || 5;
         let classList = await SchoolClass.find({
             classNo: classNo
         }).populate([{
@@ -571,12 +573,15 @@ const getClassList = async (req, res, next) => {
         let dataList = [];
         classList.map((item, index) => {
             console.log(item);
+            if(item && item.subjects[index] && item.subjects[index].students){
             item.subjects[index].students.map((students) => {
                 if (students.status != 5) {
                     dataList.push(students);
                 }
+            
                 //   console.log( 'here is the cklasssssss',students)
             })
+        }
             //    item.subjects[index].students.length = 0;
             //  delete item.subjects[0]
         })
@@ -595,8 +600,32 @@ const getClassList = async (req, res, next) => {
         });
     }
 };
+const getClassList = async (req, res, next) => {
+    try {
+        let classNo = req.body.class || 5;
+        let classList = await SchoolUser.find({
+            class: classNo
+        }).lean();
+        classList = JSON.parse(JSON.stringify(classList))
+        
+        return responseModule.successResponse(res, {
+            success: 1,
+            message: 'Class list fetched successfully.',
+            data: {
+                classStudent: classList
+            }
+        });
+
+    } catch (err) {
+        winston.error(err);
+        return next({
+            msgCode: 1036
+        });
+    }
+};
 const changeAdmission = async (req, res, next) => {
     try {
+        sgMail.setApiKey('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');
         let status = req.body.status || 1,
             id = req.body.id;
         console.log(status, id);
@@ -637,6 +666,24 @@ const changeAdmission = async (req, res, next) => {
                 "studentId": students._id,
             })
         }
+        sgMail.send({
+            to: admissions.email,
+            from: 'bilal.khursheed@vizteck.com',
+            Subject: 'Admission status',
+            html: `<html><body>
+            <h1>Congratulations</h1>
+            <h3>Here is your login credentials </h3>
+            <p> Parent Email : ${admissions.email} </p>
+            <p> Parent password : 12345678 </p>
+            <p> student Email : ${students.RegNo} </p>
+            <p> student password : 12345678 </p>
+            </body> </html>`
+        }).then(() => {
+            console.log('Email sent');
+
+        }).catch(error => {
+            console.log(error.response.body);
+        });
         // admissions.map((item) =>{
 
         // })
@@ -655,6 +702,7 @@ const changeAdmission = async (req, res, next) => {
         });
     }
 };
+
 module.exports = {
     getSubAdminUsersListing,
     isEmailExists,

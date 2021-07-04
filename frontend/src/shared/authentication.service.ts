@@ -8,6 +8,10 @@ import { BASE_URL } from 'src/model/global';
 export class AuthenticationService {
 
   baseUrl = BASE_URL;
+  id = JSON.parse(localStorage.getItem("logindata"));
+  if(id){
+    id = id._id
+  }
   
   constructor(private httpClient: HttpClient) {}
 
@@ -16,7 +20,7 @@ export class AuthenticationService {
   }
 
   admission(user: any){
-    return this.httpClient.post(this.baseUrl + '/parent/admission', {user});
+    return this.httpClient.post(this.baseUrl + '/parent/admission', {user, id: this.id});
   }
   
 }

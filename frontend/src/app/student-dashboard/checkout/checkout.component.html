@@ -2,29 +2,30 @@
     <div class="leftCard dullbackground">
         <form>
             <div class="bilheading mb-5">Billing Details</div>
-            <input class="form-control form-control-sm mb-3" type="text" id="firstname" name="firstname" placeholder="First Name" required="required" onkeyup="checkoutvalidation()">
-            <input class="form-control form-control-sm mb-3" type="text" id="lastname" name="lastname" placeholder="Last Name" required="required" onkeyup="checkoutvalidation()">
-            <input class="form-control form-control-sm mb-3" type="number" id="phone" name="phone" placeholder="Phone Number" required="required" onkeyup="checkoutvalidation()">
-            <input class="form-control form-control-sm mb-3" type="text" id="address" name="address" placeholder="Address" required="required" onkeyup="checkoutvalidation()">
+            <input class="form-control form-control-sm mb-3" [(ngModel)]="firstName" type="text" id="firstname" name="firstname" placeholder="First Name" required="required" onkeyup="checkoutvalidation()">
+            <input class="form-control form-control-sm mb-3" [(ngModel)]="lastName" type="text" id="lastname" name="lastname" placeholder="Last Name" required="required" onkeyup="checkoutvalidation()">
+            <input class="form-control form-control-sm mb-3" [(ngModel)]="phone" type="number" id="phone" name="phone" placeholder="Phone Number" required="required" onkeyup="checkoutvalidation()">
+            <input class="form-control form-control-sm mb-3" [(ngModel)]="address" type="text" id="address" name="address" placeholder="Address" required="required" onkeyup="checkoutvalidation()">
             
 
             <div class="col-sm-12 mb-3 zeropadd">
                 <div class=" col-md-3 pr-3">
-                    <input class="form-control form-control-sm " type="text" id="city" name="city" placeholder="City" required="required" onkeyup="checkoutvalidation()">
+                    <input class="form-control form-control-sm " [(ngModel)]="city" type="text" id="city" name="city" placeholder="City" required="required" onkeyup="checkoutvalidation()">
                 </div>
                 <div class=" col-md-3 pr-3">
-                    <input class="form-control form-control-sm" type="text" id="state" name="state" placeholder="State" required="required" onkeyup="checkoutvalidation()">
+                    <input class="form-control form-control-sm" [(ngModel)]="state" type="text" id="state" name="state" placeholder="State" required="required" onkeyup="checkoutvalidation()">
                 </div>
                 <div class="col-md-3 pr-3">
-                    <input class="form-control form-control-sm" type="text" id="country" name="country" placeholder="Country" required="required" onkeyup="checkoutvalidation()">
+                    <input class="form-control form-control-sm" [(ngModel)]="country" type="text" id="country" name="country" placeholder="Country" required="required" onkeyup="checkoutvalidation()">
                 </div>
                 <div class="col-md-3">
-                    <input class="form-control form-control-sm" type="number" id="postalcode" name="postalcode" placeholder="Postal Code" required="required" onkeyup="checkoutvalidation()">
+                    <input class="form-control form-control-sm" [(ngModel)]="postalcode" type="number" id="postalcode" name="postalcode" placeholder="Postal Code" required="required" onkeyup="checkoutvalidation()">
                 </div>
             </div>
-            <input class="form-control form-control-sm mb-3" type="text" id="email" name="email" placeholder="Email" required="required" onkeyup="checkoutvalidation()">
+            <input class="form-control form-control-sm mb-3" [(ngModel)]="email" type="text" id="email" name="email" placeholder="Email" required="required" onkeyup="checkoutvalidation()">
             
-            <input class="form-control form-control-sm mb-3" type="text" id="ordernote" name="ordernote" placeholder="Order Notes">
+            <input class="form-control form-control-sm mb-3" [(ngModel)]="orderNote" type="text" id="ordernote" name="ordernote" placeholder="Order Notes">
+            <h6 style="color: rgb(28, 177, 14);">{{message}}</h6>
         </form>
         <div>
             <span id="message"></span>
@@ -43,14 +44,16 @@
             <tbody id="tablerow">
                 <tr>
                     <td data-th="Product">
-                          <h4 class="nomargin opacity">English Book</h4>
+                          <h4 class="nomargin opacity">{{subjectName}}</h4>
                     </td>
-                    <td data-th="Price" class="opacity text-center">Rs. 634</td>
+                    <td data-th="Price" class="opacity text-center">Rs. {{price}}</td>
                     </tr>
             </tbody>
+
+            
             
           </table>
-          <button class="btn btn-danger btn-block" id="submit" onclick="sendcheckoutdata()">PLACE ORDER</button>
+          <button class="btn btn-danger btn-block" id="submit" (click)="sendcheckoutdata()">PLACE ORDER</button>
     </div>
 </div>
 

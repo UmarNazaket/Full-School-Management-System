@@ -67,7 +67,7 @@ deleteSelectedProducts() {
         accept: () => {
             this.products = this.products.filter(val => !this.selectedProducts.includes(val));
             this.selectedProducts = null;
-            this.messageService.add({severity:'success', summary: 'Successful', detail: 'Products Deleted', life: 3000});
+            this.messageService.add({severity:'success', summary: 'Successful', detail: 'Student Deleted', life: 3000});
         }
     });
 }
@@ -85,7 +85,7 @@ deleteProduct(product) {
         accept: () => {
             this.products = this.products.filter(val => val._id !== product._id);
             this.product = {};
-            this.messageService.add({severity:'success', summary: 'Successful', detail: 'Product Deleted', life: 3000});
+            this.messageService.add({severity:'success', summary: 'Successful', detail: 'Student Deleted', life: 3000});
             var data = {
                 studentId: product._id,
                 status: 5
@@ -110,7 +110,7 @@ saveProduct() {
         if (this.product._id) {
             console.log("Going into if")
             this.products[this.findIndexById(this.product._id)] = this.product;                
-            this.messageService.add({severity:'success', summary: 'Successful', detail: 'Product Updated', life: 3000});
+            this.messageService.add({severity:'success', summary: 'Successful', detail: 'Student Details Updated', life: 3000});
             // updating from Database
             this.orderService.editStd(this.product).subscribe((data: any) => {
                 console.table("this is data", data);
@@ -121,7 +121,7 @@ saveProduct() {
             this.product._id = this.createId();
             this.product.image = 'product-placeholder.svg';
             this.products.push(this.product);
-            this.messageService.add({severity:'success', summary: 'Successful', detail: 'Product Created', life: 3000});
+            this.messageService.add({severity:'success', summary: 'Successful', detail: 'Student Created', life: 3000});
         }
 
         this.products = [...this.products];

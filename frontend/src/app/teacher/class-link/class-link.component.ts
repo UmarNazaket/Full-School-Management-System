@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import {StudentService} from '../../../shared/student.service'
+import {StudentService} from '../../../shared/student.service';
+import {Message,MessageService} from 'primeng/api';
 
 @Component({
   selector: 'app-class-link',
   templateUrl: './class-link.component.html',
-  styleUrls: ['./class-link.component.scss']
+  styleUrls: ['./class-link.component.scss'],
+  providers: [MessageService]
 })
 export class ClassLinkComponent implements OnInit {
   classLink: any;
@@ -19,8 +21,9 @@ export class ClassLinkComponent implements OnInit {
 
   startTime: any;
   endTime: any;
+  msgs1: Message[];
 
-  constructor(private studentservice: StudentService) { }
+  constructor(private studentservice: StudentService , private messageService: MessageService) { }
 
   ngOnInit(): void {
     this.subjectId = localStorage.getItem("subjectIdforteacher")
@@ -38,6 +41,13 @@ export class ClassLinkComponent implements OnInit {
     }
     this.studentservice.classLink(data).subscribe((res: any) => {
       console.table("this is data", res);
+      this.startTime = null;
+      this.endTime = null;
+      this.classLink = null;
+
+        this.msgs1 = [
+          { severity: 'success', summary: 'Class Link Added', detail: '' }
+        ];
     });
   }
 

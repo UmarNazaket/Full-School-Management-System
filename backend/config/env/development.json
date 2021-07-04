@@ -23,9 +23,9 @@
         "secret": "*&test&#"
     },
     "mailer": {
-        "SENDGRID_API_KEY": "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",
-        "fromAddress": "info@vizteck.com",
-        "mailerName": "Vizteck"
+        "SENDGRID_API_KEY": "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",
+        "fromAddress": "bilal.khursheed@vizteck.com",
+        "mailerName": "SchoolSystem"
     },
     "userTypes": [
         "user",

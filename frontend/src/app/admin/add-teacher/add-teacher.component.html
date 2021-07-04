@@ -1,0 +1,29 @@
+<div class="container-fluid px-1 py-5 mx-auto">
+    <div class="row d-flex justify-content-center">
+        <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+            <h3>Add a Teacher</h3>
+            
+            <div class="card">
+                <form class="form-card">
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">First name<span class="text-danger"> *</span></label> <input [(ngModel)]="firstname" type="text" id="fname" name="fname" placeholder="Enter first name" required> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Last name<span class="text-danger"> *</span></label> <input [(ngModel)]="lastname" type="text" id="lname" name="lname" placeholder="Enter last name" required> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Email<span class="text-danger"> *</span></label> <input [(ngModel)]="email" type="text" id="email" name="email" placeholder="Email"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Phone number<span class="text-danger"> *</span></label> <input [(ngModel)]="phonenumber" type="number" id="mob" name="mob" placeholder="Phone number"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-12 flex-column d-flex"> <label class="form-control-label px-3">Password<span class="text-danger"> *</span></label> <input [(ngModel)]="pass" type="password" id="pass" name="pass" placeholder="Pass"> </div>
+                    </div>
+                    <!-- <div class="row justify-content-between text-left">
+                        <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3">What would you be using Flinks for?<span class="text-danger"> *</span></label> <input type="text" id="ans" name="ans" placeholder=""> </div>
+                    </div> -->
+                    <div class="row justify-content-center">
+                        <div class="form-group col-sm-6"> <button type="submit" class="btn-block btn-primary" (click)="onsubmit()">Add Admin</button> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

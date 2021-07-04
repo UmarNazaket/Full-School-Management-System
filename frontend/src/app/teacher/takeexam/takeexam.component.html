@@ -1,5 +1,10 @@
 <div class="col-sm-12">
     <div class="col-sm-12 mt-5 mb-4 text-center"><h3>Upload Paper</h3></div>
+    <div style="display: flex; flex-direction: row; justify-content: space-around;">
+        <div>start Time:  <input type="datetime-local" [(ngModel)]="startTime"></div>
+        <div>End Time:  <input type="datetime-local" [(ngModel)]="endTime"></div>
+    </div>
+    <br/>
     <p-fileUpload name="demo[]" url="" (onUpload)="onUpload($event)"
     [accept]= "'.pdf,.doc,.docx,.text,.txt'">
             <ng-template pTemplate="content">

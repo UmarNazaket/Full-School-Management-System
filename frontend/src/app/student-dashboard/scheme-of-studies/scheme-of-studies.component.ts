@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Pipe, PipeTransform } from '@angular/core';
 import {StudentService} from '../../../shared/student.service';
-
+// import {DomSanitizationService} from '@angular/platform-browser';
 import {BrowserModule, DomSanitizer} from '@angular/platform-browser'
+
+// @Pipe({ name: 'safe' })
 
 @Component({
   selector: 'app-scheme-of-studies',
@@ -15,18 +17,22 @@ export class SchemeOfStudiesComponent implements OnInit {
   constructor(private studentservice: StudentService, private sanitizer: DomSanitizer) { 
 
     
-    this.onlineexam = JSON.parse(localStorage.getItem("onlineExam"));
+    // this.onlineexam = JSON.parse(localStorage.getItem("onlineExam"));
     
-    this.link = sanitizer.bypassSecurityTrustResourceUrl(this.onlineexam.link);
+    // this.link = sanitizer.bypassSecurityTrustUrl(this.onlineexam.link);
   
+  }
+  transform(value: any, ...args: any[]) {
+    throw new Error('Method not implemented.');
   }
   onlineexam: any;
   schemeofstudy: any;
   link:any;
 
   ngOnInit(): void {
+    
     this.schemeofstudy = JSON.parse(localStorage.getItem("schemeOfStudies"));
-    this.schemeOdStudies = this.schemeofstudy[0].SchemeOfStudy;
+    (this.schemeofstudy[0].SchemeOfStudy)?this.schemeOdStudies = this.schemeofstudy[0].SchemeOfStudy : this.schemeOdStudies = ''
 
 
     // this.onlineexam = JSON.parse(localStorage.getItem("onlineExam"));

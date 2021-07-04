@@ -102,7 +102,7 @@ let updateFeeChallan = async (req, res, next) => {
 }
 let studentList = async (req, res, next) => {
     try {
-        let classNo = req.body.classes || '7';
+        let classNo = req.body.classes || '07';
             
        let studentList = await SchoolUser.find({
         class: classNo

@@ -4,7 +4,7 @@
             <div class="eup-ov-grid-wrapper">
               <div class="container">
               <!--          Cards wrapper  -->
-                <div class="row">
+                <div class="row" *ngIf="classlink.length != 0">
                   <div class="col-md-12">
                     <div class="eup-ov-cards-heading text-center">
                       <h5>Online Classes Link</h5>
@@ -31,10 +31,10 @@
       
                 <div class="row">
                     <div class="eup-ov-cards-heading text-center col-sm-12">
-                        <h4>Subjects & Attendance</h4>
+                        <h4>Subject Details</h4>
                     </div>
                   <div class="col-sm-12  mb-5 eup-ov-courses-table-wrapper">
-                    <div
+                    <!-- <div
                       style="
                         /*width: 85%;*/
                         margin-left: auto;
@@ -53,10 +53,10 @@
                           border: 0px;
                         "
                       >
-                      </div>
+                      </div> -->
       
                       <!-- 1 Row -->
-                      <div class="pb-2 pt-2" style="border-bottom: #9b9595 1px solid;" *ngFor="let course of subjects; index as i" >
+                      <!-- <div class="pb-2 pt-2" style="border-bottom: #9b9595 1px solid;" *ngFor="let course of subjects; index as i" >
                         <div class="col-sm-12" style="display: flex; flex-direction: row; align-content: space-between; flex-wrap: wrap;">
             <span style="width: 30%; color: #9b9595;">{{course.teacherName}}
           </span>
@@ -80,10 +80,10 @@
                             
                           </div>
                         </div>
-                      </div>
+                      </div> -->
                       
       
-                    </div>
+                    <!-- </div> -->
                   </div>
       
                 </div>
@@ -95,14 +95,16 @@
                           <th>Name</th>
                           <th>Buy Book</th>
                           <th>See Attendance</th>
+                          <th>Take Paper</th>
                       </tr>
                   </ng-template>
                   <ng-template pTemplate="body" let-subject>
                       <tr>
                           <td>{{subject.teacher[0].name}}</td>
                           <td>{{subject.name}}</td>
-                          <td><i class="fa fa-shopping-cart fa-2x" style="color: #389cf2;" routerLink="/student/checkout"></i></td>
-                          <td (click)="gotoAssessment(course.post_title, course._id)"> <i class="fa fa-clipboard fa-2x" style="color: #389cf2;"></i> </td>
+                          <td><i class="pi pi-shopping-cart" style="font-size: 2rem; color: #225670;" (click)="gotoCheckout(subject.price, subject.name)"></i></td>
+                          <td (click)="getAttendance(subject._id)"><i class="pi pi-file" style="font-size: 2rem; color: #225670;"></i></td>
+                          <td (click)="gotoAssessment(subject.name, subject._id)"> <i class="fa fa-clipboard fa-2x" style="color: #225670;"></i> </td>
                       </tr>
                   </ng-template>
               </p-table>

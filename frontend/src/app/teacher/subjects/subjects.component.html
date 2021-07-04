@@ -1,56 +1,17 @@
 <!--        Table wrapper   -->
-<div class="col-sm-12">      
-    <div class="row">
-        <div class="eup-ov-cards-heading text-center col-sm-12">
-            <h4>Subjects & Attendance</h4>
-        </div>
-      <div class="col-sm-12  mb-5 eup-ov-courses-table-wrapper">
-        <div
-          style="
-            /*width: 85%;*/
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 8px;
-            border: #389cf2 solid;
-          "
-        >
-          <div
-            class="text-light pt-3 pb-3"
-            style="
-              display: flex;
-              flex-direction: row;
-              align-content: space-between;
-              background-color: #389cf2;
-              border: 0px;"
-          >
-          </div>
-    
-          <!-- 1 Row -->
-          <div class="pb-2 pt-2" style="border-bottom: #9b9595 1px solid;" *ngFor="let course of smallfinalarray; index as i" >
-            <div class="col-sm-12" style="display: flex; flex-direction: row; align-content: space-between; flex-wrap: wrap;">
-    <span style="width: 30%; color: #9b9595;">{{course.name}}
-    </span>
-    
-              <div class="progres" style="width: 40%; margin-left: auto;" *ngIf="!contentLoader">
-               <!--  -->
-               <i class="fa fa-book fa-2x" (click)="gotodetailspage(course._id)"></i>
-              </div>
-            </div>
-            <div class="col-sm-12" style="display: flex; flex-direction: row; align-content: space-between; flex-wrap: wrap;">
-    <!-- <span style="width: 30%;">
-    <p-skeleton styleClass="p-mb-2" *ngIf="contentLoader"></p-skeleton> 
-    <span *ngIf="contentLoader == false">{{course._id}}</span>
-    </span> -->
-              <div style="width: 40%; margin-left: auto;">
-                <!--  -->
-                Description
-              </div>
-            </div>
-          </div>
-          
-    
+<div class="col-sm-12"> 
+    <div class="col-sm-12 mt-5">
+      <h2 class="text-center">Select a Subject</h2>  
+    </div>
+
+    <div class="cards-list">
+      <div class="card 1" *ngFor="let course of smallfinalarray; index as i" (click)="gotodetailspage(course._id)">
+        <div class="card_image"> <img src="https://res.cloudinary.com/umarnazaket/image/upload/v1616948600/tbel-abuseridze-EtwnK9c5KvQ-unsplash_kqeeoo.jpg" /> </div>
+        <div class="card_title title-white">
+          <p>{{course.name}}</p>
+          <p>Class: {{course.class}}</p>
         </div>
       </div>
-    
-    </div>
+      
+      </div>
     </div>

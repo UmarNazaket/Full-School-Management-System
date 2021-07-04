@@ -18,6 +18,7 @@ export class StudentDashboardComponent implements OnInit {
     if(localStorage.getItem("dataType") != "student"){
       this.router.navigate(['/']);
     }
+    
   }
   logout(): void{
     // Logout Functionality here

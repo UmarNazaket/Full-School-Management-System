@@ -1,7 +1,13 @@
-<p-table [value]="attendance">
+<div class="card mt-5">
+    <h5>Attendance</h5>
+    <p-chart type="bar" [data]="basicData" [options]="basicOptions"></p-chart>
+</div>
+
+
+<p-table [value]="attendances">
   <ng-template pTemplate="header">
       <tr>
-          <th>Code</th>
+          <th>No.</th>
           <th>Date</th>
           <th>Ispresent</th>
       </tr>
@@ -14,3 +20,5 @@
       </tr>
   </ng-template>
 </p-table>
+
+
