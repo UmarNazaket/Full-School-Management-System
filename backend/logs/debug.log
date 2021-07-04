@@ -18650,3 +18650,41 @@ CastError: Cast to ObjectId failed for value "0" (type number) at path "students
 [2021-06-13 12:52:17] [32minfo[39m:  {"studentOnlineClass":[]} 
 [2021-06-13 13:46:46] [31merror[39m:  mongoose connection disconnected 
 [2021-06-13 13:47:29] [32minfo[39m:  mongoose connection open to mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-04 09:29:12] [32minfo[39m:  loaded config file:development 
+[2021-07-04 09:29:12] [32minfo[39m:  Try to Connect MongoDb: mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-04 09:29:15] [32minfo[39m:  mongoose connection open to mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-04 09:29:15] [32minfo[39m:  models are loading ... 
+[2021-07-04 09:29:15] [32minfo[39m:  app/modules/admin/adminAccounts/models/schoolUser.model.js 
+[2021-07-04 09:29:15] [32minfo[39m:  app/modules/common/models/admissionForm.model.js 
+[2021-07-04 09:29:15] [32minfo[39m:  app/modules/common/models/announcements.model.js 
+[2021-07-04 09:29:15] [32minfo[39m:  app/modules/common/models/attendance.model.js 
+[2021-07-04 09:29:15] [32minfo[39m:  app/modules/common/models/class.model.js 
+[2021-07-04 09:29:15] [32minfo[39m:  app/modules/common/models/fee.model.js 
+[2021-07-04 09:29:15] [32minfo[39m:  app/modules/common/models/onlineClass.model.js 
+[2021-07-04 09:29:15] [32minfo[39m:  app/modules/common/models/onlineExam.model.js 
+[2021-07-04 09:29:15] [32minfo[39m:  app/modules/common/models/studentMarks.model.js 
+[2021-07-04 09:29:15] [32minfo[39m:  app/modules/common/models/subjects.model.js 
+[2021-07-04 09:29:15] [32minfo[39m:  app/modules/common/models/timeTable.model.js 
+[2021-07-04 09:29:15] [32minfo[39m:  app/modules/socketIo/api/models/online_user.model.js 
+[2021-07-04 09:29:16] [32minfo[39m:  error messages are loading ... 
+[2021-07-04 09:29:16] [32minfo[39m:  app/modules/admin/adminAccounts/error/adminUser.errors.json is loaded 
+[2021-07-04 09:29:16] [32minfo[39m:  app/modules/employee/error/employee.errors.json is loaded 
+[2021-07-04 09:29:16] [32minfo[39m:  app/modules/parent/error/parent.errors.json is loaded 
+[2021-07-04 09:29:16] [32minfo[39m:  app/modules/student/error/studentuser.errors.json is loaded 
+[2021-07-04 09:29:16] [32minfo[39m:  app/modules/teacher/error/teacheruser.errors.json is loaded 
+[2021-07-04 09:29:16] [32minfo[39m:  routes are loading ... 
+[2021-07-04 09:29:17] [32minfo[39m:  app/modules/admin/adminAccounts/routes/adminSignIn.routes.js is loaded 
+[2021-07-04 09:29:17] [32minfo[39m:  app/modules/admin/adminAccounts/routes/adminuser.routes.js is loaded 
+[2021-07-04 09:29:17] [32minfo[39m:  app/modules/employee/routes/employee.routes.js is loaded 
+[2021-07-04 09:29:17] [32minfo[39m:  app/modules/parent/routes/parent.routes.js is loaded 
+[2021-07-04 09:29:17] [32minfo[39m:  app/modules/student/routes/studentuser.routes.js is loaded 
+[2021-07-04 09:29:17] [32minfo[39m:  app/modules/teacher/routes/teacheruser.routes.js is loaded 
+[2021-07-04 09:29:19] [32minfo[39m:  Agenda Started. 
+[2021-07-04 09:32:00] [32minfo[39m:  {"_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","phoneNumber":90078601,"email":"ff-07-1222","userType":1,"DOB":"22-feb-1997","schoolName":"Public School","status":1,"updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z"} 
+[2021-07-04 09:32:00] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects" 
+CastError: Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects"
+    at model.Query.exec (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-04 09:32:00] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 09:32:01] [32minfo[39m:  {"studentOnlineClass":[]} 

@@ -1672,3 +1672,9 @@ CastError: Cast to ObjectId failed for value "0" (type number) at path "students
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
 [2021-06-13 12:52:16] [31merror[39m:  {"msgCode":1037} 
 [2021-06-13 13:46:46] [31merror[39m:  mongoose connection disconnected 
+[2021-07-04 09:32:00] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects" 
+CastError: Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects"
+    at model.Query.exec (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-04 09:32:00] [31merror[39m:  {"msgCode":1037} 
