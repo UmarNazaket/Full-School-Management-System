@@ -23157,6 +23157,7 @@ ReferenceError: onlineExam is not defined
 [2021-07-04 12:13:00] [32minfo[39m:  app/modules/student/routes/studentuser.routes.js is loaded 
 [2021-07-04 12:13:00] [32minfo[39m:  app/modules/teacher/routes/teacheruser.routes.js is loaded 
 [2021-07-04 12:13:02] [32minfo[39m:  Agenda Started. 
+<<<<<<< HEAD
 [2021-07-04 12:19:22] [32minfo[39m:  loaded config file:development 
 [2021-07-04 12:19:22] [32minfo[39m:  Try to Connect MongoDb: mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
 [2021-07-04 12:19:25] [32minfo[39m:  mongoose connection open to mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
@@ -23419,3 +23420,464 @@ ReferenceError: student is not defined
 [2021-07-04 15:29:28] [32minfo[39m:  {"studentSubjects":[{"_id":"60c503b6a28e211f14e1aa7d","teacher":[{"_id":"60c50268a28e211f14e1aa7b","phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","name":"umer","firstName":"umer","lastName":"Ahmad","fatherName":"nawaz khan","password":"$2a$10$fHWVwc/DtX06n7tA1nFT4uBek0ZhNu7UZ6D5Quc6iCX5.pPc1aKRS","userType":2,"email":"teacher1@gmail.com","class":"","RegNo":"","updatedAt":"2021-06-12T18:52:24.193Z","createdAt":"2021-06-12T18:52:24.193Z","__v":0}],"name":"English","price":"500","subjectName":"English","teacherName":"umerAhmad"},{"_id":"60c64194fd1f6630f0054385","teacher":[{"_id":"60c6678344dd522e68d3be6b","phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","name":"fiazan","firstName":"fiazan","lastName":"Ahmad","fatherName":"khan","password":"$2a$10$fNhH.wjjqL07m3o0dTaKz.hHF4rQMhJglE7275PbZj1lHcrlTzhR6","userType":2,"email":"teacher2@gmail.com","class":"","RegNo":"","updatedAt":"2021-06-13T20:16:03.596Z","createdAt":"2021-06-13T20:16:03.596Z","__v":0}],"name":"Urdu","price":"900","subjectName":"Urdu","teacherName":"fiazanAhmad"},{"_id":"60c641c9fd1f6630f0054387","teacher":[{"_id":"60c50268a28e211f14e1aa7b","phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","name":"umer","firstName":"umer","lastName":"Ahmad","fatherName":"nawaz khan","password":"$2a$10$fHWVwc/DtX06n7tA1nFT4uBek0ZhNu7UZ6D5Quc6iCX5.pPc1aKRS","userType":2,"email":"teacher1@gmail.com","class":"","RegNo":"","updatedAt":"2021-06-12T18:52:24.193Z","createdAt":"2021-06-12T18:52:24.193Z","__v":0}],"name":"Math","price":"300","subjectName":"Math","teacherName":"umerAhmad"},{"_id":"60c641d4fd1f6630f0054388","teacher":[{"_id":"60c667d844dd522e68d3be6c","phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","name":"abdullah","firstName":"abdullah","lastName":"Ahmad","fatherName":"khan","password":"$2a$10$N29cs7hwWCrnqbrksO4sbuqAr6B96i6o5tSSzIuGGlH1C7NBN7Qhu","userType":2,"email":"teacher3@gmail.com","class":"","RegNo":"","updatedAt":"2021-06-13T20:17:28.107Z","createdAt":"2021-06-13T20:17:28.107Z","__v":0}],"name":"Science","price":"400","subjectName":"Science","teacherName":"abdullahAhmad"}]} 
 [2021-07-04 15:29:29] [32minfo[39m:  {"studentOnlineClass":[{"_id":"60c72ba7819a6b3968a62176","day":2,"startTime":" 10:10 AM","endTime":"05:11 AM","link":"Https://teams.com","teacherId":"60a75be05b90242c1c92f8fd","updatedAt":"2021-06-14T10:12:55.985Z","createdAt":"2021-06-14T10:12:55.985Z","__v":0,"subjectName":"English"},{"_id":"60e14588bf876926c892a662","day":2,"startTime":" 10:22 AM","endTime":"10:22 AM","link":"https://www.microsoft.com/en-ww/microsoft-teams/group-chat-software","teacherId":"60e14588bf876926c892a661","updatedAt":"2021-07-04T05:22:16.870Z","createdAt":"2021-07-04T05:22:16.870Z","__v":0,"subjectName":"English"}]} 
 [2021-07-04 15:29:54] [32minfo[39m:  {"StudentPaper":{"isSubmitted":true,"_id":"60e18da265f1c626d07cf165","link":"https://localhost:3000/","submissionDate":"123456","student":"60c5025aa28e211f14e1aa7a","subjectId":"60c503b6a28e211f14e1aa7d","updatedAt":"2021-07-04T10:29:54.406Z","createdAt":"2021-07-04T10:29:54.406Z","__v":0}} 
+=======
+[2021-07-04 12:13:04] [32minfo[39m:  loaded config file:development 
+[2021-07-04 12:13:04] [32minfo[39m:  Try to Connect MongoDb: mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-04 12:13:06] [32minfo[39m:  mongoose connection open to mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-04 12:13:06] [32minfo[39m:  models are loading ... 
+[2021-07-04 12:13:06] [32minfo[39m:  app/modules/admin/adminAccounts/models/schoolUser.model.js 
+[2021-07-04 12:13:06] [32minfo[39m:  app/modules/common/models/admissionForm.model.js 
+[2021-07-04 12:13:06] [32minfo[39m:  app/modules/common/models/announcements.model.js 
+[2021-07-04 12:13:06] [32minfo[39m:  app/modules/common/models/attendance.model.js 
+[2021-07-04 12:13:06] [32minfo[39m:  app/modules/common/models/class.model.js 
+[2021-07-04 12:13:06] [32minfo[39m:  app/modules/common/models/fee.model.js 
+[2021-07-04 12:13:06] [32minfo[39m:  app/modules/common/models/onlineClass.model.js 
+[2021-07-04 12:13:06] [32minfo[39m:  app/modules/common/models/onlineExam.model.js 
+[2021-07-04 12:13:06] [32minfo[39m:  app/modules/common/models/orders.model.js 
+[2021-07-04 12:13:06] [32minfo[39m:  app/modules/common/models/studentMarks.model.js 
+[2021-07-04 12:13:06] [32minfo[39m:  app/modules/common/models/subjects.model.js 
+[2021-07-04 12:13:06] [32minfo[39m:  app/modules/common/models/timeTable.model.js 
+[2021-07-04 12:13:06] [32minfo[39m:  app/modules/socketIo/api/models/online_user.model.js 
+[2021-07-04 12:13:07] [32minfo[39m:  error messages are loading ... 
+[2021-07-04 12:13:07] [32minfo[39m:  app/modules/admin/adminAccounts/error/adminUser.errors.json is loaded 
+[2021-07-04 12:13:07] [32minfo[39m:  app/modules/employee/error/employee.errors.json is loaded 
+[2021-07-04 12:13:07] [32minfo[39m:  app/modules/parent/error/parent.errors.json is loaded 
+[2021-07-04 12:13:07] [32minfo[39m:  app/modules/student/error/studentuser.errors.json is loaded 
+[2021-07-04 12:13:07] [32minfo[39m:  app/modules/teacher/error/teacheruser.errors.json is loaded 
+[2021-07-04 12:13:07] [32minfo[39m:  routes are loading ... 
+[2021-07-04 12:13:08] [32minfo[39m:  app/modules/admin/adminAccounts/routes/adminSignIn.routes.js is loaded 
+[2021-07-04 12:13:08] [32minfo[39m:  app/modules/admin/adminAccounts/routes/adminuser.routes.js is loaded 
+[2021-07-04 12:13:08] [32minfo[39m:  app/modules/employee/routes/employee.routes.js is loaded 
+[2021-07-04 12:13:08] [32minfo[39m:  app/modules/parent/routes/parent.routes.js is loaded 
+[2021-07-04 12:13:08] [32minfo[39m:  app/modules/student/routes/studentuser.routes.js is loaded 
+[2021-07-04 12:13:08] [32minfo[39m:  app/modules/teacher/routes/teacheruser.routes.js is loaded 
+[2021-07-04 12:13:10] [32minfo[39m:  Agenda Started. 
+[2021-07-04 12:13:16] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:13:47] [31merror[39m:  student is not defined 
+ReferenceError: student is not defined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:90:13)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:13:47] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:13:47] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:13:56] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:13:58] [31merror[39m:  student is not defined 
+ReferenceError: student is not defined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:90:13)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:13:58] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:14:02] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:14:04] [31merror[39m:  student is not defined 
+ReferenceError: student is not defined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:90:13)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:14:04] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:14:10] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:14:11] [31merror[39m:  student is not defined 
+ReferenceError: student is not defined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:90:13)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:14:11] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:14:12] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:20:08] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:20:12] [31merror[39m:  student is not defined 
+ReferenceError: student is not defined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:90:13)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:20:12] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:20:24] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:20:25] [31merror[39m:  student is not defined 
+ReferenceError: student is not defined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:90:13)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:20:25] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:23:28] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:23:35] [31merror[39m:  student is not defined 
+ReferenceError: student is not defined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:90:13)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:23:35] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:23:36] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:24:14] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:24:18] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:24:20] [31merror[39m:  student is not defined 
+ReferenceError: student is not defined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:90:13)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:24:20] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:24:20] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:24:29] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:25:07] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:25:08] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:25:09] [31merror[39m:  student is not defined 
+ReferenceError: student is not defined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:90:13)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:25:09] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:25:09] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:25:57] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:26:01] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:26:03] [31merror[39m:  Cannot read property 'studentId' of undefined 
+TypeError: Cannot read property 'studentId' of undefined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:88:40)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:26:03] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:26:03] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:26:07] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:26:09] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:26:10] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:26:12] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:26:14] [31merror[39m:  Cannot read property 'studentId' of undefined 
+TypeError: Cannot read property 'studentId' of undefined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:88:40)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:26:14] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:26:14] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:26:30] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:27:34] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:27:39] [31merror[39m:  Cannot read property 'studentId' of undefined 
+TypeError: Cannot read property 'studentId' of undefined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:88:40)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:27:39] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:27:40] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:28:07] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:28:18] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:28:21] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:28:33] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:28:35] [31merror[39m:  Cannot read property 'studentId' of undefined 
+TypeError: Cannot read property 'studentId' of undefined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:88:40)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:28:35] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:28:35] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:29:05] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:29:08] [31merror[39m:  Cannot read property 'studentId' of undefined 
+TypeError: Cannot read property 'studentId' of undefined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:88:40)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:29:08] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:29:08] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:29:28] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:29:32] [31merror[39m:  Cannot read property 'studentId' of undefined 
+TypeError: Cannot read property 'studentId' of undefined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:88:40)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:29:32] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:29:32] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:33:07] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:33:08] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:33:10] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:33:10] [32minfo[39m:  {"studentMarks":{"firstTerm":[{"totalMarks":"100","obtMarks":"80","subjectName":"English"},{"totalMarks":"100","obtMarks":"40","subjectName":"Urdu"},{"totalMarks":"100","obtMarks":"90","subjectName":"Math"},{"totalMarks":"100","obtMarks":"80","subjectName":"Science"}],"secondTerm":[{"totalMarks":"100","obtMarks":"60","subjectName":"English"},{"totalMarks":"100","obtMarks":"60","subjectName":"Urdu"},{"totalMarks":"100","obtMarks":"50","subjectName":"Math"},{"totalMarks":"100","obtMarks":"50","subjectName":"Science"}],"thirdTerm":[{"totalMarks":"100","obtMarks":"90","subjectName":"English"},{"totalMarks":"100","obtMarks":"66","subjectName":"Urdu"},{"totalMarks":"100","obtMarks":"69","subjectName":"Math"},{"totalMarks":"100","obtMarks":"75","subjectName":"Science"}]}} 
+[2021-07-04 12:35:00] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:35:02] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:35:02] [32minfo[39m:  {"studentMarks":{"firstTerm":[{"totalMarks":"100","obtMarks":"80","subjectName":"English"},{"totalMarks":"100","obtMarks":"40","subjectName":"Urdu"},{"totalMarks":"100","obtMarks":"90","subjectName":"Math"},{"totalMarks":"100","obtMarks":"80","subjectName":"Science"}],"secondTerm":[{"totalMarks":"100","obtMarks":"60","subjectName":"English"},{"totalMarks":"100","obtMarks":"60","subjectName":"Urdu"},{"totalMarks":"100","obtMarks":"50","subjectName":"Math"},{"totalMarks":"100","obtMarks":"50","subjectName":"Science"}],"thirdTerm":[{"totalMarks":"100","obtMarks":"90","subjectName":"English"},{"totalMarks":"100","obtMarks":"66","subjectName":"Urdu"},{"totalMarks":"100","obtMarks":"69","subjectName":"Math"},{"totalMarks":"100","obtMarks":"75","subjectName":"Science"}]}} 
+[2021-07-04 12:35:35] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:35:37] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:35:37] [32minfo[39m:  {"studentMarks":{"firstTerm":[{"totalMarks":"100","obtMarks":"80","subjectName":"English"},{"totalMarks":"100","obtMarks":"40","subjectName":"Urdu"},{"totalMarks":"100","obtMarks":"90","subjectName":"Math"},{"totalMarks":"100","obtMarks":"80","subjectName":"Science"}],"secondTerm":[{"totalMarks":"100","obtMarks":"60","subjectName":"English"},{"totalMarks":"100","obtMarks":"60","subjectName":"Urdu"},{"totalMarks":"100","obtMarks":"50","subjectName":"Math"},{"totalMarks":"100","obtMarks":"50","subjectName":"Science"}],"thirdTerm":[{"totalMarks":"100","obtMarks":"90","subjectName":"English"},{"totalMarks":"100","obtMarks":"66","subjectName":"Urdu"},{"totalMarks":"100","obtMarks":"69","subjectName":"Math"},{"totalMarks":"100","obtMarks":"75","subjectName":"Science"}]}} 
+[2021-07-04 12:38:12] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:44:33] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:49:37] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:49:44] [32minfo[39m:  {"studentMarks":{"firstTerm":[],"secondTerm":[],"thirdTerm":[]}} 
+[2021-07-04 12:55:44] [32minfo[39m:  {"studentsList":[[{"phoneNumber":90078601,"status":1,"DOB":"22-feb-1997","studentId":[],"schoolName":"Public School","_id":"60c505913095fd2e844c2b73","name":"BilalAhmad","firstName":"Bilal","lastName":"Ahmad","fatherName":"","email":"ff-07-1222","password":"$2a$10$WPAnEp92JUdi7tFwG9d0n.IkXQlwhPnYO.LPwLSIw93MaXo23TT5y","userType":1,"class":7,"RegNo":"ff-07-1222","updatedAt":"2021-07-01T16:19:22.606Z","createdAt":"2021-06-12T19:05:53.626Z","__v":0}]]} 
+[2021-07-04 12:55:48] [32minfo[39m:  {"studentMarks":{"firstTerm":[{"totalMarks":"100","obtMarks":"80","subjectName":"English"},{"totalMarks":"100","obtMarks":"40","subjectName":"Urdu"},{"totalMarks":"100","obtMarks":"90","subjectName":"Math"},{"totalMarks":"100","obtMarks":"80","subjectName":"Science"}],"secondTerm":[{"totalMarks":"100","obtMarks":"60","subjectName":"English"},{"totalMarks":"100","obtMarks":"60","subjectName":"Urdu"},{"totalMarks":"100","obtMarks":"50","subjectName":"Math"},{"totalMarks":"100","obtMarks":"50","subjectName":"Science"}],"thirdTerm":[{"totalMarks":"100","obtMarks":"90","subjectName":"English"},{"totalMarks":"100","obtMarks":"66","subjectName":"Urdu"},{"totalMarks":"100","obtMarks":"69","subjectName":"Math"},{"totalMarks":"100","obtMarks":"75","subjectName":"Science"}]}} 
+>>>>>>> 9ed2070e44114923cbc0fe65377e1208cb56b293
