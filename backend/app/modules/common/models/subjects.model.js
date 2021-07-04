@@ -25,6 +25,10 @@ var SubjectSchema = new Schema({
     class: {
         type: Number,
     },
+    price: {
+        type: String,
+        default : "300"
+    },
     SchemeOfStudy: {
         type: String,
         default: ''

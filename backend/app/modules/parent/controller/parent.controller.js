@@ -55,10 +55,10 @@ let generateStudentAdmission = async (req, res, next) => {
 }
 let listofBachas = async (req, res, next) => {
     try {
-        let parentId = '60bad47c75036c5288e26b48'; //req.body.parentId || 0;
+        let parentId = req.body.parentId || 0;
 
         let childs = await SchoolUser.find({
-            _id: parentId
+            _id: ObjectId(parentId)
         }).populate({
             path: 'studentId',
             module: 'SchoolUser'
@@ -85,7 +85,7 @@ let listofBachas = async (req, res, next) => {
 let viewStudentRecord = async (req, res, next) => {
     try {
         //  let parentId =  '60b91cc5e614a45214a0ec18'; //req.body.parentId || 0;
-        let studentId = '60bad45c75036c5288e26b46', //req.body.studentId,
+        let studentId = (req.body.data.studentId) || '60c505913095fd2e844c2b73';
             status = req.body.data.status || 0,
             student;
         console.log(studentId, status)
@@ -94,7 +94,7 @@ let viewStudentRecord = async (req, res, next) => {
         let secondTerm = [];
         let thirdTerm = [];
         if (status == 0) {
-            let studentId = '60bad45c75036c5288e26b46'; // (req.user._id) || 0;
+            // let studentId = (req.body._id) || '60c505913095fd2e844c2b73';
             student = await StudentFee.find({
                 student: studentId
             }).populate({

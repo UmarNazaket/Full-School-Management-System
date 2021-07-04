@@ -18,7 +18,7 @@ const _ = require('lodash'),
 
 let viewTimeTable = async (req, res, next) => {
     try {
-        let teacherId = (req.user._id) || 0,
+        let teacherId = (req.body.teacherId) || 0,
 
             teacherTimeTable = await TimeTable.find({}).populate([{
                 path: 'subject',
@@ -69,13 +69,12 @@ let viewTimeTable = async (req, res, next) => {
 let fetchTeacherSubjects = async (req, res, next) => {
     try {
         let teacherId = (req.body.teacherId) || 0;
-        // console.log('here is the student id', studentId)
         let teacherSubjects = await Subjects.find({
             teacher: {
                 $in: teacherId
             },
 
-        }).select(['name'])
+        }).select(['name', 'class'])
         if (teacherSubjects) {
 
             return responseModule.successResponse(res, {
@@ -144,7 +143,7 @@ let addOnlineClass = async (req, res, next) => {
 }
 let fetchOnlineClass = async (req, res, next) => {
     try {
-        let teacherId = (req.user._id) || 0;
+        let teacherId = (req.body.teacherId) || 0;
         // console.log('here is the student id', studentId)
         let teacherOnlineClass = await OnlineClass.find({
             teacherId: teacherId
@@ -172,7 +171,7 @@ let fetchOnlineClass = async (req, res, next) => {
 }
 let fetchOnlineClassById = async (req, res, next) => {
     try {
-        let teacherId = (req.user._id) || 0;
+        let teacherId = (req.body.teacherId) || 0;
         let _id = (req.params.id) || 0;
         // console.log('here is the student id', studentId)
         let teacherOnlineClass = await OnlineClass.find({
@@ -202,7 +201,7 @@ let fetchOnlineClassById = async (req, res, next) => {
 }
 let fetchStudentBySubject = async (req, res, next) => {
     try {
-        let subjectId = (req.body.id) || 0;
+        let subjectId = (req.body.subjectId) || 0;
 
         console.log('here is the student id', subjectId)
         let studentList = await Subjects.find({
@@ -351,7 +350,7 @@ let addOnlineExam = async (req, res, next) => {
             classId = _.trim(req.body.classId),
             subject = _.trim(req.body.subject),
             link = _.trim(req.body.link),
-            teacherId = _.trim((req.user._id));
+            teacherId = _.trim((req.body.teacherId));
 
 
         // startTime = moment.unix(startTime).format('HH:MM');

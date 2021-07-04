@@ -71,6 +71,7 @@ import { AssessmentsComponent } from './student-dashboard/assessments/assessment
 import { SchemeOfStudiesComponent } from './student-dashboard/scheme-of-studies/scheme-of-studies.component';
 import { AdmissionFormsComponent } from './admin/admission-forms/admission-forms.component';
 import { AddSubjectClassComponent } from './admin/add-subject-class/add-subject-class.component';
+import { AddTeacherComponent } from './admin/add-teacher/add-teacher.component';
 
 @NgModule({
   declarations: [
@@ -109,7 +110,8 @@ import { AddSubjectClassComponent } from './admin/add-subject-class/add-subject-
     AssessmentsComponent,
     SchemeOfStudiesComponent,
     AdmissionFormsComponent,
-    AddSubjectClassComponent
+    AddSubjectClassComponent,
+    AddTeacherComponent
   ],
   imports: [
     ConfirmDialogModule,

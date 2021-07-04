@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class TakeexamComponent implements OnInit {
   uploadedFiles: any[] = [];
 
+  startTime: any;
+  endTime: any;
+
   constructor() { }
 
   ngOnInit(): void {

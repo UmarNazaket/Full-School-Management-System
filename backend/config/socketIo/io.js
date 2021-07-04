@@ -28,7 +28,7 @@ module.exports = function(server) {
         transports: ['websocket', 'polling']
     });
 
-    adapter = mongoAdapter(config.mongodb.uri);
+    adapter = mongoAdapter(config.mongodb.uri1);
     io.adapter(adapter);
 
     // let redisClient = redis.createClient({ host: config.redis.host, port: config.redis.port });
@@ -47,7 +47,7 @@ module.exports = function(server) {
         key: 'connect.sid', // connect.sid
         secret: config.session.secret,
         store: mongoStore.create({
-            mongoUrl: config.mongodb.host + config.mongodb.db_name, //YOUR MONGODB URL
+            mongoUrl: config.mongodb.host1 + config.mongodb.db_name, //YOUR MONGODB URL
             // ttl: 14 * 24 * 60 * 60,
             autoRemove: 'native' 
         }),

@@ -51,7 +51,7 @@ var UserSchema = new Schema({
         default: null
     },
     class: {
-        type: String
+        type: Number
     },
     studentId: [{
         type: Schema.Types.ObjectId,
