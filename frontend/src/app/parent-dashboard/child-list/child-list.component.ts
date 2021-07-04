@@ -25,7 +25,7 @@ export class ChildListComponent implements OnInit {
   getResult(stdId: any): void{
     this.student.getResultP({studentId: stdId , status: 1}).subscribe((res: any) => {
       console.table("this is data", res);
-      localStorage.setItem("Result", JSON.stringify(res.data.student));
+      localStorage.setItem("Result", JSON.stringify(res.data.studentMarks));
     });
     // 1
     this.router.navigate(['/parent/result']);
@@ -33,7 +33,7 @@ export class ChildListComponent implements OnInit {
   getFee(stdId: any): void{
     this.student.getChallanP({studentId: stdId , status: 0}).subscribe((res: any) => {
       console.table("this is data", res);
-     localStorage.setItem("feeChallan",JSON.stringify(res.data.student));
+     localStorage.setItem("feeChallan",JSON.stringify(res.data.studentFee));
     });
     // 0
     this.router.navigate(['/parent/fee']);

@@ -1,9 +1,17 @@
 <div class="body_wrapper">
+    
     <div class="result_heading text-center text-light pt-3 mb-3">
         <h3>Result Card</h3>
+        
     </div> 
-    <h5 class="text-light pl-3">First Semester Result</h5>
-    <table class="container">
+    <div class="col-sm-12">
+        <button class="mt-4 mb-4 px-5 btn btn-light" (click)="showTerm(1)">First Term</button>
+        <button class="mt-4 mb-4 ml-5 px-5 mr-5 btn btn-light" (click)="showTerm(2)">Second Term</button>
+        <button class="mt-4 mb-4 px-5 btn btn-light" (click)="showTerm(3)">Final Term</button>
+    </div>
+    <div  id="result">
+    <h5 class="text-light pl-3 pt-5" *ngIf="IsFirstTerm">First Term Result</h5>
+    <table class="container" *ngIf="IsFirstTerm">
         <thead>
             <tr>
                 <th><h1>Subject</h1></th>
@@ -12,7 +20,7 @@
                 <th><h1>Percentage</h1></th>
             </tr>
         </thead>
-        <tbody>
+        <tbody >
             <tr *ngFor="let firstsem of firstTerm">
                 <td>{{firstsem.subjectName}}</td>
                 <td>{{firstsem.totalMarks}}</td>
@@ -22,8 +30,8 @@
         </tbody>
     </table>
 
-    <h5 class="text-light pl-3 pt-5">Second Semester Result</h5>
-    <table class="container">
+    <h5 class="text-light pl-3 pt-5" *ngIf="IsSecondTerm">Second Term Result</h5>
+    <table class="container" *ngIf="IsSecondTerm">
         <thead>
             <tr>
                 <th><h1>Subject</h1></th>
@@ -33,17 +41,17 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let firstsem of secondTerm">
-                <td>{{firstsem.subjectName}}</td>
-                <td>{{firstsem.totalMarks}}</td>
-                <td>{{firstsem.obtMarks}}</td>
-                <td>{{( firstsem.obtMarks / firstsem.totalMarks)*100}}%</td>
+            <tr *ngFor="let secondTerm of secondTerm">
+                <td>{{secondTerm.subjectName}}</td>
+                <td>{{secondTerm.totalMarks}}</td>
+                <td>{{secondTerm.obtMarks}}</td>
+                <td>{{( secondTerm.obtMarks / secondTerm.totalMarks)*100}}%</td>
             </tr>
         </tbody>
     </table>
 
-    <h5 class="text-light pl-3 pt-5">Final Semester Result</h5>
-    <table class="container">
+    <h5 class="text-light pl-3 pt-5" *ngIf="IsThirdTerm">Final Term Result</h5>
+    <table class="container" *ngIf="IsThirdTerm">
         <thead>
             <tr>
                 <th><h1>Subject</h1></th>
@@ -53,12 +61,18 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let firstsem of thirdTerm">
-                <td>{{firstsem.subjectName}}</td>
-                <td>{{firstsem.totalMarks}}</td>
-                <td>{{firstsem.obtMarks}}</td>
-                <td>{{( firstsem.obtMarks / firstsem.totalMarks)*100}}%</td>
+            <tr *ngFor="let finalTerm of thirdTerm">
+                <td>{{finalTerm.subjectName}}</td>
+                <td>{{finalTerm.totalMarks}}</td>
+                <td>{{finalTerm.obtMarks}}</td>
+                <td>{{( finalTerm.obtMarks / finalTerm.totalMarks)*100}}%</td>
             </tr>
         </tbody>
     </table>
+</div>
+</div>
+<div class="col-sm-6 offset-sm-3 mt-4 text-center" *ngIf="IsFirstTerm || IsSecondTerm || IsThirdTerm">
+    <button type="button" class="btn btn-success btn-lg btn-block" (click)=printfn()>
+        Print   <span class="glyphicon glyphicon-chevron-right"></span>
+    </button>
 </div>

@@ -11,6 +11,7 @@ export class FeeComponent implements OnInit {
 
   ngOnInit(): void {
     this.challan = JSON.parse(localStorage.getItem("feeChallan"))
+    console.log(this.challan)
   }
 
 }

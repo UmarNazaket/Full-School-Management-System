@@ -22,6 +22,7 @@ import { ChallanFormComponent } from './student-dashboard/challan-form/challan-f
 import { CheckoutComponent } from './student-dashboard/checkout/checkout.component';
 import { ProfileComponent } from './student-dashboard/profile/profile.component';
 import { ResultComponent } from './student-dashboard/result/result.component';
+import { ResultCComponent } from './parent-dashboard/result/result.component';
 import { SchemeOfStudiesComponent } from './student-dashboard/scheme-of-studies/scheme-of-studies.component';
 import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component';
 import { TimetableComponent } from './student-dashboard/timetable/timetable.component';
@@ -102,7 +103,7 @@ const routes: Routes = [{
     },
     {
       path: "result",
-      component: ResultComponent
+      component: ResultCComponent
     },
     {
       path: "attendance",
