@@ -3028,3 +3028,83 @@ ReferenceError: onlineExam is not defined
     at addAttendance (E:\vizteck-work\Full-School-Management-System\backend\app\modules\teacher\controller\teacheruser.controller.js:276:9)
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
 [2021-07-04 10:51:09] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 11:48:32] [31merror[39m:  Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
+Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (E:\Separate Projects\Full-School-Management-System\backend\node_modules\bson\lib\bson\objectid.js:59:11)
+    at ObjectID (E:\Separate Projects\Full-School-Management-System\backend\node_modules\bson\lib\bson\objectid.js:40:43)
+    at fetchStudentBySubject (E:\Separate Projects\Full-School-Management-System\backend\app\modules\teacher\controller\teacheruser.controller.js:208:18)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+[2021-07-04 11:48:32] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 11:48:49] [31merror[39m:  Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
+Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (E:\Separate Projects\Full-School-Management-System\backend\node_modules\bson\lib\bson\objectid.js:59:11)
+    at ObjectID (E:\Separate Projects\Full-School-Management-System\backend\node_modules\bson\lib\bson\objectid.js:40:43)
+    at fetchStudentBySubject (E:\Separate Projects\Full-School-Management-System\backend\app\modules\teacher\controller\teacheruser.controller.js:208:18)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+[2021-07-04 11:48:49] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 11:49:42] [31merror[39m:  Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
+Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (E:\Separate Projects\Full-School-Management-System\backend\node_modules\bson\lib\bson\objectid.js:59:11)
+    at ObjectID (E:\Separate Projects\Full-School-Management-System\backend\node_modules\bson\lib\bson\objectid.js:40:43)
+    at fetchStudentBySubject (E:\Separate Projects\Full-School-Management-System\backend\app\modules\teacher\controller\teacheruser.controller.js:208:18)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+[2021-07-04 11:49:42] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:01:28] [31merror[39m:  {"message":"This admin account doesn’t exist. Please enter a different email."} 
+[2021-07-04 12:01:41] [31merror[39m:  {"message":"This admin account doesn’t exist. Please enter a different email."} 
+[2021-07-04 12:02:38] [31merror[39m:  {"message":"This admin account doesn’t exist. Please enter a different email."} 
+[2021-07-04 12:03:32] [31merror[39m:  {"message":"This admin account doesn’t exist. Please enter a different email."} 
+[2021-07-04 12:12:11] [31merror[39m:  {"status":404} 

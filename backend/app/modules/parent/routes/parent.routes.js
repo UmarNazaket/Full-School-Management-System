@@ -12,7 +12,7 @@ const parentUserController = require('../controller/parent.controller'),
             // passport.isAuthorized([3]),
             parentUserController.generateStudentAdmission
         );
-        app.get(
+        app.post(
             version + moduleName + '/view/child',
             // // passport.isAuthenticated,
             // passport.isAuthorized([4]),
