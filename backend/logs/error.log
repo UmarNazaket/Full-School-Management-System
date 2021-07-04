@@ -3018,3 +3018,13 @@ TypeError: moment(...).format(...).unix is not a function
     at Layer.handle [as handle_request] (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
     at trim_prefix (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
 [2021-07-04 10:19:47] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 10:30:27] [31merror[39m:  admissions is not defined 
+ReferenceError: admissions is not defined
+    at addOrder (E:\vizteck-work\Full-School-Management-System\backend\app\modules\student\controller\studentuser.controller.js:576:21)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-04 10:30:27] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 10:51:09] [31merror[39m:  onlineExam is not defined 
+ReferenceError: onlineExam is not defined
+    at addAttendance (E:\vizteck-work\Full-School-Management-System\backend\app\modules\teacher\controller\teacheruser.controller.js:276:9)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-04 10:51:09] [31merror[39m:  {"msgCode":1037} 

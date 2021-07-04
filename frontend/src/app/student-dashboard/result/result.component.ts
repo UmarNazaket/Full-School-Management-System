@@ -34,6 +34,7 @@ export class ResultComponent implements OnInit {
      document.body.innerHTML = printContents;
      window.print();
      document.body.innerHTML = originalContents;
+     window.location.reload();
   }
 
   showTerm(num: any){

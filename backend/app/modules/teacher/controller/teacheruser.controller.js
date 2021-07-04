@@ -270,8 +270,27 @@ let addSchemeOfStudy = async (req, res, next) => {
 let addAttendance = async (req, res, next) => {
     try {
         let attendanceArry = (req.body.attendanceArry) || [];
-
-
+        // attendanceArry[0].date = moment(attendanceArry[0].date).unix()
+        let checkAlreadyAttendanceMarked = await Attendance.find({
+            subjectId: ObjectId(attendanceArry[0].subjectId)
+        })
+        // console.log(checkAlreadyAttendanceMarked)
+        checkAlreadyAttendanceMarked = checkAlreadyAttendanceMarked.filter((item) => {
+            // console.log(moment(item.date))
+            let existingDate = moment(item.date).format('YYYY-MM-DD')
+            let currentDate = moment().format('YYYY-MM-DD')
+            return moment(existingDate).isSame(moment(currentDate));
+        })
+        // console.log(checkAlreadyAttendanceMarked)
+        if (checkAlreadyAttendanceMarked && checkAlreadyAttendanceMarked.length) {
+            return responseModule.successResponse(res, {
+                success: 2,
+                message: 'students attendance is already marked.',
+                data: {
+                    isAttendanceAdded: true
+                }
+            });
+        }
         let addSchemeOfStudy = await Attendance.insertMany(attendanceArry)
         if (addSchemeOfStudy) {
 

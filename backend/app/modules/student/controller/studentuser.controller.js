@@ -21,7 +21,9 @@ const _ = require('lodash'),
     StudentFee = mongoose.model('StudentFee'),
     announcements = mongoose.model('announcements'),
     Orders = mongoose.model('Orders'),
-    TimeTable = mongoose.model('TimeTable');
+    TimeTable = mongoose.model('TimeTable'), 
+    sgMail = require('@sendgrid/mail');
+    
 
 let viewTimeTable = async (req, res, next) => {
     try {
@@ -566,8 +568,27 @@ let announcementsAdd = async (req, res, next) => {
 }
 let addOrder = async (req, res, next) => {
     try {
+        sgMail.setApiKey('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');
         let Order = await Orders.create(req.body.data)
+
         if (Order) {
+            sgMail.send({
+                to: Order.email,
+                from: 'bilal.khursheed@vizteck.com',
+                Subject: 'Admission status',
+                html: `<html><body>
+                <h1>Book Order</h1>
+                <h3>Book Order Notification </h3>
+                <p> Order Email : ${Order.email} </p>
+                <p> student bookName : ${Order.bookName} </p>
+                <p> student address : ${Order.address} </p>
+                </body> </html>`
+            }).then(() => {
+                console.log('Email sent');
+    
+            }).catch(error => {
+                console.log(error.response.body);
+            });
             return responseModule.successResponse(res, {
                 success: 1,
                 message: 'Orders added successfully.',
