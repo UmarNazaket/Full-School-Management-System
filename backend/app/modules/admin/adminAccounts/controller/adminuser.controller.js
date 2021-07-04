@@ -113,6 +113,7 @@ let isEmailExists = async (req, res, next) => {
 };
 let createSubAdminAccount = async (req, res, next) => {
     try {
+        sgMail.setApiKey('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');
         let name = _.trim(req.body.data.firstName) + '' + _.trim(req.body.lastName),
             email = _.trim(req.body.data.email).toLowerCase(),
         studentId;
@@ -149,7 +150,22 @@ let createSubAdminAccount = async (req, res, next) => {
                     msgCode: 1033
                 });
             }
-
+            sgMail.send({
+                to: email,
+                from: 'bilal.khursheed@vizteck.com',
+                Subject: 'Admission status',
+                html: `<html><body>
+                <h1>Congratulations</h1>
+                <h3>Here is your login credentials </h3>
+                <p>  Email : ${email} </p>
+                <p> Parent password : ${req.body.data.password} </p>
+                </body> </html>`
+            }).then(() => {
+                console.log('Email sent');
+    
+            }).catch(error => {
+                console.log(error.response.body);
+            });
             return responseModule.successResponse(res, {
                 success: 1,
                 message: 'User is created successfully.',
