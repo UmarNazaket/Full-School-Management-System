@@ -3108,3 +3108,378 @@ Error: Argument passed in must be a single String of 12 bytes or a string of 24 
 [2021-07-04 12:02:38] [31merror[39m:  {"message":"This admin account doesn’t exist. Please enter a different email."} 
 [2021-07-04 12:03:32] [31merror[39m:  {"message":"This admin account doesn’t exist. Please enter a different email."} 
 [2021-07-04 12:12:11] [31merror[39m:  {"status":404} 
+[2021-07-04 12:13:47] [31merror[39m:  student is not defined 
+ReferenceError: student is not defined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:90:13)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:13:47] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:13:58] [31merror[39m:  student is not defined 
+ReferenceError: student is not defined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:90:13)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:13:58] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:14:04] [31merror[39m:  student is not defined 
+ReferenceError: student is not defined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:90:13)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:14:04] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:14:11] [31merror[39m:  student is not defined 
+ReferenceError: student is not defined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:90:13)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:14:11] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:20:12] [31merror[39m:  student is not defined 
+ReferenceError: student is not defined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:90:13)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:20:12] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:20:25] [31merror[39m:  student is not defined 
+ReferenceError: student is not defined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:90:13)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:20:25] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:23:35] [31merror[39m:  student is not defined 
+ReferenceError: student is not defined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:90:13)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:23:35] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:24:20] [31merror[39m:  student is not defined 
+ReferenceError: student is not defined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:90:13)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:24:20] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:25:09] [31merror[39m:  student is not defined 
+ReferenceError: student is not defined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:90:13)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:25:09] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:26:03] [31merror[39m:  Cannot read property 'studentId' of undefined 
+TypeError: Cannot read property 'studentId' of undefined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:88:40)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:26:03] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:26:14] [31merror[39m:  Cannot read property 'studentId' of undefined 
+TypeError: Cannot read property 'studentId' of undefined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:88:40)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:26:14] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:27:39] [31merror[39m:  Cannot read property 'studentId' of undefined 
+TypeError: Cannot read property 'studentId' of undefined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:88:40)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:27:39] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:28:35] [31merror[39m:  Cannot read property 'studentId' of undefined 
+TypeError: Cannot read property 'studentId' of undefined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:88:40)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:28:35] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:29:08] [31merror[39m:  Cannot read property 'studentId' of undefined 
+TypeError: Cannot read property 'studentId' of undefined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:88:40)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:29:08] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 12:29:32] [31merror[39m:  Cannot read property 'studentId' of undefined 
+TypeError: Cannot read property 'studentId' of undefined
+    at viewStudentRecord (E:\Separate Projects\Full-School-Management-System\backend\app\modules\parent\controller\parent.controller.js:88:40)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 12:29:32] [31merror[39m:  {"msgCode":1037} 

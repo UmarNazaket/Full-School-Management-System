@@ -57,7 +57,7 @@ export class LoginComponent implements OnInit {
       console.log("employee")
       localStorage.setItem('dataType', "employee");
       localStorage.setItem('logindata', JSON.stringify(data.data));
-      this.router.navigate(['/employee/adddeletestudents']);
+      this.router.navigate(['/employee/setfeechallan']);
     }
     else if(data.data.userType == 4){
       console.log("parent");

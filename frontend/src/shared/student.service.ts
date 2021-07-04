@@ -61,12 +61,12 @@ export class StudentService {
 
   getChallanP(data: any){
     console.log(data)
-    return this.httpClient.post(this.baseUrl + '/parent/view/student/data', {data, id: this.id});
+    return this.httpClient.post(this.baseUrl + '/student/fetch/fee/challan', {id: data.studentId});
   }
 
   getResultP(data: any){
-    console.log(data)
-    return this.httpClient.post(this.baseUrl + '/parent/view/student/data', {data, id: this.id});
+    console.log(data.studentId)
+    return this.httpClient.post(this.baseUrl + '/student/fetch/marks', {id: data.studentId});
   }
 
   // FOR EMPLOYEE

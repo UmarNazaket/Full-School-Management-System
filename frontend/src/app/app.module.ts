@@ -29,6 +29,7 @@ import { TimetableComponent } from './student-dashboard/timetable/timetable.comp
 import { GuestUserComponent } from './guest-user/guest-user.component';
 import { ParentDashboardComponent } from './parent-dashboard/parent-dashboard.component';
 import { ResultComponent } from './student-dashboard/result/result.component';
+// import { ResultComponent } from './parent-dashboard/result/resultc.component';
 import { CheckoutComponent } from './student-dashboard/checkout/checkout.component';
 import { AnnouncementsComponent } from './student-dashboard/announcements/announcements.component';
 import { ChildListComponent } from './parent-dashboard/child-list/child-list.component';
@@ -72,6 +73,7 @@ import { SchemeOfStudiesComponent } from './student-dashboard/scheme-of-studies/
 import { AdmissionFormsComponent } from './admin/admission-forms/admission-forms.component';
 import { AddSubjectClassComponent } from './admin/add-subject-class/add-subject-class.component';
 import { AddTeacherComponent } from './admin/add-teacher/add-teacher.component';
+import { ResultCComponent } from './parent-dashboard/result/result.component';
 
 @NgModule({
   declarations: [
@@ -88,6 +90,7 @@ import { AddTeacherComponent } from './admin/add-teacher/add-teacher.component';
     GuestUserComponent,
     ParentDashboardComponent,
     ResultComponent,
+    ResultCComponent,
     CheckoutComponent,
     AnnouncementsComponent,
     ChildListComponent,
