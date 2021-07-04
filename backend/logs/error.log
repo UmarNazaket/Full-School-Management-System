@@ -2871,5 +2871,160 @@ CastError: Cast to ObjectId failed for value "0" (type number) at path "_id" for
     at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
     at runMicrotasks (<anonymous>)
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
+<<<<<<< HEAD
+[2021-06-13 12:52:16] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 13:46:46] [31merror[39m:  mongoose connection disconnected 
+[2021-07-04 09:32:00] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects" 
+CastError: Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects"
+    at model.Query.exec (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-04 09:32:00] [31merror[39m:  {"msgCode":1037} 
+=======
 [2021-07-01 21:58:49] [31merror[39m:  {"msgCode":1037} 
 [2021-07-01 21:59:34] [31merror[39m:  mongoose connection disconnected 
+>>>>>>> 06c6ae8d0ecbf17a6d05d64b0fb57c006ca615d2
+[2021-07-04 09:56:47] [31merror[39m:  {"message":"Invalid password."} 
+[2021-07-04 09:57:53] [31merror[39m:  OnlineClass validation failed: teacherId: Cast to ObjectId failed for value "" (type string) at path "teacherId", link: Path `link` is required. 
+ValidationError: OnlineClass validation failed: teacherId: Cast to ObjectId failed for value "" (type string) at path "teacherId", link: Path `link` is required.
+    at model.Document.invalidate (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\document.js:2729:32)
+    at model.$set (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\document.js:1318:12)
+    at model.$set (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\document.js:1022:16)
+    at model.Document (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\document.js:147:12)
+    at model.Model (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:105:12)
+    at new model (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4706:15)
+    at E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:3094:22
+    at E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:3130:7
+    at Array.forEach (<anonymous>)
+    at E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:3129:15
+    at E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at Mongoose._promiseOrCallback (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\index.js:1149:10)
+    at Function.create (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:3064:23)
+    at addOnlineClass (E:\vizteck-work\Full-School-Management-System\backend\app\modules\teacher\controller\teacheruser.controller.js:113:48)
+    at Layer.handle [as handle_request] (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+[2021-07-04 09:57:53] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 09:58:26] [31merror[39m:  OnlineClass validation failed: teacherId: Cast to ObjectId failed for value "" (type string) at path "teacherId" 
+ValidationError: OnlineClass validation failed: teacherId: Cast to ObjectId failed for value "" (type string) at path "teacherId"
+    at model.Document.invalidate (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\document.js:2729:32)
+    at model.$set (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\document.js:1318:12)
+    at model.$set (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\document.js:1022:16)
+    at model.Document (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\document.js:147:12)
+    at model.Model (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:105:12)
+    at new model (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4706:15)
+    at E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:3094:22
+    at E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:3130:7
+    at Array.forEach (<anonymous>)
+    at E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:3129:15
+    at E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at Mongoose._promiseOrCallback (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\index.js:1149:10)
+    at Function.create (E:\vizteck-work\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:3064:23)
+    at addOnlineClass (E:\vizteck-work\Full-School-Management-System\backend\app\modules\teacher\controller\teacheruser.controller.js:113:48)
+    at Layer.handle [as handle_request] (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+[2021-07-04 09:58:26] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 10:11:39] [31merror[39m:  moment(...).format(...).unix is not a function 
+TypeError: moment(...).format(...).unix is not a function
+    at fetchStudentOnlineClass (E:\vizteck-work\Full-School-Management-System\backend\app\modules\student\controller\studentuser.controller.js:345:59)
+    at Layer.handle [as handle_request] (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\vizteck-work\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 10:11:39] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 10:12:41] [31merror[39m:  mongoose connection disconnected 
+[2021-07-04 10:12:48] [31merror[39m:  moment.format is not a function 
+TypeError: moment.format is not a function
+    at fetchStudentOnlineClass (E:\vizteck-work\Full-School-Management-System\backend\app\modules\student\controller\studentuser.controller.js:345:27)
+    at Layer.handle [as handle_request] (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\vizteck-work\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 10:12:48] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 10:16:14] [31merror[39m:  startTime is not defined 
+ReferenceError: startTime is not defined
+    at E:\vizteck-work\Full-School-Management-System\backend\app\modules\student\controller\studentuser.controller.js:369:42
+    at Array.map (<anonymous>)
+    at fetchStudentOnlineClass (E:\vizteck-work\Full-School-Management-System\backend\app\modules\student\controller\studentuser.controller.js:368:28)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-04 10:16:14] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 10:19:47] [31merror[39m:  moment(...).format(...).unix is not a function 
+TypeError: moment(...).format(...).unix is not a function
+    at addOnlineClass (E:\vizteck-work\Full-School-Management-System\backend\app\modules\teacher\controller\teacheruser.controller.js:109:69)
+    at Layer.handle [as handle_request] (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+    at E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\vizteck-work\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
+[2021-07-04 10:19:47] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 10:30:27] [31merror[39m:  admissions is not defined 
+ReferenceError: admissions is not defined
+    at addOrder (E:\vizteck-work\Full-School-Management-System\backend\app\modules\student\controller\studentuser.controller.js:576:21)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-04 10:30:27] [31merror[39m:  {"msgCode":1037} 
+[2021-07-04 10:51:09] [31merror[39m:  onlineExam is not defined 
+ReferenceError: onlineExam is not defined
+    at addAttendance (E:\vizteck-work\Full-School-Management-System\backend\app\modules\teacher\controller\teacheruser.controller.js:276:9)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-04 10:51:09] [31merror[39m:  {"msgCode":1037} 

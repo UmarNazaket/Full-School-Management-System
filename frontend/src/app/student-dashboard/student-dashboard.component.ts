@@ -15,6 +15,9 @@ export class StudentDashboardComponent implements OnInit {
   ngOnInit(): void {
     // @ts-ignore
     document.getElementById('eup-navbar-heading').innerText = 'Student Dashboard';
+    if(localStorage.getItem("dataType") != "student"){
+      this.router.navigate(['/']);
+    }
     
   }
   logout(): void{

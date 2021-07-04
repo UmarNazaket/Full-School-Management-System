@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
       this.router.navigate(['/admin/addadmin']);
     }
     else if(data.data.userType == 1){
-      console.log(data);
+      console.log("Student");
       localStorage.setItem('logindata', JSON.stringify(data.data));
       localStorage.setItem('dataType', "student");
       this.router.navigate(['/student/welcome']);

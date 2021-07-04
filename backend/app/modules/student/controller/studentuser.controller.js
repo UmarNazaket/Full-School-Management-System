@@ -1,4 +1,6 @@
-const { data } = require('../../../../config/winston');
+const {
+    data
+} = require('../../../../config/winston');
 
 const _ = require('lodash'),
     bcrypt = require('bcryptjs'),
@@ -19,7 +21,9 @@ const _ = require('lodash'),
     StudentFee = mongoose.model('StudentFee'),
     announcements = mongoose.model('announcements'),
     Orders = mongoose.model('Orders'),
-    TimeTable = mongoose.model('TimeTable');
+    TimeTable = mongoose.model('TimeTable'), 
+    sgMail = require('@sendgrid/mail');
+    
 
 let viewTimeTable = async (req, res, next) => {
     try {
@@ -54,19 +58,19 @@ let viewTimeTable = async (req, res, next) => {
             }
 
         });
-        let Monday = studentTimeTable.filter((item)=>{
+        let Monday = studentTimeTable.filter((item) => {
             return item.day === 2
         })
-        let Tuesday = studentTimeTable.filter((item)=>{
+        let Tuesday = studentTimeTable.filter((item) => {
             return item.day === 2
         })
-        let Wednesday = studentTimeTable.filter((item)=>{
+        let Wednesday = studentTimeTable.filter((item) => {
             return item.day === 2
         })
-        let Thursday = studentTimeTable.filter((item)=>{
+        let Thursday = studentTimeTable.filter((item) => {
             return item.day === 2
         })
-        let Friday = studentTimeTable.filter((item)=>{
+        let Friday = studentTimeTable.filter((item) => {
             return item.day === 2
         })
 
@@ -104,20 +108,18 @@ let fetchStudentSubjects = async (req, res, next) => {
         console.log('here is the student id', studentId)
         let studentSubjects = await Subjects.find({
             students: {
-                $in: studentId
+                $in: ObjectId(studentId)
             },
 
-        }).populate([
-            {
+        }).populate([{
             path: 'teacher',
             model: 'SchoolUser',
-            }
-        ]).lean().select(['teacher', 'name' ,'price']);
-        studentSubjects.forEach((item)=>{
+        }]).lean().select(['teacher', 'name', 'price']);
+        studentSubjects.forEach((item) => {
             item.subjectName = item.name;
-            item.teacherName = item.teacher[0].firstName +""+   item.teacher[0].lastName
-           //  item.teacher[0].pop
-           })
+            item.teacherName = item.teacher[0].firstName + "" + item.teacher[0].lastName
+            //  item.teacher[0].pop
+        })
         if (studentSubjects) {
 
             return responseModule.successResponse(res, {
@@ -144,38 +146,39 @@ let fetchStudentAttendance = async (req, res, next) => {
         let studentId = (req.body.id) || '60c505913095fd2e844c2b73';
         let subjectId = (req.body.subjectId) || 0;
         let filter = {};
-        if(subjectId){
-            filter={
+        if (subjectId) {
+            filter = {
                 studentId: ObjectId(studentId),
-                subjectId:ObjectId(subjectId)
+                subjectId: ObjectId(subjectId)
             }
-        }else {
-            filter={
-                studentId:ObjectId(studentId)
+        } else {
+            filter = {
+                studentId: ObjectId(studentId)
             }
         }
         console.log(filter)
         let studentAttendance = await Attendance.find(filter)
-        .populate([{
-            path: 'subjectId',
-            model: 'Subjects',
-            required: true,
-        }]).lean()
+            .populate([{
+                path: 'subjectId',
+                model: 'Subjects',
+                required: true,
+            }]).lean()
         studentAttendance = JSON.parse(JSON.stringify(studentAttendance))
-        
+
         studentAttendance.map((item) => {
             item.subjectName = item.subjectId.name;
             item.date = moment(item.date).format('YYYY-MM-DD')
             delete item.subjectId
         })
-        let present = [], absent = [];
-        for(let x = 1 ; x <= 12; x++){
-         let data1=   studentAttendance.filter((item) =>{
-                return moment(item.date).format('MM') == '0'+x && item.status ==1
+        let present = [],
+            absent = [];
+        for (let x = 1; x <= 12; x++) {
+            let data1 = studentAttendance.filter((item) => {
+                return moment(item.date).format('MM') == '0' + x && item.status == 1
             })
             present = [...present, data1.length]
-         let data=   studentAttendance.filter((item) =>{
-                return moment(item.date).format('MM') == '0'+x && item.status ==0
+            let data = studentAttendance.filter((item) => {
+                return moment(item.date).format('MM') == '0' + x && item.status == 0
             })
             absent = [...absent, data.length]
 
@@ -187,8 +190,8 @@ let fetchStudentAttendance = async (req, res, next) => {
                 message: 'Student attendance fetched successfully.',
                 data: {
                     studentAttendance: studentAttendance,
-                    present : present,
-                    absent : absent
+                    present: present,
+                    absent: absent
                 }
             });
         } else {
@@ -219,37 +222,41 @@ let fetchStudentMarks = async (req, res, next) => {
         let secondTerm = [];
         let thirdTerm = [];
         studentMarks.map((item) => {
-            let data={
-                totalMarks:item.firstTerm? item.firstTerm.totalMarks : 0,
-                obtMarks: item.firstTerm? item.firstTerm.obtMarks : 0,
-                totalMarks: item.firstTerm? item.firstTerm.totalMarks : 0,
-                subjectName : item.subjectId.name
+            let data = {
+                totalMarks: item.firstTerm ? item.firstTerm.totalMarks : 0,
+                obtMarks: item.firstTerm ? item.firstTerm.obtMarks : 0,
+                totalMarks: item.firstTerm ? item.firstTerm.totalMarks : 0,
+                subjectName: item.subjectId.name
             }
             firstTerm = [...firstTerm, data]
-           let data2={
-                totalMarks:item.secondTerm? item.secondTerm.totalMarks : 0,
-                obtMarks: item.secondTerm? item.secondTerm.obtMarks : 0,
-                totalMarks: item.secondTerm? item.secondTerm.totalMarks : 0,
-                subjectName : item.subjectId.name
+            let data2 = {
+                totalMarks: item.secondTerm ? item.secondTerm.totalMarks : 0,
+                obtMarks: item.secondTerm ? item.secondTerm.obtMarks : 0,
+                totalMarks: item.secondTerm ? item.secondTerm.totalMarks : 0,
+                subjectName: item.subjectId.name
             }
             secondTerm = [...secondTerm, data2]
-           let data3={
-            totalMarks:item.thirdTerm? item.thirdTerm.totalMarks : 0,
-            obtMarks: item.thirdTerm? item.thirdTerm.obtMarks : 0,
-            totalMarks: item.thirdTerm? item.thirdTerm.totalMarks : 0,
-                subjectName : item.subjectId.name
+            let data3 = {
+                totalMarks: item.thirdTerm ? item.thirdTerm.totalMarks : 0,
+                obtMarks: item.thirdTerm ? item.thirdTerm.obtMarks : 0,
+                totalMarks: item.thirdTerm ? item.thirdTerm.totalMarks : 0,
+                subjectName: item.subjectId.name
             }
             thirdTerm = [...thirdTerm, data3]
             delete item.subjectId
         })
-       
+
         if (studentMarks) {
 
             return responseModule.successResponse(res, {
                 success: 1,
                 message: 'Student Marks fetched successfully.',
                 data: {
-                    studentMarks: {firstTerm,secondTerm,thirdTerm}
+                    studentMarks: {
+                        firstTerm,
+                        secondTerm,
+                        thirdTerm
+                    }
                 }
             });
         } else {
@@ -267,7 +274,7 @@ let fetchStudentMarks = async (req, res, next) => {
 let fetchStudentMarksBySubject = async (req, res, next) => {
     try {
         let studentId = (req.body.id) || '60c505913095fd2e844c2b73';
-            subjectId = _.trim(req.body.subjectId)
+        subjectId = _.trim(req.body.subjectId)
         let studentMarks = await StudentMarks.find({
             studentId: studentId,
             subjectId: subjectId
@@ -283,25 +290,25 @@ let fetchStudentMarksBySubject = async (req, res, next) => {
         let thirdTerm = [];
         studentMarks.map((item) => {
             // item.subjectName = item.subjectId.name;
-           let data={
+            let data = {
                 totalMarks: item.firstTerm.totalMarks,
                 obtMarks: item.firstTerm.obtMarks,
                 totalMarks: item.firstTerm.totalMarks,
-                subjectName : item.subjectId.name
+                subjectName: item.subjectId.name
             }
             firstTerm = [...firstTerm, data]
-           let data2={
+            let data2 = {
                 totalMarks: item.secondTerm.totalMarks,
                 obtMarks: item.secondTerm.obtMarks,
                 totalMarks: item.secondTerm.totalMarks,
-                subjectName : item.subjectId.name
+                subjectName: item.subjectId.name
             }
             secondTerm = [...secondTerm, data2]
-           let data3={
+            let data3 = {
                 totalMarks: item.thirdTerm.totalMarks,
                 obtMarks: item.thirdTerm.obtMarks,
                 totalMarks: item.thirdTerm.totalMarks,
-                subjectName : item.subjectId.name
+                subjectName: item.subjectId.name
             }
             thirdTerm = [...thirdTerm, data3]
             delete item.subjectId
@@ -313,7 +320,11 @@ let fetchStudentMarksBySubject = async (req, res, next) => {
                 success: 1,
                 message: 'Student Marks fetched successfully.',
                 data: {
-                    studentMarks: {firstTerm,secondTerm,thirdTerm}
+                    studentMarks: {
+                        firstTerm,
+                        secondTerm,
+                        thirdTerm
+                    }
                 }
             });
         } else {
@@ -331,12 +342,12 @@ let fetchStudentMarksBySubject = async (req, res, next) => {
 let fetchStudentOnlineClass = async (req, res, next) => {
     try {
         let studentId = (req.body.id) || '60c505913095fd2e844c2b73';
-            subjectId = _.trim(req.body.subjectId);
+        subjectId = _.trim(req.body.subjectId);
 
-            let time = moment().unix()
+        let time = moment().unix()
 
 
-        let studentOnlineClass = await OnlineClass.find({ }).populate([{
+        let studentOnlineClass = await OnlineClass.find({}).populate([{
             path: 'subject',
             model: 'Subjects',
             required: true,
@@ -349,14 +360,20 @@ let fetchStudentOnlineClass = async (req, res, next) => {
             }
         }]).lean()
         studentOnlineClass = JSON.parse(JSON.stringify(studentOnlineClass))
-        console.log(studentOnlineClass);
+        // console.log(studentOnlineClass);
+
+        console.log(studentOnlineClass)
+        studentOnlineClass = studentOnlineClass.filter((item) => {
+
+            return parseInt(item.startTime) <= time && parseInt(item.endTime) > time
+        })
         studentOnlineClass.map((item) => {
+            item.startTime = moment.unix(item.startTime).format(' HH:mm A');
+            item.endTime = moment.unix(item.endTime).format('HH:mm A');
             item.subjectName = item.subject.name
             delete item.subject
         })
-        studentOnlineClass = studentOnlineClass.filter((item) =>{
-            return parseInt(item.startTime) < time && parseInt(item.endTime) > time
-        })
+        console.log(time)
         if (studentOnlineClass) {
 
             return responseModule.successResponse(res, {
@@ -385,14 +402,14 @@ let fetchStudentFeeChallan = async (req, res, next) => {
             student: studentId
         }).populate({
             path: 'student',
-            module: 'SchoolUser' 
+            module: 'SchoolUser'
         })
-        studentFee= JSON.parse(JSON.stringify(studentFee))
-        studentFee.map((item)=>{
-            item.studentName = item.student.firstName + ""+ item.student.lastName
+        studentFee = JSON.parse(JSON.stringify(studentFee))
+        studentFee.map((item) => {
+            item.studentName = item.student.firstName + "" + item.student.lastName
             item.RegNo = item.student.RegNo
             item.submissionDate = moment(item.submissionDate).format('YYYY-MM-DD')
-           delete item.student
+            delete item.student
         })
         if (studentFee) {
 
@@ -475,10 +492,10 @@ let fetchOnlineExam = async (req, res, next) => {
             onlineExam.map((item) => {
                 delete item.teacherId;
             })
-           onlineExam = onlineExam.filter((item) =>{
-                return  parseInt(item.startTime) < time &&  parseInt(item.endTime) < time
+            onlineExam = onlineExam.filter((item) => {
+                return parseInt(item.startTime) < time && parseInt(item.endTime) < time
             })
-            onlineExam.map((item) =>{
+            onlineExam.map((item) => {
                 item.startTime = moment.unix(item.startTime).format('YYYY-MM-DD HH:mm:ss')
                 item.endTime = moment.unix(item.endTime).format('YYYY-MM-DD  HH:mm:ss')
             })
@@ -504,7 +521,7 @@ let fetchOnlineExam = async (req, res, next) => {
 let addData = async (req, res, next) => {
     try {
         console.log('dfgchvjbknljcfxdxgchvjb,')
-      let onlineExam = await SchoolUser.insertMany(req.body)
+        let onlineExam = await SchoolUser.insertMany(req.body)
         if (onlineExam) {
             return responseModule.successResponse(res, {
                 success: 1,
@@ -528,7 +545,7 @@ let addData = async (req, res, next) => {
 let announcementsAdd = async (req, res, next) => {
     try {
         console.log('dfgchvjbknljcfxdxgchvjb,')
-      let onlineExam = await announcements.create(req.body)
+        let onlineExam = await announcements.create(req.body)
         if (onlineExam) {
             return responseModule.successResponse(res, {
                 success: 1,
@@ -551,8 +568,27 @@ let announcementsAdd = async (req, res, next) => {
 }
 let addOrder = async (req, res, next) => {
     try {
-      let Order = await Orders.create(req.body.data)
+        sgMail.setApiKey('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');
+        let Order = await Orders.create(req.body.data)
+
         if (Order) {
+            sgMail.send({
+                to: Order.email,
+                from: 'bilal.khursheed@vizteck.com',
+                Subject: 'Admission status',
+                html: `<html><body>
+                <h1>Book Order</h1>
+                <h3>Book Order Notification </h3>
+                <p> Order Email : ${Order.email} </p>
+                <p> student bookName : ${Order.bookName} </p>
+                <p> student address : ${Order.address} </p>
+                </body> </html>`
+            }).then(() => {
+                console.log('Email sent');
+    
+            }).catch(error => {
+                console.log(error.response.body);
+            });
             return responseModule.successResponse(res, {
                 success: 1,
                 message: 'Orders added successfully.',
@@ -575,7 +611,7 @@ let addOrder = async (req, res, next) => {
 let announcementsfetch = async (req, res, next) => {
     try {
         console.log('dfgchvjbknljcfxdxgchvjb,')
-      let announcement = await announcements.find({})
+        let announcement = await announcements.find({})
         if (announcement) {
             return responseModule.successResponse(res, {
                 success: 1,
