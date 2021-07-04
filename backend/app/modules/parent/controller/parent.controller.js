@@ -55,7 +55,7 @@ let generateStudentAdmission = async (req, res, next) => {
 }
 let listofBachas = async (req, res, next) => {
     try {
-        let parentId = req.body.parentId || 0;
+        let parentId = req.body.id || 0;
 
         let childs = await SchoolUser.find({
             _id: ObjectId(parentId)

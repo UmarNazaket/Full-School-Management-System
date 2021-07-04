@@ -51,7 +51,7 @@ export class StudentService {
 
   // FOR PARENT
   getchildren(){
-    return this.httpClient.get(this.baseUrl + '/parent/view/child');
+    return this.httpClient.post(this.baseUrl + '/parent/view/child', {id: this.id});
   }
 
   getAttendanceP(data: any){

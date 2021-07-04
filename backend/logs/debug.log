@@ -23079,3 +23079,81 @@ ReferenceError: onlineExam is not defined
 [2021-07-04 11:42:58] [32minfo[39m:  app/modules/student/routes/studentuser.routes.js is loaded 
 [2021-07-04 11:42:58] [32minfo[39m:  app/modules/teacher/routes/teacheruser.routes.js is loaded 
 [2021-07-04 11:43:00] [32minfo[39m:  Agenda Started. 
+[2021-07-04 11:58:33] [32minfo[39m:  loaded config file:development 
+[2021-07-04 11:58:33] [32minfo[39m:  Try to Connect MongoDb: mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-04 11:58:36] [32minfo[39m:  mongoose connection open to mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-04 11:58:37] [32minfo[39m:  models are loading ... 
+[2021-07-04 11:58:37] [32minfo[39m:  app/modules/admin/adminAccounts/models/schoolUser.model.js 
+[2021-07-04 11:58:37] [32minfo[39m:  app/modules/common/models/admissionForm.model.js 
+[2021-07-04 11:58:37] [32minfo[39m:  app/modules/common/models/announcements.model.js 
+[2021-07-04 11:58:37] [32minfo[39m:  app/modules/common/models/attendance.model.js 
+[2021-07-04 11:58:37] [32minfo[39m:  app/modules/common/models/class.model.js 
+[2021-07-04 11:58:37] [32minfo[39m:  app/modules/common/models/fee.model.js 
+[2021-07-04 11:58:37] [32minfo[39m:  app/modules/common/models/onlineClass.model.js 
+[2021-07-04 11:58:37] [32minfo[39m:  app/modules/common/models/onlineExam.model.js 
+[2021-07-04 11:58:37] [32minfo[39m:  app/modules/common/models/orders.model.js 
+[2021-07-04 11:58:37] [32minfo[39m:  app/modules/common/models/studentMarks.model.js 
+[2021-07-04 11:58:37] [32minfo[39m:  app/modules/common/models/subjects.model.js 
+[2021-07-04 11:58:37] [32minfo[39m:  app/modules/common/models/timeTable.model.js 
+[2021-07-04 11:58:37] [32minfo[39m:  app/modules/socketIo/api/models/online_user.model.js 
+[2021-07-04 11:58:40] [32minfo[39m:  error messages are loading ... 
+[2021-07-04 11:58:41] [32minfo[39m:  app/modules/admin/adminAccounts/error/adminUser.errors.json is loaded 
+[2021-07-04 11:58:41] [32minfo[39m:  app/modules/employee/error/employee.errors.json is loaded 
+[2021-07-04 11:58:41] [32minfo[39m:  app/modules/parent/error/parent.errors.json is loaded 
+[2021-07-04 11:58:41] [32minfo[39m:  app/modules/student/error/studentuser.errors.json is loaded 
+[2021-07-04 11:58:41] [32minfo[39m:  app/modules/teacher/error/teacheruser.errors.json is loaded 
+[2021-07-04 11:58:41] [32minfo[39m:  routes are loading ... 
+[2021-07-04 11:58:48] [32minfo[39m:  app/modules/admin/adminAccounts/routes/adminSignIn.routes.js is loaded 
+[2021-07-04 11:58:50] [32minfo[39m:  app/modules/admin/adminAccounts/routes/adminuser.routes.js is loaded 
+[2021-07-04 11:58:50] [32minfo[39m:  app/modules/employee/routes/employee.routes.js is loaded 
+[2021-07-04 11:58:50] [32minfo[39m:  app/modules/parent/routes/parent.routes.js is loaded 
+[2021-07-04 11:58:50] [32minfo[39m:  app/modules/student/routes/studentuser.routes.js is loaded 
+[2021-07-04 11:58:50] [32minfo[39m:  app/modules/teacher/routes/teacheruser.routes.js is loaded 
+[2021-07-04 11:58:52] [32minfo[39m:  Agenda Started. 
+[2021-07-04 11:58:56] [32minfo[39m:  {"isUserCreated":true} 
+[2021-07-04 11:59:57] [32minfo[39m:  {"_id":"60bfa4734be2b9387c3de6b8","name":"Super Admin","firstName":"Super","lastName":"Admin","phoneNumber":90078601,"email":"admin@admin.com","userType":0,"DOB":"22-feb-1997","schoolName":"Public School","status":0,"updatedAt":"2021-06-08T17:10:11.235Z","createdAt":"2021-06-08T17:10:11.235Z"} 
+[2021-07-04 12:00:54] [32minfo[39m:  {"_id":"60c6fdeb4b1c062610302345","name":"numan","firstName":"numan","lastName":"Keen","phoneNumber":90078601,"email":"parent@gmail.com","userType":4,"DOB":"22-Jan-1995","schoolName":"Public School","status":1,"updatedAt":"2021-06-14T06:57:47.695Z","createdAt":"2021-06-14T06:57:47.695Z"} 
+[2021-07-04 12:00:56] [32minfo[39m:  {"studentsList":[]} 
+[2021-07-04 12:01:28] [31merror[39m:  {"message":"This admin account doesn’t exist. Please enter a different email."} 
+[2021-07-04 12:01:41] [31merror[39m:  {"message":"This admin account doesn’t exist. Please enter a different email."} 
+[2021-07-04 12:02:38] [31merror[39m:  {"message":"This admin account doesn’t exist. Please enter a different email."} 
+[2021-07-04 12:02:44] [32minfo[39m:  {"_id":"60c6fdeb4b1c062610302345","name":"numan","firstName":"numan","lastName":"Keen","phoneNumber":90078601,"email":"parent@gmail.com","userType":4,"DOB":"22-Jan-1995","schoolName":"Public School","status":1,"updatedAt":"2021-06-14T06:57:47.695Z","createdAt":"2021-06-14T06:57:47.695Z"} 
+[2021-07-04 12:02:45] [32minfo[39m:  {"studentsList":[]} 
+[2021-07-04 12:03:22] [32minfo[39m:  {"studentsList":[]} 
+[2021-07-04 12:03:32] [31merror[39m:  {"message":"This admin account doesn’t exist. Please enter a different email."} 
+[2021-07-04 12:03:44] [32minfo[39m:  {"_id":"60c6fdeb4b1c062610302345","name":"numan","firstName":"numan","lastName":"Keen","phoneNumber":90078601,"email":"parent@gmail.com","userType":4,"DOB":"22-Jan-1995","schoolName":"Public School","status":1,"updatedAt":"2021-06-14T06:57:47.695Z","createdAt":"2021-06-14T06:57:47.695Z"} 
+[2021-07-04 12:03:45] [32minfo[39m:  {"studentsList":[]} 
+[2021-07-04 12:07:51] [32minfo[39m:  {"_id":"60c6fdeb4b1c062610302345","name":"numan","firstName":"numan","lastName":"Keen","phoneNumber":90078601,"email":"parent@gmail.com","userType":4,"DOB":"22-Jan-1995","schoolName":"Public School","status":1,"updatedAt":"2021-06-14T06:57:47.695Z","createdAt":"2021-06-14T06:57:47.695Z"} 
+[2021-07-04 12:07:52] [32minfo[39m:  {"studentsList":[]} 
+[2021-07-04 12:12:11] [31merror[39m:  {"status":404} 
+[2021-07-04 12:12:55] [32minfo[39m:  loaded config file:development 
+[2021-07-04 12:12:55] [32minfo[39m:  Try to Connect MongoDb: mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-04 12:12:58] [32minfo[39m:  mongoose connection open to mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-04 12:12:58] [32minfo[39m:  models are loading ... 
+[2021-07-04 12:12:58] [32minfo[39m:  app/modules/admin/adminAccounts/models/schoolUser.model.js 
+[2021-07-04 12:12:58] [32minfo[39m:  app/modules/common/models/admissionForm.model.js 
+[2021-07-04 12:12:58] [32minfo[39m:  app/modules/common/models/announcements.model.js 
+[2021-07-04 12:12:58] [32minfo[39m:  app/modules/common/models/attendance.model.js 
+[2021-07-04 12:12:58] [32minfo[39m:  app/modules/common/models/class.model.js 
+[2021-07-04 12:12:58] [32minfo[39m:  app/modules/common/models/fee.model.js 
+[2021-07-04 12:12:58] [32minfo[39m:  app/modules/common/models/onlineClass.model.js 
+[2021-07-04 12:12:58] [32minfo[39m:  app/modules/common/models/onlineExam.model.js 
+[2021-07-04 12:12:58] [32minfo[39m:  app/modules/common/models/orders.model.js 
+[2021-07-04 12:12:58] [32minfo[39m:  app/modules/common/models/studentMarks.model.js 
+[2021-07-04 12:12:58] [32minfo[39m:  app/modules/common/models/subjects.model.js 
+[2021-07-04 12:12:58] [32minfo[39m:  app/modules/common/models/timeTable.model.js 
+[2021-07-04 12:12:58] [32minfo[39m:  app/modules/socketIo/api/models/online_user.model.js 
+[2021-07-04 12:12:59] [32minfo[39m:  error messages are loading ... 
+[2021-07-04 12:12:59] [32minfo[39m:  app/modules/admin/adminAccounts/error/adminUser.errors.json is loaded 
+[2021-07-04 12:12:59] [32minfo[39m:  app/modules/employee/error/employee.errors.json is loaded 
+[2021-07-04 12:12:59] [32minfo[39m:  app/modules/parent/error/parent.errors.json is loaded 
+[2021-07-04 12:12:59] [32minfo[39m:  app/modules/student/error/studentuser.errors.json is loaded 
+[2021-07-04 12:12:59] [32minfo[39m:  app/modules/teacher/error/teacheruser.errors.json is loaded 
+[2021-07-04 12:12:59] [32minfo[39m:  routes are loading ... 
+[2021-07-04 12:13:00] [32minfo[39m:  app/modules/admin/adminAccounts/routes/adminSignIn.routes.js is loaded 
+[2021-07-04 12:13:00] [32minfo[39m:  app/modules/admin/adminAccounts/routes/adminuser.routes.js is loaded 
+[2021-07-04 12:13:00] [32minfo[39m:  app/modules/employee/routes/employee.routes.js is loaded 
+[2021-07-04 12:13:00] [32minfo[39m:  app/modules/parent/routes/parent.routes.js is loaded 
+[2021-07-04 12:13:00] [32minfo[39m:  app/modules/student/routes/studentuser.routes.js is loaded 
+[2021-07-04 12:13:00] [32minfo[39m:  app/modules/teacher/routes/teacheruser.routes.js is loaded 
+[2021-07-04 12:13:02] [32minfo[39m:  Agenda Started. 
