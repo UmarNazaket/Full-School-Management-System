@@ -22,6 +22,7 @@ const _ = require('lodash'),
     announcements = mongoose.model('announcements'),
     Orders = mongoose.model('Orders'),
     TimeTable = mongoose.model('TimeTable'), 
+    StudentPapers = mongoose.model('StudentPapers'), 
     sgMail = require('@sendgrid/mail');
     
 
@@ -206,7 +207,7 @@ let fetchStudentAttendance = async (req, res, next) => {
         });
     }
 }
-let fetchStudentMarks = async (req, res, next) => {
+let fetchStudentMarks = async (req, res, next) => { 
     try {
         let studentId = (req.body.id) || '60c505913095fd2e844c2b73';
         let studentMarks = await StudentMarks.find({
@@ -608,6 +609,30 @@ let addOrder = async (req, res, next) => {
         });
     }
 }
+let addStudentPaper = async (req, res, next) => {
+    try {
+        let StudentPaper = await StudentPapers.create(req.body.data)
+
+        if (StudentPaper) {
+            return responseModule.successResponse(res, {
+                success: 1,
+                message: 'StudentPapers added successfully.',
+                data: {
+                    StudentPaper: StudentPaper
+                }
+            });
+        } else {
+            return next({
+                msgCode: 1100
+            });
+        }
+    } catch (err) {
+        winston.error(err);
+        return next({
+            msgCode: 1037
+        });
+    }
+}
 let announcementsfetch = async (req, res, next) => {
     try {
         console.log('dfgchvjbknljcfxdxgchvjb,')
@@ -645,5 +670,6 @@ module.exports = {
     addData,
     announcementsAdd,
     announcementsfetch,
-    addOrder
+    addOrder,
+    addStudentPaper
 }
