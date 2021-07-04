@@ -85,6 +85,12 @@
             // passport.isAuthorized([0, 1,2,3,4]),
             studentUserController.announcementsfetch
         );
+        app.post(
+            version + moduleName + '/paper/upload',
+            // passport.isAuthenticated,
+            // passport.isAuthorized([0, 1,2,3,4]),
+            studentUserController.addStudentPaper
+        );
     }
 
 
