@@ -29,6 +29,7 @@ export class UploadMarksComponent implements OnInit {
     });
   }
   uploadMarks(stdId: any): void{
+    
     let data;
       this.msgs1 = [
         { severity: 'success', summary: 'Marks Uploaded', detail: '' }

@@ -15,14 +15,14 @@ const employeeUserController = require('../controller/employee.controller'),
         );
         app.get(
             version + moduleName + '/view/fee',
-            passport.isAuthenticated,
-            passport.isAuthorized([3]),
+            // passport.isAuthenticated,
+            // passport.isAuthorized([3]),
             employeeUserController.viewFeeChallan
         );
         app.put(
             version + moduleName + '/update/fee',
-            passport.isAuthenticated,
-            passport.isAuthorized([3]),
+            // passport.isAuthenticated,
+            // passport.isAuthorized([3]),
             employeeUserController.updateFeeChallan
         );
         app.post(

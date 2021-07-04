@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {StudentService} from '../../../shared/student.service'
+import {StudentService} from '../../../shared/student.service';
+import {Message,MessageService} from 'primeng/api';
 
 @Component({
   selector: 'app-study-scheme',
@@ -15,7 +16,9 @@ export class StudySchemeComponent implements OnInit {
   schemeOfStudy: any;
   subjectId: any;
 
-  constructor(private studentservice: StudentService) { }
+  msgs1: Message[];
+
+  constructor(private studentservice: StudentService, private messageService: MessageService) { }
 
   ngOnInit(): void {
     this.subjectId = localStorage.getItem("subjectIdforteacher")
@@ -30,6 +33,11 @@ export class StudySchemeComponent implements OnInit {
 
     this.studentservice.schemeOfStudy(data).subscribe((res: any) => {
       console.table("this is data", res);
+      this.schemeOfStudy = null;
+        this.msgs1 = [
+          { severity: 'success', summary: 'Scheme Of Study Added', detail: '' }
+        ];
+     
     });
   }
 

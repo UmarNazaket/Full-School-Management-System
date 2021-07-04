@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { Subject } from 'rxjs';
 import { AddAdminComponent } from './admin/add-admin/add-admin.component';
 import { AddSubjectClassComponent } from './admin/add-subject-class/add-subject-class.component';
+import { AddTeacherComponent } from './admin/add-teacher/add-teacher.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdmissionFormsComponent } from './admin/admission-forms/admission-forms.component';
 import { EditStudentComponent } from './admin/edit-student/edit-student.component';
@@ -180,6 +181,10 @@ const routes: Routes = [{
     {
       path: 'addsubject',
       component: AddSubjectClassComponent
+    },
+    {
+      path: "addteacher",
+      component: AddTeacherComponent
     }
   ]
 }

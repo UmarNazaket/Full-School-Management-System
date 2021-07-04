@@ -18,11 +18,14 @@ const _ = require('lodash'),
     OnlineClass = mongoose.model('OnlineClass'),
     StudentFee = mongoose.model('StudentFee'),
     announcements = mongoose.model('announcements'),
+    Orders = mongoose.model('Orders'),
     TimeTable = mongoose.model('TimeTable');
 
 let viewTimeTable = async (req, res, next) => {
     try {
-        let studentId = (req.body._id) || 0, //'60c505913095fd2e844c2b73';
+        console.log('*************************')
+        console.log(req.user)
+        let studentId = (req.body.id) || '60c505913095fd2e844c2b73',
 
             studentTimeTable = await TimeTable.find({}).populate([{
                 path: 'subject',
@@ -43,6 +46,8 @@ let viewTimeTable = async (req, res, next) => {
             if (item.subject.students.length > 0) {
                 item.subjectName = item.subject.name || ''
                 item.subjectId = item.subject._id || ''
+                item.startTime = moment(item.startTime).format('hh:ss')
+                item.endTime = moment(item.endTime).format('hh:ss')
                 delete item.subject;
             } else {
                 studentTimeTable.splice(index, 1)
@@ -68,7 +73,7 @@ let viewTimeTable = async (req, res, next) => {
         if (studentTimeTable) {
             return responseModule.successResponse(res, {
                 success: 1,
-                message: 'Student timetbale is fetched successfully.',
+                message: 'Student timetable is fetched successfully.',
                 data: {
                     TimeTable: {
                         Monday,
@@ -95,7 +100,7 @@ let viewTimeTable = async (req, res, next) => {
 }
 let fetchStudentSubjects = async (req, res, next) => {
     try {
-        let studentId = (req.body._id) || 0;
+        let studentId = (req.body.id) || '60c505913095fd2e844c2b73';
         console.log('here is the student id', studentId)
         let studentSubjects = await Subjects.find({
             students: {
@@ -107,12 +112,12 @@ let fetchStudentSubjects = async (req, res, next) => {
             path: 'teacher',
             model: 'SchoolUser',
             }
-        ]).lean().select(['teacher', 'name']);
-        studentSubjects.map((item)=>{
-         item.subjectName = item.name;
-         item.teacherName = item.teacher[0].firstName +""+   item.teacher[0].lastName
-        //  item.teacher[0].pop
-        })
+        ]).lean().select(['teacher', 'name' ,'price']);
+        studentSubjects.forEach((item)=>{
+            item.subjectName = item.name;
+            item.teacherName = item.teacher[0].firstName +""+   item.teacher[0].lastName
+           //  item.teacher[0].pop
+           })
         if (studentSubjects) {
 
             return responseModule.successResponse(res, {
@@ -136,38 +141,54 @@ let fetchStudentSubjects = async (req, res, next) => {
 }
 let fetchStudentAttendance = async (req, res, next) => {
     try {
-        let studentId = (req.body._id) || 0;
+        let studentId = (req.body.id) || '60c505913095fd2e844c2b73';
         let subjectId = (req.body.subjectId) || 0;
         let filter = {};
         if(subjectId){
             filter={
-                studentId:studentId,
-                subjectId:subjectId
+                studentId: ObjectId(studentId),
+                subjectId:ObjectId(subjectId)
             }
         }else {
             filter={
-                studentId:studentId
+                studentId:ObjectId(studentId)
             }
         }
-        let studentAttendance = await Attendance.find(filter).populate([{
+        console.log(filter)
+        let studentAttendance = await Attendance.find(filter)
+        .populate([{
             path: 'subjectId',
             model: 'Subjects',
             required: true,
         }]).lean()
         studentAttendance = JSON.parse(JSON.stringify(studentAttendance))
-       
+        
         studentAttendance.map((item) => {
             item.subjectName = item.subjectId.name;
-            item.date = moment.unix(item.date).format('YYYY-MM-DD')
+            item.date = moment(item.date).format('YYYY-MM-DD')
             delete item.subjectId
         })
+        let present = [], absent = [];
+        for(let x = 1 ; x <= 12; x++){
+         let data1=   studentAttendance.filter((item) =>{
+                return moment(item.date).format('MM') == '0'+x && item.status ==1
+            })
+            present = [...present, data1.length]
+         let data=   studentAttendance.filter((item) =>{
+                return moment(item.date).format('MM') == '0'+x && item.status ==0
+            })
+            absent = [...absent, data.length]
+
+        }
         if (studentAttendance) {
 
             return responseModule.successResponse(res, {
                 success: 1,
                 message: 'Student attendance fetched successfully.',
                 data: {
-                    studentAttendance: studentAttendance
+                    studentAttendance: studentAttendance,
+                    present : present,
+                    absent : absent
                 }
             });
         } else {
@@ -184,7 +205,7 @@ let fetchStudentAttendance = async (req, res, next) => {
 }
 let fetchStudentMarks = async (req, res, next) => {
     try {
-        let studentId =  (req.body._id) || 0;
+        let studentId = (req.body.id) || '60c505913095fd2e844c2b73';
         let studentMarks = await StudentMarks.find({
             studentId: studentId,
 
@@ -245,7 +266,7 @@ let fetchStudentMarks = async (req, res, next) => {
 }
 let fetchStudentMarksBySubject = async (req, res, next) => {
     try {
-        let studentId = (req.body._id) || 0,
+        let studentId = (req.body.id) || '60c505913095fd2e844c2b73';
             subjectId = _.trim(req.body.subjectId)
         let studentMarks = await StudentMarks.find({
             studentId: studentId,
@@ -309,7 +330,7 @@ let fetchStudentMarksBySubject = async (req, res, next) => {
 }
 let fetchStudentOnlineClass = async (req, res, next) => {
     try {
-        let studentId = (req.body._id) || 0,
+        let studentId = (req.body.id) || '60c505913095fd2e844c2b73';
             subjectId = _.trim(req.body.subjectId);
 
             let time = moment().unix()
@@ -359,7 +380,7 @@ let fetchStudentOnlineClass = async (req, res, next) => {
 }
 let fetchStudentFeeChallan = async (req, res, next) => {
     try {
-        let studentId =  (req.body._id) || 0;
+        let studentId = (req.body.id) || '60c505913095fd2e844c2b73';
         let studentFee = await StudentFee.find({
             student: studentId
         }).populate({
@@ -370,7 +391,7 @@ let fetchStudentFeeChallan = async (req, res, next) => {
         studentFee.map((item)=>{
             item.studentName = item.student.firstName + ""+ item.student.lastName
             item.RegNo = item.student.RegNo
-            item.submissionDate = moment.unix(item.submissionDate).format('YYYY-MM-DD')
+            item.submissionDate = moment(item.submissionDate).format('YYYY-MM-DD')
            delete item.student
         })
         if (studentFee) {
@@ -396,7 +417,7 @@ let fetchStudentFeeChallan = async (req, res, next) => {
 }
 let fetchStudentStudyScheme = async (req, res, next) => {
     try {
-        let studentId = (req.body._id) || 0;
+        let studentId = (req.body.id) || '60c505913095fd2e844c2b73';
         let subjectId = (req.body.subjectId) || 0;
         let studyScheme = await Subjects.find({
             _id: subjectId,
@@ -433,7 +454,7 @@ let fetchStudentStudyScheme = async (req, res, next) => {
 }
 let fetchOnlineExam = async (req, res, next) => {
     try {
-        let studentId =  (req.body._id) || 0;
+        // let studentId = '60a64ef1b3c56e3cdc44f9bc'; //= (req.user._id) || 0,
         let subjectId = (req.body.subjectId) || 0;
         console.log(req.body)
         let time = moment().unix()
@@ -528,6 +549,29 @@ let announcementsAdd = async (req, res, next) => {
         });
     }
 }
+let addOrder = async (req, res, next) => {
+    try {
+      let Order = await Orders.create(req.body.data)
+        if (Order) {
+            return responseModule.successResponse(res, {
+                success: 1,
+                message: 'Orders added successfully.',
+                data: {
+                    Orders: Orders
+                }
+            });
+        } else {
+            return next({
+                msgCode: 1100
+            });
+        }
+    } catch (err) {
+        winston.error(err);
+        return next({
+            msgCode: 1037
+        });
+    }
+}
 let announcementsfetch = async (req, res, next) => {
     try {
         console.log('dfgchvjbknljcfxdxgchvjb,')
@@ -564,5 +608,6 @@ module.exports = {
     fetchOnlineExam,
     addData,
     announcementsAdd,
-    announcementsfetch
+    announcementsfetch,
+    addOrder
 }

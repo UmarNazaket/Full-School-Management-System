@@ -1,0 +1,39 @@
+import { Component, OnInit } from '@angular/core';
+import {StudentService} from '../../../shared/student.service'
+
+@Component({
+  selector: 'app-add-teacher',
+  templateUrl: './add-teacher.component.html',
+  styleUrls: ['./add-teacher.component.scss']
+})
+export class AddTeacherComponent implements OnInit {
+  firstname: any;
+  lastname: any;
+  email: any;
+  pass: any;
+  phonenumber: any;
+
+  constructor(private studentservice: StudentService) { }
+
+  ngOnInit(): void {
+  }
+
+  
+  onsubmit(): any{
+    let data = {
+      firstName: this.firstname,
+      lastName: this.lastname,
+      userType: 2,
+      email: this.email,
+      password: this.pass,
+      phoneNumber: this.phonenumber
+    }
+
+    this.studentservice.addadmin(data).subscribe((res: any) => {
+      console.table("this is data", res);
+    });
+
+  }
+
+
+}

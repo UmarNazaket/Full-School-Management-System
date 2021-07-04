@@ -7,6 +7,7 @@ import { BASE_URL } from 'src/model/global';
 })
 export class AdminSService {
   baseUrl = BASE_URL;
+  id = JSON.parse(localStorage.getItem("logindata"))._id;
 
   constructor(private httpClient: HttpClient) { }
 
@@ -19,22 +20,22 @@ export class AdminSService {
   }
 
   getStudents(classnum: any){
-    return this.httpClient.post(this.baseUrl + '/admin/subAdmin/class/student', {classnum});
+    return this.httpClient.post(this.baseUrl + '/admin/subAdmin/class/student', {class: classnum.classNo});
   }
 
   deleteStd(data: any){
-    return this.httpClient.put(this.baseUrl + '/admin/subAdmin/update/status', {data});
+    return this.httpClient.put(this.baseUrl + '/admin/subAdmin/update/status', {data , id: this.id});
   }
 
   editStd(data: any){
-    return this.httpClient.post(this.baseUrl + '/admin/subAdmin/update/user', {data});
+    return this.httpClient.post(this.baseUrl + '/admin/subAdmin/update/user', {data , id: this.id});
   }
 
   addSubject(data: any){
-    return this.httpClient.post(this.baseUrl + '/admin/subAdmin/create/subject', {data});
+    return this.httpClient.post(this.baseUrl + '/admin/subAdmin/create/subject', {data , id: this.id});
   }
 
   createTimeTable(data: any){
-    return this.httpClient.post(this.baseUrl + '/admin/subAdmin/create/timetable', {data});
+    return this.httpClient.post(this.baseUrl + '/admin/subAdmin/create/timetable', {data , id: this.id});
   }
 }

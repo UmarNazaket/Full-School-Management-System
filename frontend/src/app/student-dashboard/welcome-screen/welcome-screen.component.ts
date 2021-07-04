@@ -80,7 +80,7 @@ export class WelcomeScreenComponent implements OnInit {
   classlink: any;
   ngOnInit(): void {
     this.studentservice.getClassLink().subscribe((data: any) => {
-      console.table("this is data", data);
+      console.table("this is Class data", data);
       this.classlink = data.data.studentOnlineClass;
     });
 
@@ -95,7 +95,6 @@ export class WelcomeScreenComponent implements OnInit {
   gotoAssessment(post_title: any, courseid:any): void{
     console.log(post_title, courseid);
     localStorage.setItem("subjectName", post_title);
-    this.router.navigate(['/student/schemeofstudies'])
 
     this.studentservice.getschemeofstudies(courseid).subscribe((res: any) => {
       console.table("this is data", res);
@@ -107,14 +106,23 @@ export class WelcomeScreenComponent implements OnInit {
       // localStorage.setItem("schemeOfStudies", res.data.studyScheme);
       localStorage.setItem("onlineExam", JSON.stringify(res.data.onlineExam[0]));
     });
+
+    
+    this.router.navigate(['/student/schemeofstudies'])
   }
 
   getAttendance(subjectId: any): void{
     this.studentservice.getAttendance(subjectId).subscribe((res: any) => {
       console.table("this is attendance data ", res);
-      localStorage.setItem("attendancevalues", JSON.stringify(res.data.studentAttendance));
+      localStorage.setItem("attendancevalues", JSON.stringify(res));
       this.router.navigate(['/student/attendance'])
     });
+  }
+
+  gotoCheckout(price: any, subjectName: any): any{
+    localStorage.setItem("price", price);
+    localStorage.setItem("subjectName", subjectName);
+    this.router.navigate(['/student/checkout'])
   }
 
 }

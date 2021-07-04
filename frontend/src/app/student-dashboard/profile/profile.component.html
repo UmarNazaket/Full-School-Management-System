@@ -8,7 +8,7 @@
           <!-- Main Content -->
           <div class="main-content">
               <div class="text-center name-heading">
-                  Hello Name !
+                  Hello {{name}} !
                   
               </div>
               <div class="form pl-3 pr-3">
@@ -25,7 +25,7 @@
                     </div>
                     <div class="row ">
                         <div class="col-sm-12 col-md-6 mt-4">
-                          <label for="email">Email</label>
+                          <label for="email">DOB</label>
                           <input type="email" class="form-control" id="email" name="email" [(ngModel)]='user.user_email' readonly>
                         </div>
                         <div class="col-sm-12 col-md-6 mt-4">
@@ -35,7 +35,7 @@
                       </div>
                       <div class=" col-sm-12 h5 base-color1 mt-3">{{message}}</div>
                       <div class="row mt-4 text-center">
-                          <button class="btn btn-primary" (click)="changecontact()">Update</button>
+                          <!-- <button class="btn btn-primary" (click)="changecontact()">Update</button> -->
                       </div>
                   </form>
               </div>

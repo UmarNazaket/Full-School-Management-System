@@ -15,9 +15,7 @@ export class ParentDashboardComponent implements OnInit {
   ngOnInit(): void {
     // @ts-ignore
     document.getElementById('eup-navbar-heading').innerText = 'Parent Dashboard';
-    if(!localStorage.getItem("token")){
-      this.router.navigate(['/']);
-    }
+    
   }
   logout(): void{
     // Logout Functionality here

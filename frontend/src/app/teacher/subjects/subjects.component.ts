@@ -26,7 +26,7 @@ export class SubjectsComponent implements OnInit {
   constructor( private studentservice: StudentService, private router:Router) { }
 
   ngOnInit(): void {
-    // localStorage.setItem("teacherID",this.teacherId);
+    this.teacherId = JSON.parse(localStorage.getItem("logindata"))._id;
     this.studentservice.fetchSubjects(this.teacherId).subscribe((res: any) => {
       console.table("this is data", res);
       this.smallfinalarray = res.data.teacherSubjects;

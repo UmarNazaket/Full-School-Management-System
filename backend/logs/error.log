@@ -1525,150 +1525,1351 @@ CastError: Cast to ObjectId failed for value "urdu" (type string) at path "_id" 
 [2021-06-12 14:18:33] [31merror[39m:  mongoose connection disconnected 
 [2021-06-12 14:20:41] [31merror[39m:  {"status":404} 
 [2021-06-12 15:20:20] [31merror[39m:  mongoose connection disconnected 
-[2021-06-13 00:29:40] [31merror[39m:  mongoose connection disconnected 
-[2021-06-13 00:41:19] [31merror[39m:  {"message":"This admin account doesn’t exist. Please enter a different email."} 
-[2021-06-13 00:41:55] [31merror[39m:  Cannot read property '_id' of undefined 
-TypeError: Cannot read property '_id' of undefined
-    at fetchStudentOnlineClass (E:\Separate Projects\Full-School-Management-System\backend\app\modules\student\controller\studentuser.controller.js:312:35)
-    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
-    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
-    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
-    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
-    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
-    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
-    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
-    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
-    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
-    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
-    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
-    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
-    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
-    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
-    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
-    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
-    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
-[2021-06-13 00:41:55] [31merror[39m:  {"msgCode":1037} 
-[2021-06-13 00:41:55] [31merror[39m:  Cannot read property '_id' of undefined 
-TypeError: Cannot read property '_id' of undefined
-    at fetchStudentSubjects (E:\Separate Projects\Full-School-Management-System\backend\app\modules\student\controller\studentuser.controller.js:98:35)
-    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
-    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
-    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
-    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
-    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
-    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
-    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
-    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
-    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
-    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
-    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
-    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
-    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
-    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
-    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
-    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
-    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
-[2021-06-13 00:41:55] [31merror[39m:  {"msgCode":1037} 
-[2021-06-13 00:44:51] [31merror[39m:  {"msgCode":3} 
-[2021-06-13 00:44:51] [31merror[39m:  {"msgCode":3} 
-[2021-06-13 00:45:53] [31merror[39m:  {"msgCode":3} 
-[2021-06-13 00:45:53] [31merror[39m:  {"msgCode":3} 
-[2021-06-13 05:50:04] [31merror[39m:  mongoose connection disconnected 
-[2021-06-13 10:33:36] [31merror[39m:  {"msgCode":3} 
-[2021-06-13 10:33:36] [31merror[39m:  {"msgCode":3} 
-[2021-06-13 10:34:23] [31merror[39m:  {"msgCode":3} 
-[2021-06-13 10:34:24] [31merror[39m:  {"msgCode":3} 
-[2021-06-13 10:34:39] [31merror[39m:  {"msgCode":3} 
-[2021-06-13 10:34:39] [31merror[39m:  {"msgCode":3} 
-[2021-06-13 12:22:18] [31merror[39m:  mongoose connection disconnected 
-[2021-06-13 12:22:32] [31merror[39m:  {"msgCode":3} 
-[2021-06-13 12:22:32] [31merror[39m:  {"msgCode":3} 
-[2021-06-13 12:24:36] [31merror[39m:  {"msgCode":3} 
-[2021-06-13 12:24:36] [31merror[39m:  {"msgCode":3} 
-[2021-06-13 12:29:01] [31merror[39m:  {"status":404} 
-[2021-06-13 12:29:44] [31merror[39m:  {"status":404} 
-[2021-06-13 12:41:05] [31merror[39m:  {"status":404} 
-[2021-06-13 12:41:07] [31merror[39m:  {"status":404} 
-[2021-06-13 12:48:24] [31merror[39m:  Cannot read property '_id' of undefined 
-TypeError: Cannot read property '_id' of undefined
-    at fetchStudentOnlineClass (E:\Separate Projects\Full-School-Management-System\backend\app\modules\student\controller\studentuser.controller.js:312:35)
-    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
-    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
-    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
-    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
-    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
-    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
-    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
-    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
-    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
-    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
-    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
-    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
-    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
-    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
-    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
-    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
-    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
-[2021-06-13 12:48:24] [31merror[39m:  {"msgCode":1037} 
-[2021-06-13 12:48:24] [31merror[39m:  Cannot read property '_id' of undefined 
-TypeError: Cannot read property '_id' of undefined
-    at fetchStudentSubjects (E:\Separate Projects\Full-School-Management-System\backend\app\modules\student\controller\studentuser.controller.js:98:35)
-    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
-    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
-    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:281:22
-    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:354:14)
-    at param (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:365:14)
-    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:410:3)
-    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
-    at SessionStrategy.strategy.pass (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:343:9)
-    at SessionStrategy.authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\strategies\session.js:75:10)
-    at attempt (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:366:16)
-    at authenticate (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\authenticate.js:367:7)
-    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
-    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:284:7
-    at Function.process_params (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:335:12)
-    at next (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:275:10)
-    at initialize (E:\Separate Projects\Full-School-Management-System\backend\node_modules\passport\lib\middleware\initialize.js:53:5)
-    at Layer.handle [as handle_request] (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (E:\Separate Projects\Full-School-Management-System\backend\node_modules\express\lib\router\index.js:317:13)
-[2021-06-13 12:48:24] [31merror[39m:  {"msgCode":1037} 
-[2021-06-13 12:51:15] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects" 
-CastError: Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects"
-    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4470:21)
+[2021-06-12 15:29:26] [31merror[39m:  {"message":"Invalid password."} 
+[2021-06-12 15:30:02] [31merror[39m:  {"code":"ETIMEOUT","syscall":"queryTxt","hostname":"cluster0.m2t0w.mongodb.net"} 
+[2021-06-12 15:34:49] [31merror[39m:  mongoose connection disconnected 
+[2021-06-12 19:43:51] [31merror[39m:  {"status":404} 
+[2021-06-12 19:50:34] [31merror[39m:  {"status":404} 
+[2021-06-12 21:00:24] [31merror[39m:  {"status":404} 
+[2021-06-12 22:46:23] [31merror[39m:  {"status":404} 
+[2021-06-12 22:47:39] [31merror[39m:  Cast to ObjectId failed for value "urdu" (type string) at path "_id" for model "Subjects" 
+CastError: Cast to ObjectId failed for value "urdu" (type string) at path "_id" for model "Subjects"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-12 22:47:39] [31merror[39m:  {"msgCode":1037} 
+[2021-06-12 22:47:51] [31merror[39m:  Cast to ObjectId failed for value "urdu" (type string) at path "_id" for model "Subjects" 
+CastError: Cast to ObjectId failed for value "urdu" (type string) at path "_id" for model "Subjects"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-12 22:47:51] [31merror[39m:  {"msgCode":1037} 
+[2021-06-12 22:49:17] [31merror[39m:  Cast to ObjectId failed for value "urdu" (type string) at path "_id" for model "Subjects" 
+CastError: Cast to ObjectId failed for value "urdu" (type string) at path "_id" for model "Subjects"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-12 22:49:17] [31merror[39m:  {"msgCode":1037} 
+[2021-06-12 23:15:05] [31merror[39m:  Cast to ObjectId failed for value "urdu" (type string) at path "_id" for model "Subjects" 
+CastError: Cast to ObjectId failed for value "urdu" (type string) at path "_id" for model "Subjects"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-12 23:15:05] [31merror[39m:  {"msgCode":1037} 
+[2021-06-12 23:32:42] [31merror[39m:  Cast to ObjectId failed for value "urdu" (type string) at path "_id" for model "Subjects" 
+CastError: Cast to ObjectId failed for value "urdu" (type string) at path "_id" for model "Subjects"
+    at model.Query.exec (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-12 23:32:42] [31merror[39m:  {"msgCode":1037} 
+[2021-06-12 23:39:04] [31merror[39m:  Cannot read property 'firstName' of undefined 
+TypeError: Cannot read property 'firstName' of undefined
+    at createSubAdminAccount (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:115:41)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+[2021-06-12 23:39:04] [31merror[39m:  {"msgCode":1033} 
+[2021-06-12 23:41:37] [31merror[39m:  Cannot read property 'firstName' of undefined 
+TypeError: Cannot read property 'firstName' of undefined
+    at createSubAdminAccount (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:115:41)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+[2021-06-12 23:41:37] [31merror[39m:  {"msgCode":1033} 
+[2021-06-12 23:42:33] [31merror[39m:  SchoolUser validation failed: studentId.0: Cast to [ObjectId] failed for value "[0]" (type string) at path "studentId.0" 
+ValidationError: SchoolUser validation failed: studentId.0: Cast to [ObjectId] failed for value "[0]" (type string) at path "studentId.0"
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at model.$set (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:1318:12)
+    at model.$set (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:1022:16)
+    at model.Document (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:147:12)
+    at model.Model (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:105:12)
+    at new model (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:4706:15)
+    at createSubAdminAccount (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:127:28)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+[2021-06-12 23:42:33] [31merror[39m:  {"msgCode":1033} 
+[2021-06-12 23:43:27] [31merror[39m:  studentId is not defined 
+ReferenceError: studentId is not defined
+    at createSubAdminAccount (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:138:24)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+[2021-06-12 23:43:27] [31merror[39m:  {"msgCode":1033} 
+[2021-06-12 23:44:07] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: "teacher@gmail.com" } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: "teacher@gmail.com" }
+    at Function.create (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\error.js:57:12)
+    at toError (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\utils.js:123:22)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\operations\common_functions.js:258:39
+    at handler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\topology.js:944:24)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:350:13
+    at handleOperationResult (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\server.js:558:5)
+    at MessageStream.messageHandler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:277:5)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:485:12)
+    at processIncomingData (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:385:12)
+    at writeOrBuffer (_stream_writable.js:367:5)
+    at MessageStream.Writable.write (_stream_writable.js:307:12)
+    at Socket.ondata (_stream_readable.js:707:22)
+    at Socket.emit (events.js:315:20)
+    at Socket.EventEmitter.emit (domain.js:485:12)
+    at addChunk (_stream_readable.js:296:12)
+    at readableAddChunk (_stream_readable.js:272:9)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+[2021-06-12 23:44:07] [31merror[39m:  {"msgCode":1033} 
+[2021-06-12 23:55:41] [31merror[39m:  Cannot read property 'name' of undefined 
+TypeError: Cannot read property 'name' of undefined
+    at createNewClass (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:307:35)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+[2021-06-12 23:55:41] [31merror[39m:  {"msgCode":1037} 
+[2021-06-12 23:56:14] [31merror[39m:  {"expose":true,"statusCode":400,"status":400,"body":"{\r\n    \"data\"{\r\n        \"name\": \"Blue Class\",\r\n        \"classNo\": 5\r\n    }\r\n}","type":"entity.parse.failed"} 
+[2021-06-12 23:56:42] [31merror[39m:  Cannot read property 'name' of undefined 
+TypeError: Cannot read property 'name' of undefined
+    at createNewSubject (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:341:35)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+[2021-06-12 23:56:42] [31merror[39m:  {"msgCode":1038} 
+[2021-06-12 23:57:34] [31merror[39m:  Cannot read property 'name' of undefined 
+TypeError: Cannot read property 'name' of undefined
+    at createNewSubject (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:341:35)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+[2021-06-12 23:57:34] [31merror[39m:  {"msgCode":1038} 
+[2021-06-13 00:00:48] [31merror[39m:  Cannot read property 'type' of undefined 
+TypeError: Cannot read property 'type' of undefined
+    at generateStudentFee (E:\vizteck-work\expressWithMongoDb\app\modules\employee\controller\employee.controller.js:18:34)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+[2021-06-13 00:00:48] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 00:02:52] [31merror[39m:  {"msgCode":3} 
+[2021-06-13 00:05:03] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at Function.create (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\error.js:57:12)
+    at toError (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\utils.js:123:22)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\operations\common_functions.js:258:39
+    at handler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\topology.js:944:24)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:350:13
+    at handleOperationResult (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\server.js:558:5)
+    at MessageStream.messageHandler (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:277:5)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:485:12)
+    at processIncomingData (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:385:12)
+    at writeOrBuffer (_stream_writable.js:367:5)
+    at MessageStream.Writable.write (_stream_writable.js:307:12)
+    at TLSSocket.ondata (_stream_readable.js:707:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:485:12)
+    at addChunk (_stream_readable.js:296:12)
+    at readableAddChunk (_stream_readable.js:272:9)
+    at TLSSocket.Readable.push (_stream_readable.js:213:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:186:23)
+[2021-06-13 00:05:03] [31merror[39m:  {"msgCode":1033} 
+[2021-06-13 00:06:56] [31merror[39m:  {"msgCode":3} 
+[2021-06-13 00:08:07] [31merror[39m:  Cannot read property 'day' of undefined 
+TypeError: Cannot read property 'day' of undefined
+    at createNewTimeTable (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:483:42)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+[2021-06-13 00:08:07] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 00:08:54] [31merror[39m:  {"msgCode":3} 
+[2021-06-13 00:10:06] [31merror[39m:  Cannot read property 'day' of undefined 
+TypeError: Cannot read property 'day' of undefined
+    at addOnlineClass (E:\vizteck-work\expressWithMongoDb\app\modules\teacher\controller\teacheruser.controller.js:102:42)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+[2021-06-13 00:10:06] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 00:10:24] [31merror[39m:  OnlineClass validation failed: teacherId: Cast to ObjectId failed for value "" (type string) at path "teacherId" 
+ValidationError: OnlineClass validation failed: teacherId: Cast to ObjectId failed for value "" (type string) at path "teacherId"
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at model.$set (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:1318:12)
+    at model.$set (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:1022:16)
+    at model.Document (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:147:12)
+    at model.Model (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:105:12)
+    at new model (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:4706:15)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:3094:22
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:3130:7
+    at Array.forEach (<anonymous>)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:3129:15
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at Mongoose._promiseOrCallback (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\index.js:1149:10)
+    at Function.create (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:3064:23)
+    at addOnlineClass (E:\vizteck-work\expressWithMongoDb\app\modules\teacher\controller\teacheruser.controller.js:114:48)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+[2021-06-13 00:10:24] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 00:14:01] [31merror[39m:  Cannot read property 'subjectId' of undefined 
+TypeError: Cannot read property 'subjectId' of undefined
+    at addSchemeOfStudy (E:\vizteck-work\expressWithMongoDb\app\modules\teacher\controller\teacheruser.controller.js:240:40)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+[2021-06-13 00:14:01] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 00:18:39] [31merror[39m:  Cannot read property 'subjectId' of undefined 
+TypeError: Cannot read property 'subjectId' of undefined
+    at addStudentMarks (E:\vizteck-work\expressWithMongoDb\app\modules\teacher\controller\teacheruser.controller.js:302:40)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:281:22
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:354:14)
+    at param (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:410:3)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at SessionStrategy.strategy.pass (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:343:9)
+    at SessionStrategy.authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\strategies\session.js:75:10)
+    at attempt (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:366:16)
+    at authenticate (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\authenticate.js:367:7)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:275:10)
+    at initialize (E:\vizteck-work\expressWithMongoDb\node_modules\passport\lib\middleware\initialize.js:53:5)
+    at Layer.handle [as handle_request] (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\vizteck-work\expressWithMongoDb\node_modules\express\lib\router\index.js:317:13)
+[2021-06-13 00:18:39] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 00:19:02] [31merror[39m:  StudentMarks validation failed: subjectId: Cast to ObjectId failed for value "0" (type number) at path "subjectId", studentId: Cast to ObjectId failed for value "0" (type number) at path "studentId" 
+ValidationError: StudentMarks validation failed: subjectId: Cast to ObjectId failed for value "0" (type number) at path "subjectId", studentId: Cast to ObjectId failed for value "0" (type number) at path "studentId"
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at model.$set (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:1318:12)
+    at model.$set (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:1022:16)
+    at model.Document (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:147:12)
+    at model.Model (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:105:12)
+    at new model (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:4706:15)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:3094:22
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:3130:7
+    at Array.forEach (<anonymous>)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:3129:15
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at Mongoose._promiseOrCallback (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\index.js:1149:10)
+    at Function.create (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\model.js:3064:23)
+    at addStudentMarks (E:\vizteck-work\expressWithMongoDb\app\modules\teacher\controller\teacheruser.controller.js:318:32)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-13 00:19:02] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 00:38:50] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 00:58:35] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 16:16:27] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 16:21:21] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 16:28:41] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 16:39:48] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 17:17:30] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 20:46:19] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 21:01:23] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 21:11:20] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 21:13:17] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 21:16:09] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 21:19:29] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 21:21:49] [31merror[39m:  {"name":"MongoServerSelectionError","reason":{"type":"ReplicaSetNoPrimary","setName":"atlas-j5k88j-shard-0","maxSetVersion":1,"maxElectionId":"7fffffff0000000000000016","servers":{},"stale":false,"compatible":true,"compatibilityError":null,"logicalSessionTimeoutMinutes":null,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"commonWireVersion":9}} 
+[2021-06-13 21:22:29] [31merror[39m:  {"name":"MongoServerSelectionError","reason":{"type":"ReplicaSetNoPrimary","setName":"atlas-j5k88j-shard-0","maxSetVersion":1,"maxElectionId":"7fffffff0000000000000016","servers":{},"stale":false,"compatible":true,"compatibilityError":null,"logicalSessionTimeoutMinutes":null,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"commonWireVersion":9}} 
+[2021-06-13 21:24:40] [31merror[39m:  {"status":404} 
+[2021-06-13 21:29:50] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 21:30:46] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 21:31:26] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 21:33:23] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 21:34:05] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 21:35:29] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 21:36:28] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 21:37:39] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 21:37:44] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 21:39:49] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 21:40:35] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 21:53:32] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 22:30:35] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 22:42:30] [31merror[39m:  {"msgCode":3} 
+[2021-06-13 22:42:49] [31merror[39m:  {"msgCode":3} 
+[2021-06-13 23:12:38] [31merror[39m:  Cannot read property 'firstName' of undefined 
+TypeError: Cannot read property 'firstName' of undefined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:115:45
+    at Array.map (<anonymous>)
+    at fetchStudentSubjects (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:113:25)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-13 23:12:38] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 23:12:41] [31merror[39m:  Cannot read property 'firstName' of undefined 
+TypeError: Cannot read property 'firstName' of undefined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:115:45
+    at Array.map (<anonymous>)
+    at fetchStudentSubjects (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:113:25)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-13 23:12:41] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 23:13:29] [31merror[39m:  Cannot read property 'firstName' of undefined 
+TypeError: Cannot read property 'firstName' of undefined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:116:45
+    at Array.map (<anonymous>)
+    at fetchStudentSubjects (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:114:25)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-13 23:13:29] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 23:15:54] [31merror[39m:  Cannot read property 'firstName' of undefined 
+TypeError: Cannot read property 'firstName' of undefined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:116:48
+    at Array.forEach (<anonymous>)
+    at fetchStudentSubjects (E:\vizteck-work\expressWithMongoDb\app\modules\student\controller\studentuser.controller.js:114:25)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-13 23:15:54] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 23:31:41] [31merror[39m:  mongoose connection disconnected 
+[2021-06-13 23:33:38] [31merror[39m:  {"status":404} 
+[2021-06-13 23:34:33] [31merror[39m:  Orders validation failed: lastName: Path `lastName` is required., firstName: Path `firstName` is required. 
+ValidationError: Orders validation failed: lastName: Path `lastName` is required., firstName: Path `firstName` is required.
+    at model.Document.invalidate (E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2729:32)
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\document.js:2541:17
+    at E:\vizteck-work\expressWithMongoDb\node_modules\mongoose\lib\schematype.js:1256:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2021-06-13 23:34:33] [31merror[39m:  {"msgCode":1037} 
+[2021-06-13 23:35:15] [31merror[39m:  {"expose":true,"statusCode":400,"status":400,"body":"{\r\n    \"data\"{\r\n        \"firstName\": \"Bilal\",\r\n        \"lastName\": \"Khursheed\",\r\n        \"phone\": \"123456\",\r\n        \"address\": \"dfghjbsaj sgsdi\",\r\n        \"city\": \"ashhvka 6\",\r\n        \"state\": \"sjkajb\",\r\n        \"country\": \"aksjdb\",\r\n        \"postalCode\": \"1234\",\r\n        \"email\": \"bilal@gmail.com\",\r\n        \"bookName\": \"English\",\r\n        \"price\": \"300\",\r\n        \"orderNote\": \"book should be delivired to home\"\r\n    }\r\n}","type":"entity.parse.failed"} 
+[2021-06-14 00:27:29] [31merror[39m:  {"code":"ETIMEOUT","syscall":"queryTxt","hostname":"cluster0.m2t0w.mongodb.net"} 
+[2021-06-14 00:27:29] [31merror[39m:  {"code":"ETIMEOUT","syscall":"queryTxt","hostname":"cluster0.m2t0w.mongodb.net"} 
+[2021-06-14 00:27:29] [31merror[39m:  {"code":"ETIMEOUT","syscall":"queryTxt","hostname":"cluster0.m2t0w.mongodb.net"} 
+[2021-06-14 01:15:40] [31merror[39m:  {"expose":true,"statusCode":400,"status":400,"body":"{\r\n    \"data\": {\r\n        \"firstName\": \"Bilal \",\r\n        \"lastName\": \"Ahmad\",\r\n        \"fatherName\": \"abdul khan\",\r\n        \"phoneNumber\": 90078601,\r\n        \"password\": \"12345678\",\r\n        \"userType\": 2,\r\n        \"DOB\": \"22-feb-1997\",\r\n        \"schoolName\": \"Public School\",\r\n        \"status\": 1,\r\n        \"email\": \"teacher@gmail.com\",\r\n        \r\n    }\r\n}","type":"entity.parse.failed"} 
+[2021-06-14 01:24:21] [31merror[39m:  {"status":404} 
+[2021-06-14 12:02:31] [31merror[39m:  {"status":404} 
+[2021-06-14 12:12:39] [31merror[39m:  mongoose connection disconnected 
+[2021-06-14 14:30:41] [31merror[39m:  mongoose connection disconnected 
+[2021-06-14 14:34:02] [31merror[39m:  Cannot read property 'students' of undefined 
+TypeError: Cannot read property 'students' of undefined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:575:34
+    at Array.map (<anonymous>)
+    at getClassList (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:573:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-14 14:34:02] [31merror[39m:  {"msgCode":1036} 
+[2021-06-14 14:34:58] [31merror[39m:  Cannot read property 'students' of undefined 
+TypeError: Cannot read property 'students' of undefined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:575:34
+    at Array.map (<anonymous>)
+    at getClassList (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:573:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-14 14:34:58] [31merror[39m:  {"msgCode":1036} 
+[2021-06-14 14:34:59] [31merror[39m:  Cannot read property 'students' of undefined 
+TypeError: Cannot read property 'students' of undefined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:575:34
+    at Array.map (<anonymous>)
+    at getClassList (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:573:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-14 14:34:59] [31merror[39m:  {"msgCode":1036} 
+[2021-06-14 14:36:50] [31merror[39m:  Cannot read property 'students' of undefined 
+TypeError: Cannot read property 'students' of undefined
+    at E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:575:62
+    at Array.map (<anonymous>)
+    at getClassList (E:\vizteck-work\expressWithMongoDb\app\modules\admin\adminAccounts\controller\adminuser.controller.js:573:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-06-14 14:36:50] [31merror[39m:  {"msgCode":1036} 
+[2021-06-14 14:38:13] [31merror[39m:  mongoose connection disconnected 
+[2021-06-14 14:59:27] [31merror[39m:  {"msgCode":3} 
+[2021-06-14 15:10:19] [31merror[39m:  mongoose connection disconnected 
+[2021-07-01 18:44:21] [31merror[39m:  mongoose connection disconnected 
+[2021-07-01 19:18:39] [31merror[39m:  mongoose connection disconnected 
+[2021-07-01 19:52:01] [31merror[39m:  mongoose connection disconnected 
+[2021-07-01 20:46:53] [31merror[39m:  mongoose connection disconnected 
+[2021-07-01 20:49:46] [31merror[39m:  {"name":"MongoServerSelectionError","reason":{"type":"ReplicaSetNoPrimary","setName":"atlas-j5k88j-shard-0","maxSetVersion":1,"maxElectionId":"7fffffff0000000000000018","servers":{},"stale":false,"compatible":true,"compatibilityError":null,"logicalSessionTimeoutMinutes":30,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"commonWireVersion":9}} 
+[2021-07-01 20:50:06] [31merror[39m:  connection timed out 
+MongooseServerSelectionError: connection timed out
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
     at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
-[2021-06-13 12:51:15] [31merror[39m:  {"msgCode":1037} 
-[2021-06-13 12:51:47] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects" 
-CastError: Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects"
-    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4470:21)
+[2021-07-01 20:50:06] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:50:14] [31merror[39m:  connection timed out 
+MongooseServerSelectionError: connection timed out
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
     at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
-[2021-06-13 12:51:47] [31merror[39m:  {"msgCode":1037} 
-[2021-06-13 12:52:13] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects" 
-CastError: Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects"
-    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4470:21)
+[2021-07-01 20:50:14] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:50:17] [31merror[39m:  connection timed out 
+MongooseServerSelectionError: connection timed out
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
     at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
-[2021-06-13 12:52:13] [31merror[39m:  {"msgCode":1037} 
-[2021-06-13 12:52:16] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects" 
-CastError: Cast to ObjectId failed for value "0" (type number) at path "students" for model "Subjects"
-    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4470:21)
+[2021-07-01 20:50:17] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:50:20] [31merror[39m:  connection timed out 
+MongooseServerSelectionError: connection timed out
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
     at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
-[2021-06-13 12:52:16] [31merror[39m:  {"msgCode":1037} 
-[2021-06-13 13:46:46] [31merror[39m:  mongoose connection disconnected 
+[2021-07-01 20:50:20] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:50:23] [31merror[39m:  connection timed out 
+MongooseServerSelectionError: connection timed out
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:50:23] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:50:25] [31merror[39m:  connection timed out 
+MongooseServerSelectionError: connection timed out
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:50:25] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:50:25] [31merror[39m:  connection timed out 
+MongooseServerSelectionError: connection timed out
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:50:25] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:50:25] [31merror[39m:  connection timed out 
+MongooseServerSelectionError: connection timed out
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:50:25] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:50:25] [31merror[39m:  connection timed out 
+MongooseServerSelectionError: connection timed out
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:50:25] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:50:25] [31merror[39m:  connection timed out 
+MongooseServerSelectionError: connection timed out
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:50:25] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:50:25] [31merror[39m:  connection timed out 
+MongooseServerSelectionError: connection timed out
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:50:25] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:50:44] [31merror[39m:  {"name":"MongoServerSelectionError","reason":{"type":"ReplicaSetNoPrimary","setName":"atlas-j5k88j-shard-0","maxSetVersion":1,"maxElectionId":"7fffffff0000000000000018","servers":{},"stale":false,"compatible":true,"compatibilityError":null,"logicalSessionTimeoutMinutes":30,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"commonWireVersion":9}} 
+[2021-07-01 20:51:25] [31merror[39m:  connection timed out 
+MongooseServerSelectionError: connection timed out
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:51:25] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:51:25] [31merror[39m:  connection timed out 
+MongooseServerSelectionError: connection timed out
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:51:25] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:51:25] [31merror[39m:  connection timed out 
+MongooseServerSelectionError: connection timed out
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:51:25] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:51:25] [31merror[39m:  connection timed out 
+MongooseServerSelectionError: connection timed out
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:51:25] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:51:25] [31merror[39m:  connection timed out 
+MongooseServerSelectionError: connection timed out
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:51:25] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:51:25] [31merror[39m:  connection timed out 
+MongooseServerSelectionError: connection timed out
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:51:26] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:51:26] [31merror[39m:  connection timed out 
+MongooseServerSelectionError: connection timed out
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:51:26] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:52:01] [31merror[39m:  connection timed out 
+MongooseServerSelectionError: connection timed out
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:52:01] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:53:00] [31merror[39m:  Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ 
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:53:00] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:53:01] [31merror[39m:  Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ 
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:53:01] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:53:01] [31merror[39m:  Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ 
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:53:01] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:53:02] [31merror[39m:  Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ 
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:53:02] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:53:18] [31merror[39m:  Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ 
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:53:18] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:53:19] [31merror[39m:  Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ 
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:53:19] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:53:19] [31merror[39m:  Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ 
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:53:20] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:53:37] [31merror[39m:  Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ 
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:53:37] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:53:39] [31merror[39m:  Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ 
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:53:39] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:53:40] [31merror[39m:  Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ 
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:53:40] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:53:40] [31merror[39m:  Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ 
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:53:40] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:53:42] [31merror[39m:  Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ 
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:53:42] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:53:42] [31merror[39m:  Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ 
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 20:53:42] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 20:55:35] [31merror[39m:  mongoose connection disconnected 
+[2021-07-01 20:58:38] [31merror[39m:  mongoose connection disconnected 
+[2021-07-01 21:05:32] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at MessageStream.messageHandler (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:467:12)
+    at processIncomingData (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at TLSSocket.ondata (internal/streams/readable.js:719:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-01 21:05:32] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:06:09] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at MessageStream.messageHandler (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:467:12)
+    at processIncomingData (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at TLSSocket.ondata (internal/streams/readable.js:719:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-01 21:06:09] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:06:23] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at MessageStream.messageHandler (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:467:12)
+    at processIncomingData (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at TLSSocket.ondata (internal/streams/readable.js:719:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-01 21:06:23] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:07:39] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at MessageStream.messageHandler (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:467:12)
+    at processIncomingData (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at TLSSocket.ondata (internal/streams/readable.js:719:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-01 21:07:39] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:07:45] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at MessageStream.messageHandler (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:467:12)
+    at processIncomingData (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at TLSSocket.ondata (internal/streams/readable.js:719:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-01 21:07:45] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:09:13] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at MessageStream.messageHandler (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:467:12)
+    at processIncomingData (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at TLSSocket.ondata (internal/streams/readable.js:719:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-01 21:09:13] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:17:20] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at MessageStream.messageHandler (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:467:12)
+    at processIncomingData (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at TLSSocket.ondata (internal/streams/readable.js:719:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-01 21:17:20] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:17:25] [31merror[39m:  {"status":404} 
+[2021-07-01 21:17:27] [31merror[39m:  {"status":404} 
+[2021-07-01 21:20:15] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at MessageStream.messageHandler (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:467:12)
+    at processIncomingData (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at TLSSocket.ondata (internal/streams/readable.js:719:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-01 21:20:15] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:21:33] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at MessageStream.messageHandler (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:467:12)
+    at processIncomingData (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at TLSSocket.ondata (internal/streams/readable.js:719:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-01 21:21:33] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:21:55] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at MessageStream.messageHandler (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:467:12)
+    at processIncomingData (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at TLSSocket.ondata (internal/streams/readable.js:719:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-01 21:21:55] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:21:58] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at MessageStream.messageHandler (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:467:12)
+    at processIncomingData (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at TLSSocket.ondata (internal/streams/readable.js:719:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-01 21:21:58] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:23:42] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at MessageStream.messageHandler (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:467:12)
+    at processIncomingData (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at TLSSocket.ondata (internal/streams/readable.js:719:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-01 21:23:42] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:24:17] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at MessageStream.messageHandler (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:467:12)
+    at processIncomingData (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at TLSSocket.ondata (internal/streams/readable.js:719:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-01 21:24:17] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:27:39] [31merror[39m:  mongoose connection disconnected 
+[2021-07-01 21:28:58] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at MessageStream.messageHandler (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:467:12)
+    at processIncomingData (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at TLSSocket.ondata (internal/streams/readable.js:719:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-01 21:28:58] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:34:36] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at MessageStream.messageHandler (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:467:12)
+    at processIncomingData (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at TLSSocket.ondata (internal/streams/readable.js:719:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-01 21:34:36] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:37:25] [31merror[39m:  connection 5 to 23.23.5.90:27017 closed 
+MongoNetworkError: connection 5 to 23.23.5.90:27017 closed
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:68:15
+    at Map.forEach (<anonymous>)
+    at TLSSocket.<anonymous> (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:67:20)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at net.js:673:12
+    at TCP.done (_tls_wrap.js:563:7)
+[2021-07-01 21:37:25] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:37:36] [31merror[39m:  Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ 
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 21:37:36] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 21:37:47] [31merror[39m:  Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ 
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 21:37:47] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 21:37:50] [31merror[39m:  Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ 
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Function.Model.$wrapCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\model.js:4881:32)
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4482:21
+    at E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4481:10)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 21:37:50] [31merror[39m:  {"msgCode":1036} 
+[2021-07-01 21:39:38] [31merror[39m:  mongoose connection disconnected 
+[2021-07-01 21:41:14] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at MessageStream.messageHandler (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:467:12)
+    at processIncomingData (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at TLSSocket.ondata (internal/streams/readable.js:719:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-01 21:41:14] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:42:06] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at MessageStream.messageHandler (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:467:12)
+    at processIncomingData (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at TLSSocket.ondata (internal/streams/readable.js:719:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-01 21:42:06] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:45:29] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at MessageStream.messageHandler (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:467:12)
+    at processIncomingData (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at TLSSocket.ondata (internal/streams/readable.js:719:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-01 21:45:29] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:46:17] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at MessageStream.messageHandler (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:467:12)
+    at processIncomingData (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at TLSSocket.ondata (internal/streams/readable.js:719:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-01 21:46:17] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:49:01] [31merror[39m:  E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null } 
+MongoError: E11000 duplicate key error collection: SchoolSystem.schoolusers index: email_1 dup key: { email: null }
+    at MessageStream.messageHandler (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:315:20)
+    at MessageStream.EventEmitter.emit (domain.js:467:12)
+    at processIncomingData (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at TLSSocket.ondata (internal/streams/readable.js:719:22)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-01 21:49:01] [31merror[39m:  {"msgCode":1032} 
+[2021-07-01 21:54:17] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "_id" for model "SchoolUser" 
+CastError: Cast to ObjectId failed for value "0" (type number) at path "_id" for model "SchoolUser"
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 21:54:17] [31merror[39m:  {"msgCode":1037} 
+[2021-07-01 21:55:18] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "_id" for model "SchoolUser" 
+CastError: Cast to ObjectId failed for value "0" (type number) at path "_id" for model "SchoolUser"
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 21:55:18] [31merror[39m:  {"msgCode":1037} 
+[2021-07-01 21:58:23] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "_id" for model "SchoolUser" 
+CastError: Cast to ObjectId failed for value "0" (type number) at path "_id" for model "SchoolUser"
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 21:58:23] [31merror[39m:  {"msgCode":1037} 
+[2021-07-01 21:58:49] [31merror[39m:  Cast to ObjectId failed for value "0" (type number) at path "_id" for model "SchoolUser" 
+CastError: Cast to ObjectId failed for value "0" (type number) at path "_id" for model "SchoolUser"
+    at model.Query.exec (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4470:21)
+    at model.Query.Query.then (E:\Separate Projects\Full-School-Management-System\backend\node_modules\mongoose\lib\query.js:4564:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-07-01 21:58:49] [31merror[39m:  {"msgCode":1037} 
+[2021-07-01 21:59:34] [31merror[39m:  mongoose connection disconnected 

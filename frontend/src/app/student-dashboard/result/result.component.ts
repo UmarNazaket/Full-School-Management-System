@@ -10,6 +10,10 @@ export class ResultComponent implements OnInit {
   firstTerm: any;
   secondTerm: any;
   thirdTerm: any;
+  
+  IsFirstTerm = false;
+  IsSecondTerm = false;
+  IsThirdTerm = false;
 
   result: any;
   constructor(private studentservice: StudentService) { }
@@ -30,6 +34,24 @@ export class ResultComponent implements OnInit {
      document.body.innerHTML = printContents;
      window.print();
      document.body.innerHTML = originalContents;
+  }
+
+  showTerm(num: any){
+    if(num == 1){
+      this.IsFirstTerm = true;
+      this.IsSecondTerm = false;
+      this.IsThirdTerm = false;
+    }
+    else if(num == 2){
+      this.IsFirstTerm = false;
+      this.IsSecondTerm = true;
+      this.IsThirdTerm = false;
+    }
+    else{
+      this.IsFirstTerm = false;
+      this.IsSecondTerm = false;
+      this.IsThirdTerm = true;
+    }
   }
 
 }
