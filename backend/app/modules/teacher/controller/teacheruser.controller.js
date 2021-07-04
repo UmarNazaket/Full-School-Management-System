@@ -101,10 +101,10 @@ let addOnlineClass = async (req, res, next) => {
         let day = parseInt(req.body.data.day) || 0,
             startTime = req.body.data.startTime,
             endTime = req.body.data.endTime,
-            classId = _.trim(req.body.data.classId)|| '60a755585cc40f3fbcf3302f',
+            classId = _.trim(req.body.data.classId) || '60a755585cc40f3fbcf3302f',
             subject = _.trim(req.body.data.subject),
             link = _.trim(req.body.data.link),
-            teacherId = _.trim((req.body.data.teacherId));
+            teacherId = ObjectId((req.body.data.teacherId));
 
         startTime = moment(startTime).unix();
         endTime = moment(endTime).unix();
