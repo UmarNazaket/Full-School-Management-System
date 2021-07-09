@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
@@ -74,6 +75,8 @@ import { AdmissionFormsComponent } from './admin/admission-forms/admission-forms
 import { AddSubjectClassComponent } from './admin/add-subject-class/add-subject-class.component';
 import { AddTeacherComponent } from './admin/add-teacher/add-teacher.component';
 import { ResultCComponent } from './parent-dashboard/result/result.component';
+import { AngularFileUploaderModule } from "angular-file-uploader";
+import {EditorModule} from 'primeng/editor';
 
 @NgModule({
   declarations: [
@@ -117,6 +120,9 @@ import { ResultCComponent } from './parent-dashboard/result/result.component';
     AddTeacherComponent
   ],
   imports: [
+    EditorModule,
+    ReactiveFormsModule,
+    AngularFileUploaderModule,
     ConfirmDialogModule,
     InputNumberModule,
     RadioButtonModule,
