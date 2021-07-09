@@ -24016,3 +24016,40 @@ TypeError: Cannot read property 'studentId' of undefined
 [2021-07-10 01:38:38] [32minfo[39m:  app/modules/parent/routes/parent.routes.js is loaded 
 [2021-07-10 01:38:38] [32minfo[39m:  app/modules/student/routes/studentuser.routes.js is loaded 
 [2021-07-10 01:38:38] [32minfo[39m:  app/modules/teacher/routes/teacheruser.routes.js is loaded 
+[2021-07-10 01:38:48] [32minfo[39m:  loaded config file:development 
+[2021-07-10 01:38:48] [32minfo[39m:  Try to Connect MongoDb: mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-10 01:38:51] [32minfo[39m:  mongoose connection open to mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-10 01:38:51] [32minfo[39m:  models are loading ... 
+[2021-07-10 01:38:51] [32minfo[39m:  app/modules/admin/adminAccounts/models/schoolUser.model.js 
+[2021-07-10 01:38:51] [32minfo[39m:  app/modules/common/models/admissionForm.model.js 
+[2021-07-10 01:38:51] [32minfo[39m:  app/modules/common/models/announcements.model.js 
+[2021-07-10 01:38:51] [32minfo[39m:  app/modules/common/models/attendance.model.js 
+[2021-07-10 01:38:51] [32minfo[39m:  app/modules/common/models/class.model.js 
+[2021-07-10 01:38:51] [32minfo[39m:  app/modules/common/models/fee.model.js 
+[2021-07-10 01:38:51] [32minfo[39m:  app/modules/common/models/onlineClass.model.js 
+[2021-07-10 01:38:51] [32minfo[39m:  app/modules/common/models/onlineExam.model.js 
+[2021-07-10 01:38:51] [32minfo[39m:  app/modules/common/models/orders.model.js 
+[2021-07-10 01:38:51] [32minfo[39m:  app/modules/common/models/studentMarks.model.js 
+[2021-07-10 01:38:51] [32minfo[39m:  app/modules/common/models/studentPapers.model.js 
+[2021-07-10 01:38:51] [32minfo[39m:  app/modules/common/models/subjects.model.js 
+[2021-07-10 01:38:51] [32minfo[39m:  app/modules/common/models/timeTable.model.js 
+[2021-07-10 01:38:51] [32minfo[39m:  app/modules/socketIo/api/models/online_user.model.js 
+[2021-07-10 01:38:51] [32minfo[39m:  error messages are loading ... 
+[2021-07-10 01:38:51] [32minfo[39m:  app/modules/admin/adminAccounts/error/adminUser.errors.json is loaded 
+[2021-07-10 01:38:51] [32minfo[39m:  app/modules/employee/error/employee.errors.json is loaded 
+[2021-07-10 01:38:51] [32minfo[39m:  app/modules/parent/error/parent.errors.json is loaded 
+[2021-07-10 01:38:51] [32minfo[39m:  app/modules/student/error/studentuser.errors.json is loaded 
+[2021-07-10 01:38:51] [32minfo[39m:  app/modules/teacher/error/teacheruser.errors.json is loaded 
+[2021-07-10 01:38:51] [32minfo[39m:  routes are loading ... 
+[2021-07-10 01:38:52] [32minfo[39m:  app/modules/admin/adminAccounts/routes/adminSignIn.routes.js is loaded 
+[2021-07-10 01:38:53] [32minfo[39m:  app/modules/admin/adminAccounts/routes/adminuser.routes.js is loaded 
+[2021-07-10 01:38:53] [32minfo[39m:  app/modules/employee/routes/employee.routes.js is loaded 
+[2021-07-10 01:38:53] [32minfo[39m:  app/modules/parent/routes/parent.routes.js is loaded 
+[2021-07-10 01:38:53] [32minfo[39m:  app/modules/student/routes/studentuser.routes.js is loaded 
+[2021-07-10 01:38:53] [32minfo[39m:  app/modules/teacher/routes/teacheruser.routes.js is loaded 
+[2021-07-10 01:38:55] [32minfo[39m:  Agenda Started. 
+[2021-07-10 01:40:03] [31merror[39m:  mongoose connection disconnected 
+[2021-07-10 01:57:43] [32minfo[39m:  {"onlineExam":[{"_id":"60e8a603842e0f3c40ae0dec","day":1,"startTime":" 01:52 AM","endTime":"11:54 AM","link":"<h1 class=\"ql-align-center\">English Paper</h1><h2>Question 01:</h2><p><strong>What is your name?</strong></p><p><br></p><h2>Question 02:</h2><p><strong>What is your age?</strong></p><p><br></p>","teacherId":"60c50268a28e211f14e1aa7b","updatedAt":"2021-07-09T19:39:47.393Z","createdAt":"2021-07-09T19:39:47.393Z","__v":0,"subjectName":"English"}]} 
+[2021-07-10 02:00:58] [32minfo[39m:  {"onlineExam":[{"_id":"60e8a603842e0f3c40ae0dec","day":1,"startTime":" 01:52 AM","endTime":"11:54 AM","link":"<h1 class=\"ql-align-center\">English Paper</h1><h2>Question 01:</h2><p><strong>What is your name?</strong></p><p><br></p><h2>Question 02:</h2><p><strong>What is your age?</strong></p><p><br></p>","teacherId":"60c50268a28e211f14e1aa7b","updatedAt":"2021-07-09T19:39:47.393Z","createdAt":"2021-07-09T19:39:47.393Z","__v":0,"subjectName":"English"},{"_id":"60e8b85ac62cfc43286363f1","day":1,"startTime":" 01:57 AM","endTime":"07:57 AM","link":"<h2>Question 01:</h2><p><strong>What is your Name?</strong></p><h2><br></h2><h2>Question 02:</h2><p><strong>What is your Age?</strong></p>","teacherId":"60c50268a28e211f14e1aa7b","updatedAt":"2021-07-09T20:58:02.017Z","createdAt":"2021-07-09T20:58:02.017Z","__v":0,"subjectName":"English"}]} 
+[2021-07-10 02:01:21] [32minfo[39m:  {"onlineExam":[{"_id":"60e8b85ac62cfc43286363f1","day":1,"startTime":" 01:57 AM","endTime":"07:57 AM","link":"<h2>Question 01:</h2><p><strong>What is your Name?</strong></p><h2><br></h2><h2>Question 02:</h2><p><strong>What is your Age?</strong></p>","teacherId":"60c50268a28e211f14e1aa7b","updatedAt":"2021-07-09T20:58:02.017Z","createdAt":"2021-07-09T20:58:02.017Z","__v":0,"subjectName":"English"}]} 
+[2021-07-10 02:25:45] [32minfo[39m:  mongoose connection open to mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
