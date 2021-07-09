@@ -35,6 +35,7 @@ import { SubjectsComponent } from './teacher/subjects/subjects.component';
 import { TakeexamComponent } from './teacher/takeexam/takeexam.component';
 import { TeacherComponent } from './teacher/teacher.component';
 import { UploadMarksComponent } from './teacher/upload-marks/upload-marks.component';
+import { GetStdPaperComponent } from './teacher/get-std-paper/get-std-paper.component';
 
 const routes: Routes = [{
   path: '',
@@ -142,6 +143,10 @@ const routes: Routes = [{
     {
       path: "classlink",
       component: ClassLinkComponent
+    },
+    {
+      path: 'studentpaper',
+      component: GetStdPaperComponent
     }
   ]
 },

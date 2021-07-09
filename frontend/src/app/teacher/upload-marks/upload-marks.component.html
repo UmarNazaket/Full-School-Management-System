@@ -21,6 +21,7 @@
             <th>Name</th>
             <th>Marks Gained</th>
             <th>Upload Marks</th>
+            <th>See Paper</th>
         </tr>
     </ng-template>
     <ng-template pTemplate="body" let-student let-i="rowIndex">
@@ -30,6 +31,7 @@
             <td>{{student.name}}</td>
             <td><input type="number" [(ngModel)]="optMarks" id="optmark{{i}}"></td>
             <td><button class="btn btn-primary" (click)="uploadMarks(student._id)">Upload</button></td>
+            <td><i style="cursor: pointer;" class="fa fa-eye fa-2x" (click)="getPaper(student._id)"></i></td>
         </tr>
     </ng-template>
 </p-table>

@@ -95,6 +95,7 @@ export class WelcomeScreenComponent implements OnInit {
   gotoAssessment(post_title: any, courseid:any): void{
     console.log(post_title, courseid);
     localStorage.setItem("subjectName", post_title);
+    localStorage.setItem("subjectId", courseid);
 
     this.studentservice.getschemeofstudies(courseid).subscribe((res: any) => {
       console.table("this is data", res);
@@ -105,10 +106,11 @@ export class WelcomeScreenComponent implements OnInit {
       console.table("this is data", res.data.onlineExam);
       // localStorage.setItem("schemeOfStudies", res.data.studyScheme);
       localStorage.setItem("onlineExam", JSON.stringify(res.data.onlineExam[0]));
+      this.router.navigate(['/student/schemeofstudies'])
     });
 
     
-    this.router.navigate(['/student/schemeofstudies'])
+    
   }
 
   getAttendance(subjectId: any): void{

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {StudentService} from '../../../shared/student.service';
 import {Message,MessageService} from 'primeng/api';
 import { PrimeNGConfig } from 'primeng/api';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-upload-marks',
@@ -19,7 +20,7 @@ export class UploadMarksComponent implements OnInit {
   optMarks: any;
 
 
-  constructor(private studentservice: StudentService, private messageService: MessageService, private primengConfig: PrimeNGConfig) { }
+  constructor(private router: Router,private studentservice: StudentService, private messageService: MessageService, private primengConfig: PrimeNGConfig) { }
 
   ngOnInit(): void {
     this.subjectId = localStorage.getItem("subjectIdforteacher")
@@ -73,6 +74,11 @@ export class UploadMarksComponent implements OnInit {
 
   getValue(val: any): void{
     console.log(val)
+  }
+
+  getPaper(stdid: any): any{
+    localStorage.setItem("stdidforteacher",stdid)
+    this.router.navigate(['/teacher/studentpaper'])
   }
 
 }
