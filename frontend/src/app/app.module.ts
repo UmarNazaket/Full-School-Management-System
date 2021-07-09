@@ -77,6 +77,7 @@ import { AddTeacherComponent } from './admin/add-teacher/add-teacher.component';
 import { ResultCComponent } from './parent-dashboard/result/result.component';
 import { AngularFileUploaderModule } from "angular-file-uploader";
 import {EditorModule} from 'primeng/editor';
+import { GetStdPaperComponent } from './teacher/get-std-paper/get-std-paper.component';
 
 @NgModule({
   declarations: [
@@ -117,7 +118,8 @@ import {EditorModule} from 'primeng/editor';
     SchemeOfStudiesComponent,
     AdmissionFormsComponent,
     AddSubjectClassComponent,
-    AddTeacherComponent
+    AddTeacherComponent,
+    GetStdPaperComponent
   ],
   imports: [
     EditorModule,

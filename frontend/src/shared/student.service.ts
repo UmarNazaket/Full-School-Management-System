@@ -111,6 +111,18 @@ export class StudentService {
   addadmin(data: any){
     return this.httpClient.post(this.baseUrl + '/admin/subadmin/create', {data, id: this.id});
   }
+
+
+  // %%%%%%%%%%%%%%%%%%%%%%%%%% PAPER API's &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+  teacherAddPaper(data: any){
+    return this.httpClient.post(this.baseUrl + '/teacher/add/online/exam', {day: data.day, startTime: data.startTime, endTime: data.endTime, classId: data.classId, subject: data.subject, link: data.link, teacherId: data.teacherId});
+  }
+  studentAddPaper(data: any){
+    return this.httpClient.post(this.baseUrl + '/student/paper/upload', {data});
+  }
+  teacherfetchpaper(data: any){
+    return this.httpClient.post(this.baseUrl + '/teacher/fetch/student/exam', {data});
+  }
   
 }
 
