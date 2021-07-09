@@ -23913,3 +23913,106 @@ TypeError: Cannot read property 'studentId' of undefined
 [2021-07-09 23:40:36] [32minfo[39m:  app/modules/student/routes/studentuser.routes.js is loaded 
 [2021-07-09 23:40:36] [32minfo[39m:  app/modules/teacher/routes/teacheruser.routes.js is loaded 
 [2021-07-09 23:40:37] [31merror[39m:  mongoose connection disconnected 
+[2021-07-09 23:41:10] [32minfo[39m:  loaded config file:development 
+[2021-07-09 23:41:10] [32minfo[39m:  Try to Connect MongoDb: mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-09 23:41:19] [32minfo[39m:  mongoose connection open to mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-09 23:41:19] [32minfo[39m:  models are loading ... 
+[2021-07-09 23:41:19] [32minfo[39m:  app/modules/admin/adminAccounts/models/schoolUser.model.js 
+[2021-07-09 23:41:19] [32minfo[39m:  app/modules/common/models/admissionForm.model.js 
+[2021-07-09 23:41:19] [32minfo[39m:  app/modules/common/models/announcements.model.js 
+[2021-07-09 23:41:19] [32minfo[39m:  app/modules/common/models/attendance.model.js 
+[2021-07-09 23:41:19] [32minfo[39m:  app/modules/common/models/class.model.js 
+[2021-07-09 23:41:19] [32minfo[39m:  app/modules/common/models/fee.model.js 
+[2021-07-09 23:41:19] [32minfo[39m:  app/modules/common/models/onlineClass.model.js 
+[2021-07-09 23:41:19] [32minfo[39m:  app/modules/common/models/onlineExam.model.js 
+[2021-07-09 23:41:19] [32minfo[39m:  app/modules/common/models/orders.model.js 
+[2021-07-09 23:41:19] [32minfo[39m:  app/modules/common/models/studentMarks.model.js 
+[2021-07-09 23:41:19] [32minfo[39m:  app/modules/common/models/studentPapers.model.js 
+[2021-07-09 23:41:19] [32minfo[39m:  app/modules/common/models/subjects.model.js 
+[2021-07-09 23:41:19] [32minfo[39m:  app/modules/common/models/timeTable.model.js 
+[2021-07-09 23:41:19] [32minfo[39m:  app/modules/socketIo/api/models/online_user.model.js 
+[2021-07-09 23:41:20] [32minfo[39m:  error messages are loading ... 
+[2021-07-09 23:41:20] [32minfo[39m:  app/modules/admin/adminAccounts/error/adminUser.errors.json is loaded 
+[2021-07-09 23:41:20] [32minfo[39m:  app/modules/employee/error/employee.errors.json is loaded 
+[2021-07-09 23:41:20] [32minfo[39m:  app/modules/parent/error/parent.errors.json is loaded 
+[2021-07-09 23:41:20] [32minfo[39m:  app/modules/student/error/studentuser.errors.json is loaded 
+[2021-07-09 23:41:20] [32minfo[39m:  app/modules/teacher/error/teacheruser.errors.json is loaded 
+[2021-07-09 23:41:20] [32minfo[39m:  routes are loading ... 
+[2021-07-09 23:41:22] [32minfo[39m:  app/modules/admin/adminAccounts/routes/adminSignIn.routes.js is loaded 
+[2021-07-09 23:41:22] [32minfo[39m:  app/modules/admin/adminAccounts/routes/adminuser.routes.js is loaded 
+[2021-07-09 23:41:22] [32minfo[39m:  app/modules/employee/routes/employee.routes.js is loaded 
+[2021-07-09 23:41:22] [32minfo[39m:  app/modules/parent/routes/parent.routes.js is loaded 
+[2021-07-09 23:41:22] [32minfo[39m:  app/modules/student/routes/studentuser.routes.js is loaded 
+[2021-07-09 23:41:22] [32minfo[39m:  app/modules/teacher/routes/teacheruser.routes.js is loaded 
+[2021-07-09 23:41:32] [32minfo[39m:  Agenda Started. 
+[2021-07-09 23:43:26] [31merror[39m:  mongoose connection disconnected 
+[2021-07-09 23:43:47] [32minfo[39m:  mongoose connection open to mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-09 23:55:27] [32minfo[39m:  mongoose connection open to mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-10 00:28:12] [32minfo[39m:  mongoose connection open to mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-10 00:44:06] [32minfo[39m:  mongoose connection open to mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-10 01:11:54] [32minfo[39m:  loaded config file:development 
+[2021-07-10 01:11:54] [32minfo[39m:  Try to Connect MongoDb: mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-10 01:12:03] [32minfo[39m:  mongoose connection open to mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-10 01:12:03] [32minfo[39m:  models are loading ... 
+[2021-07-10 01:12:03] [32minfo[39m:  app/modules/admin/adminAccounts/models/schoolUser.model.js 
+[2021-07-10 01:12:03] [32minfo[39m:  app/modules/common/models/admissionForm.model.js 
+[2021-07-10 01:12:03] [32minfo[39m:  app/modules/common/models/announcements.model.js 
+[2021-07-10 01:12:03] [32minfo[39m:  app/modules/common/models/attendance.model.js 
+[2021-07-10 01:12:03] [32minfo[39m:  app/modules/common/models/class.model.js 
+[2021-07-10 01:12:03] [32minfo[39m:  app/modules/common/models/fee.model.js 
+[2021-07-10 01:12:03] [32minfo[39m:  app/modules/common/models/onlineClass.model.js 
+[2021-07-10 01:12:03] [32minfo[39m:  app/modules/common/models/onlineExam.model.js 
+[2021-07-10 01:12:03] [32minfo[39m:  app/modules/common/models/orders.model.js 
+[2021-07-10 01:12:03] [32minfo[39m:  app/modules/common/models/studentMarks.model.js 
+[2021-07-10 01:12:03] [32minfo[39m:  app/modules/common/models/studentPapers.model.js 
+[2021-07-10 01:12:03] [32minfo[39m:  app/modules/common/models/subjects.model.js 
+[2021-07-10 01:12:03] [32minfo[39m:  app/modules/common/models/timeTable.model.js 
+[2021-07-10 01:12:03] [32minfo[39m:  app/modules/socketIo/api/models/online_user.model.js 
+[2021-07-10 01:12:20] [32minfo[39m:  error messages are loading ... 
+[2021-07-10 01:12:20] [32minfo[39m:  app/modules/admin/adminAccounts/error/adminUser.errors.json is loaded 
+[2021-07-10 01:12:20] [32minfo[39m:  app/modules/employee/error/employee.errors.json is loaded 
+[2021-07-10 01:12:20] [32minfo[39m:  app/modules/parent/error/parent.errors.json is loaded 
+[2021-07-10 01:12:20] [32minfo[39m:  app/modules/student/error/studentuser.errors.json is loaded 
+[2021-07-10 01:12:20] [32minfo[39m:  app/modules/teacher/error/teacheruser.errors.json is loaded 
+[2021-07-10 01:12:20] [32minfo[39m:  routes are loading ... 
+[2021-07-10 01:12:47] [32minfo[39m:  app/modules/admin/adminAccounts/routes/adminSignIn.routes.js is loaded 
+[2021-07-10 01:12:53] [32minfo[39m:  app/modules/admin/adminAccounts/routes/adminuser.routes.js is loaded 
+[2021-07-10 01:12:53] [32minfo[39m:  app/modules/employee/routes/employee.routes.js is loaded 
+[2021-07-10 01:12:53] [32minfo[39m:  app/modules/parent/routes/parent.routes.js is loaded 
+[2021-07-10 01:12:53] [32minfo[39m:  app/modules/student/routes/studentuser.routes.js is loaded 
+[2021-07-10 01:12:53] [32minfo[39m:  app/modules/teacher/routes/teacheruser.routes.js is loaded 
+[2021-07-10 01:12:54] [31merror[39m:  mongoose connection disconnected 
+[2021-07-10 01:12:56] [32minfo[39m:  Agenda Started. 
+[2021-07-10 01:12:57] [32minfo[39m:  mongoose connection open to mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-10 01:18:39] [32minfo[39m:  mongoose connection open to mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-10 01:38:19] [32minfo[39m:  loaded config file:development 
+[2021-07-10 01:38:19] [32minfo[39m:  Try to Connect MongoDb: mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-10 01:38:25] [32minfo[39m:  mongoose connection open to mongodb+srv://faizan:faizan@cluster0.m2t0w.mongodb.net/SchoolSystem 
+[2021-07-10 01:38:25] [32minfo[39m:  models are loading ... 
+[2021-07-10 01:38:25] [32minfo[39m:  app/modules/admin/adminAccounts/models/schoolUser.model.js 
+[2021-07-10 01:38:25] [32minfo[39m:  app/modules/common/models/admissionForm.model.js 
+[2021-07-10 01:38:25] [32minfo[39m:  app/modules/common/models/announcements.model.js 
+[2021-07-10 01:38:25] [32minfo[39m:  app/modules/common/models/attendance.model.js 
+[2021-07-10 01:38:25] [32minfo[39m:  app/modules/common/models/class.model.js 
+[2021-07-10 01:38:25] [32minfo[39m:  app/modules/common/models/fee.model.js 
+[2021-07-10 01:38:25] [32minfo[39m:  app/modules/common/models/onlineClass.model.js 
+[2021-07-10 01:38:25] [32minfo[39m:  app/modules/common/models/onlineExam.model.js 
+[2021-07-10 01:38:25] [32minfo[39m:  app/modules/common/models/orders.model.js 
+[2021-07-10 01:38:25] [32minfo[39m:  app/modules/common/models/studentMarks.model.js 
+[2021-07-10 01:38:25] [32minfo[39m:  app/modules/common/models/studentPapers.model.js 
+[2021-07-10 01:38:25] [32minfo[39m:  app/modules/common/models/subjects.model.js 
+[2021-07-10 01:38:25] [32minfo[39m:  app/modules/common/models/timeTable.model.js 
+[2021-07-10 01:38:25] [32minfo[39m:  app/modules/socketIo/api/models/online_user.model.js 
+[2021-07-10 01:38:30] [32minfo[39m:  error messages are loading ... 
+[2021-07-10 01:38:30] [32minfo[39m:  app/modules/admin/adminAccounts/error/adminUser.errors.json is loaded 
+[2021-07-10 01:38:30] [32minfo[39m:  app/modules/employee/error/employee.errors.json is loaded 
+[2021-07-10 01:38:30] [32minfo[39m:  app/modules/parent/error/parent.errors.json is loaded 
+[2021-07-10 01:38:30] [32minfo[39m:  app/modules/student/error/studentuser.errors.json is loaded 
+[2021-07-10 01:38:30] [32minfo[39m:  app/modules/teacher/error/teacheruser.errors.json is loaded 
+[2021-07-10 01:38:30] [32minfo[39m:  routes are loading ... 
+[2021-07-10 01:38:36] [32minfo[39m:  app/modules/admin/adminAccounts/routes/adminSignIn.routes.js is loaded 
+[2021-07-10 01:38:38] [32minfo[39m:  app/modules/admin/adminAccounts/routes/adminuser.routes.js is loaded 
+[2021-07-10 01:38:38] [32minfo[39m:  app/modules/employee/routes/employee.routes.js is loaded 
+[2021-07-10 01:38:38] [32minfo[39m:  app/modules/parent/routes/parent.routes.js is loaded 
+[2021-07-10 01:38:38] [32minfo[39m:  app/modules/student/routes/studentuser.routes.js is loaded 
+[2021-07-10 01:38:38] [32minfo[39m:  app/modules/teacher/routes/teacheruser.routes.js is loaded 

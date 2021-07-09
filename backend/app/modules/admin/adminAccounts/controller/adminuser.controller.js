@@ -2,10 +2,6 @@
  * Created by Bilal Khursheed on 5/20/2021.
  */
 
-const {
-    stat
-} = require('fs/promises');
-
 const _ = require('lodash'),
     bcrypt = require('bcryptjs'),
     SALT_WORK_FACTOR = 10,
