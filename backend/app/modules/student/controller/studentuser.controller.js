@@ -610,7 +610,7 @@ let addOrder = async (req, res, next) => {
     }
 }
 let addStudentPaper = async (req, res, next) => {
-    try {
+    try { 
         let StudentPaper = await StudentPapers.create(req.body.data)
 
         if (StudentPaper) {
