@@ -5,12 +5,9 @@
         <div>End Time:  <input type="datetime-local" [(ngModel)]="endTime"></div>
     </div>
     <br/>
-    <p-fileUpload name="demo[]" url="" (onUpload)="onUpload($event)"
-    [accept]= "'.pdf,.doc,.docx,.text,.txt'">
-            <ng-template pTemplate="content">
-                <ul *ngIf="uploadedFiles.length">
-                    <li *ngFor="let file of uploadedFiles">{{file.name}} - {{file.size}} bytes</li>
-                </ul>
-            </ng-template>
-    </p-fileUpload>
+    <div class="mt-5">
+        <div class="col-sm-12 mt-5 text-center"><h5>Question Paper</h5></div>
+        <p-editor [(ngModel)]="paper_text" [style]="{'height':'320px'}"></p-editor>
+        <button class="btn btn-primary mt-3" (click)="submitpaper()">Submit Paper</button>
+    </div>
 </div>

@@ -41,4 +41,6 @@ export class StudySchemeComponent implements OnInit {
     });
   }
 
+  
+
 }

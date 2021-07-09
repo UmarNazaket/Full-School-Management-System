@@ -49,6 +49,10 @@ export class StudentService {
     return this.httpClient.post(this.baseUrl + '/student/order' , {data});
   }
 
+  uploadPDF1(FormData: any){
+    return this.httpClient.post('https://api.cloudinary.com/v1_1/umarnazaket/image/upload',{FormData})
+  }
+
   // FOR PARENT
   getchildren(){
     return this.httpClient.post(this.baseUrl + '/parent/view/child', {id: this.id});

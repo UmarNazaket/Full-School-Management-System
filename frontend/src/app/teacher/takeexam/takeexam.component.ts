@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./takeexam.component.scss']
 })
 export class TakeexamComponent implements OnInit {
-  uploadedFiles: any[] = [];
+  paper_text: any;
 
   startTime: any;
   endTime: any;
@@ -17,11 +17,8 @@ export class TakeexamComponent implements OnInit {
     
   }
 
-  onUpload(event: { files: any; }) {
-    
-    for(let file of event.files) {
-        this.uploadedFiles.push(file);
-    }
+  submitpaper(){
+    console.log(this.paper_text)
   }
 
 }
