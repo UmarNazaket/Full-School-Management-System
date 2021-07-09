@@ -8,7 +8,7 @@ var Schema = mongoose.Schema;
 
 var StudentPapers = new Schema({
     
-    link: {
+    paper: {
         type: String,
         required: true,
     },
@@ -20,7 +20,7 @@ var StudentPapers = new Schema({
         type: Boolean,
         default : false
     },
-    student: {
+    studentId: {
         type: Schema.Types.ObjectId,
         ref: 'SchoolUser'
     },

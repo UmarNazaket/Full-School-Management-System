@@ -14,6 +14,7 @@ const _ = require('lodash'),
     OnlineClass = mongoose.model('OnlineClass'),
     StudentMarks = mongoose.model('StudentMarks'),
     OnlineExam = mongoose.model('OnlineExam'),
+    StudentPapers = mongoose.model('StudentPapers'), 
     Attendance = mongoose.model('Attendance');
 
 let viewTimeTable = async (req, res, next) => {
@@ -234,6 +235,32 @@ let fetchStudentBySubject = async (req, res, next) => {
         });
     }
 }
+let fetchStudentPapers = async (req, res, next) => {
+    try {
+        let subjectId = (req.body.data.subjectId) || 0,
+         studentId = (req.body.data.studentId) || 0;
+
+        console.log('here is the student id', subjectId)
+        let studentPaper = await StudentPapers.findOne({
+            subjectId: ObjectId(subjectId),
+            studentId: ObjectId(studentId),
+        })
+        // console.log(studentList)
+            return responseModule.successResponse(res, {
+                success: 1,
+                message: 'Student paper is fetched successfully.',
+                data: {
+                    studentPaper: studentPaper 
+                }
+            });
+      
+    } catch (err) {
+        winston.error(err);
+        return next({
+            msgCode: 1037
+        });
+    }
+}
 let addSchemeOfStudy = async (req, res, next) => {
     try {
         let subjectId = (req.body.data.subjectId) || '';
@@ -417,6 +444,7 @@ module.exports = {
     addSchemeOfStudy,
     addAttendance,
     addStudentMarks,
-    addOnlineExam
+    addOnlineExam,
+    fetchStudentPapers
 
 }
