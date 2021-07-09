@@ -485,21 +485,34 @@ let fetchOnlineExam = async (req, res, next) => {
             //     "$gt": time
             // },
             subject: subjectId
-        })
+        }).populate([{
+            path: 'subject',
+            model: 'Subjects',
+            required: true,
+        }]).lean()
 
         if (onlineExam) {
             onlineExam = JSON.parse(JSON.stringify(onlineExam))
-
-            onlineExam.map((item) => {
-                delete item.teacherId;
-            })
             onlineExam = onlineExam.filter((item) => {
-                return parseInt(item.startTime) < time && parseInt(item.endTime) < time
+
+                return parseInt(item.startTime) <= time && parseInt(item.endTime) > time
             })
             onlineExam.map((item) => {
-                item.startTime = moment.unix(item.startTime).format('YYYY-MM-DD HH:mm:ss')
-                item.endTime = moment.unix(item.endTime).format('YYYY-MM-DD  HH:mm:ss')
+                item.startTime = moment.unix(item.startTime).format(' HH:mm A');
+                item.endTime = moment.unix(item.endTime).format('HH:mm A');
+                item.subjectName = item.subject.name
+                delete item.subject
             })
+            // onlineExam.map((item) => {
+            //     delete item.teacherId;
+            // })
+            // onlineExam = onlineExam.filter((item) => {
+            //     return parseInt(item.startTime) < time && parseInt(item.endTime) < time
+            // })
+            // onlineExam.map((item) => {
+            //     item.startTime = moment.unix(item.startTime).format('YYYY-MM-DD HH:mm:ss')
+            //     item.endTime = moment.unix(item.endTime).format('YYYY-MM-DD  HH:mm:ss')
+            // })
             return responseModule.successResponse(res, {
                 success: 1,
                 message: 'Online Exam fetched successfully.',

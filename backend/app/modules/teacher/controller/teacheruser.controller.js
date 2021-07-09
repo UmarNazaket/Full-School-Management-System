@@ -399,9 +399,8 @@ let addOnlineExam = async (req, res, next) => {
             teacherId = _.trim((req.body.teacherId));
 
 
-        // startTime = moment.unix(startTime).format('HH:MM');
-        // endTime = moment.unix(endTime).format('HH:MM');
-
+            startTime = moment(startTime).unix();
+            endTime = moment(endTime).unix();
 
         let addOnlineExam = await OnlineExam.create({
             day,
