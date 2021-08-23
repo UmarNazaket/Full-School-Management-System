@@ -29,7 +29,7 @@ Admin have all the access to each and every feature of system. Admin can be one 
 #  Module 2:  User Control
 This will deal with user accounts. Users have their specific domain logins so that they can get access to the web portal and android app. Users have the access to other features too with respect to their login account criteria. Along with that every user can report an error if he/she is facing any error in their portal or they can get help from help desk as well. Users can also customize their respective portals little bit if admin gives them access.
 
-In this system, users are of following types:
+In this system, users are of following types
 
  
 
