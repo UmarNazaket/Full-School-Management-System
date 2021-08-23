@@ -69,4 +69,4 @@ Result:
 It can be seen by students and their parents by the end of every term when teachers upload it. Once result of a term is out it cannot be editable anymore.
 
 Records:
-This feature is to keep the track of record of each student. This records feature can provide the list of all the enrolled students, their academic record, their fee records and the whole statistics.
+This feature is to keep the track of record of each student. This records feature can provide the list of all the enrolled students, their academic record, their fee records and the whole statistics
